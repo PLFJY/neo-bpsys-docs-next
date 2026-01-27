@@ -1,0 +1,34 @@
+---
+
+---
+
+
+
+本文将介绍如何安装 neo-bpsys-wpf。
+
+---
+
+## 检查系统需求
+在开始使用软件之前，请确保您的设备符合以下推荐配置：
+
++ Windows 10 20H2 及以上版本的系统（因为这下面的系统没有CET保护，如有需要可参考这篇博文自行拉取修改并编译源码解决 [解决.NET 9 WPF应用在特定Windows版本上无法启动的问题](https://blog.gitcode.com/36cf881744718a915f1506032a8c695c.html)
++ 推荐配置为i5 13400F + RTX 3060 +16GB 运行内存（最低配置为 i5 8300H + GTX 1060 + 8GB 运行内存）*
++ 已安装 [.NET 9.0 桌面运行时 ](https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0) (一般会由安装包自动处理好)
+
+> *核显能正常使用软件但不建议做导播
+
+---
+
+## 下载软件
+目前有以下渠道下载本软件：
+
+官方渠道（实时更新）
++ [项目官网](https://bpsys.plfjy.top/)（[备用官网](https://plfjy.github.io/neo-bpsys-website/)）
++ [GitHub Releases](https://github.com/PLFJY/neo-bpsys-wpf/releases)
++ ~~[Gitee 发行版](https://gitee.com/plfjy/neo-bpsys-wpf/releases)~~（因无法上传大于100MB的文件而弃用）
+
+第三方渠道（网友维护，**不保证为最新版**）
++ [蓝奏云](https://wwsm.lanzouo.com/b009hclqvi)（无需登录即可下载，密码：零风NB）
++ [百度网盘](https://pan.baidu.com/s/5_8kzq0n-09o6T1LreZHisg)
++ [阿里云盘](https://www.alipan.com/s/t8SByXpso8o)（提取码：86em）
+
