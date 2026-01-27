@@ -2,6 +2,7 @@
 name: 部署文档
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -45,6 +46,7 @@ jobs:
         run: |
           corepack enable
           pnpm install --frozen-lockfile
+
       - name: 安装依赖&构建文档
         shell: pwsh
         run: ./build.ps1
