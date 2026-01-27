@@ -27,6 +27,12 @@ jobs:
   deploy-pages-branch:
     runs-on: windows-latest
     steps:
+      - name: Print inputs
+        run: |
+          echo "source_repo=${{ inputs.source_repo }}"
+          echo "source_sha=${{ inputs.source_sha }}"
+          echo "packageId=${{ inputs.packageId }}"
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
