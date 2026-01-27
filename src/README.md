@@ -15,7 +15,7 @@ actions:
 
   - text: 使用教程
     icon: book-open
-    link: ./user-guide/
+    link: ./user-guide/introduction
 
   - text: 加入交流群
     icon: fa6-brands:qq
