@@ -1,4 +1,4 @@
-git clone https://github.com/PLFJY/neo-bpsys-wpf.git --depth 1
+git clone --depth=1 https://github.com/PLFJY/neo-bpsys-wpf.git
 dotnet run --project neo-bpsys-wpf\neo-bpsys-wpf.DocsGenerator\neo-bpsys-wpf.DocsGenerator.csproj neo-bpsys-wpf.Core src\api
 
 # Fix Windows case-insensitive collision between index and Index routes
