@@ -1,59 +1,99 @@
 <template>
-  <h2 class="section-title">下载中心</h2>
+  <h2 class="section-title">{{ t.download.title }}</h2>
   <section class="hero">
     <div class="hero-content">
       <div class="system-requirements">
-        系统要求：<VPIcon class="req-icon" icon="fa6-brands:windows" /> Windows 10 20H2 及以上
+        {{ t.download.systemRequirements }}<VPIcon class="req-icon" icon="fa6-brands:windows" />
+        {{ t.download.systemWindows }}
       </div>
-      <a ref="btnGhproxy1" id="download-button-ghproxy-1" :href="downloadHrefFallback" class="download-btn"
-        :class="{ disabled: !isWindows }" :aria-disabled="!isWindows ? 'true' : 'false'"
-        :title="!isWindows ? '当前系统不支持下载' : ''" @click="onPrimaryDisabledClick">
+      <a v-if="isZh" ref="btnGhproxy1" id="download-button-ghproxy-1" :href="downloadHrefFallback"
+        class="download-btn" :class="{ disabled: !isWindows }" :aria-disabled="!isWindows ? 'true' : 'false'"
+        :title="!isWindows ? t.download.unsupportedTitle : ''" @click="onPrimaryDisabledClick">
         <div class="line1">
           <VPIcon icon="download" />
-          {{ isWindows ? "立即下载" : "系统不支持" }}
+          {{ isWindows ? t.download.downloadNow : t.download.unsupported }}
         </div>
         <div class="line2">{{ versionText }}</div>
       </a>
 
-      <div v-if="isWindows" class="backup-download-btns">
+      <a v-else ref="btnGithub" id="download-button-github-primary" :href="githubHref" class="download-btn"
+        :class="{ disabled: !isWindows || githubDisabled }"
+        :aria-disabled="!isWindows || githubDisabled ? 'true' : 'false'"
+        :title="!isWindows ? t.download.unsupportedTitle : (githubDisabled ? t.download.githubDisabledTitle : '')"
+        @click="onPrimaryGithubDisabledClick">
+        <div class="line1">
+          <VPIcon icon="download" />
+          {{ isWindows ? t.download.downloadNow : t.download.unsupported }}
+        </div>
+        <div class="line2">{{ versionText }}</div>
+      </a>
+
+      <div v-if="isWindows && isZh" class="backup-download-btns">
         <a ref="btnGhproxy2" id="download-button-ghproxy-2" :href="downloadHrefFallback"
           class="download-btn2">
           <div class="line1">
             <VPIcon icon="link" />
-            备用线路一
+            {{ t.download.backup1 }}
           </div>
         </a>
         <a ref="btnGhproxy3" id="download-button-ghproxy-3" :href="downloadHrefFallback"
           class="download-btn2">
           <div class="line1">
             <VPIcon icon="link" />
-            备用线路二
+            {{ t.download.backup2 }}
           </div>
         </a>
         <a ref="btnGithub" id="download-button-github" :href="downloadHrefFallback" class="download-btn2"
           :class="{ disabled: githubDisabled }" :aria-disabled="githubDisabled ? 'true' : 'false'"
-          :title="githubDisabled ? '当前无法获取安装包，请稍后再试' : ''" @click="onGithubDisabledClick">
+          :title="githubDisabled ? t.download.githubDisabledTitle : ''" @click="onGithubDisabledClick">
           <div class="line1">
             <VPIcon icon="link" />
-            Github (不推荐)
+            {{ t.download.github }}
           </div>
         </a>
       </div>
       <div v-if="githubDisabled" class="download-disabled-tip">
         <VPIcon class="tip-icon" icon="fa6-solid:circle-info" />
-        下载入口暂不可用，请稍后再试或关注公告
+        {{ t.download.downloadDisabledTip }}
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
+import { computed, inject, onMounted, ref, watch } from "vue";
+import { useRouteLocale } from "@vuepress/client";
+
+const fallback = {
+  download: {
+    title: "下载中心",
+    systemRequirements: "系统要求：",
+    systemWindows: "Windows 10 20H2 及以上",
+    downloadNow: "立即下载",
+    unsupported: "系统不支持",
+    versionLoading: "获取版本中...",
+    versionNotFound: "未找到安装程序",
+    versionFailed: "获取失败",
+    backup1: "备用线路一",
+    backup2: "备用线路二",
+    github: "Github (不推荐)",
+    unsupportedTitle: "当前系统不支持下载",
+    githubDisabledTitle: "当前无法获取安装包，请稍后再试",
+    downloadDisabledTip: "下载入口暂不可用，请稍后再试或关注公告",
+  },
+};
+
+const homeI18n = inject("homeI18n", computed(() => fallback));
+const t = computed(() => homeI18n.value ?? fallback);
+const routeLocale = useRouteLocale();
+const isZh = computed(() => routeLocale.value === "/");
 
 const downloadHrefFallback =
   "https://github.com/plfjy/neo-bpsys-wpf/releases/latest/download/neo-bpsys-wpf_Installer.exe";
 
-const versionText = ref("获取版本中...");
+const githubHref = ref(downloadHrefFallback);
+const versionText = ref(t.value.download.versionLoading);
+const isVersionLoading = ref(true);
 const githubDisabled = ref(false);
 const isWindows = ref(false);
 
@@ -70,6 +110,10 @@ function onPrimaryDisabledClick(e: MouseEvent) {
   if (!isWindows.value) e.preventDefault();
 }
 
+function onPrimaryGithubDisabledClick(e: MouseEvent) {
+  if (!isWindows.value || githubDisabled.value) e.preventDefault();
+}
+
 async function updateLatestRelease() {
   try {
     const res = await fetch(
@@ -83,9 +127,11 @@ async function updateLatestRelease() {
 
     if (installerAsset) {
       versionText.value = data.tag_name || "latest";
+      isVersionLoading.value = false;
 
       const raw = installerAsset.browser_download_url as string;
 
+      githubHref.value = raw;
       if (btnGithub.value) btnGithub.value.href = raw;
       if (btnGhproxy1.value) btnGhproxy1.value.href = "https://ghproxy.net/" + raw;
       if (btnGhproxy2.value) btnGhproxy2.value.href = "https://gh-proxy.com/" + raw;
@@ -93,12 +139,14 @@ async function updateLatestRelease() {
 
       githubDisabled.value = false;
     } else {
-      versionText.value = "未找到安装程序";
+      versionText.value = t.value.download.versionNotFound;
+      isVersionLoading.value = false;
       githubDisabled.value = true;
     }
   } catch (e) {
     console.error("获取release失败:", e);
-    versionText.value = "获取失败";
+    versionText.value = t.value.download.versionFailed;
+    isVersionLoading.value = false;
   }
 }
 
@@ -106,6 +154,13 @@ onMounted(() => {
   isWindows.value = typeof navigator !== "undefined" && /windows/i.test(navigator.userAgent);
   updateLatestRelease();
 });
+
+watch(
+  () => t.value.download.versionLoading,
+  (loadingText) => {
+    if (isVersionLoading.value) versionText.value = loadingText;
+  }
+);
 </script>
 
 <style scoped>

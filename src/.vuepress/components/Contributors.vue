@@ -1,43 +1,62 @@
 <script setup lang="ts">
-type Contributor = {
-  avatar: string
-  name: string
-  contribution: string
-  link?: {
-    href: string
-    label: string
-    icon?: string
-  }
-}
+import { computed, inject } from "vue";
 
-const contributors = [
-  {
-    avatar: './assets/zack.jpg',
-    name: 'Zack',
-    contribution: '测试 对局引导 多语言 使用文档',
-    link: { href: 'https://github.com/ZackZhao233', label: 'GitHub', icon: 'fa6-brands:github' }
+type Contributor = {
+  avatar: string;
+  name: string;
+  contribution: string;
+  link?: {
+    href: string;
+    label: string;
+    icon?: string;
+  };
+};
+
+const fallback = {
+  contributors: {
+    title: "贡献者",
+    items: [
+      {
+        avatar: "./assets/avatars/zack.jpg",
+        name: "Zack",
+        contribution: "测试 对局引导 多语言 使用文档",
+        link: {
+          href: "https://github.com/ZackZhao233",
+          label: "GitHub",
+          icon: "fa6-brands:github",
+        },
+      },
+      {
+        avatar: "./assets/avatars/tianqi.jpg",
+        name: "天启",
+        contribution: "插件系统初步",
+        link: {
+          href: "https://github.com/tianqiqaq",
+          label: "GitHub",
+          icon: "fa6-brands:github",
+        },
+      },
+      {
+        avatar: "./assets/avatars/zhangzhilv.jpg",
+        name: "张之律",
+        contribution: "提供了 v1.3 版本基于 2025 IVL 秋季赛规则的默认前台 UI",
+      },
+      {
+        avatar: "./assets/avatars/tp.jpg",
+        name: "tp",
+        contribution: "提供了 v2.0 版本的默认前台 UI",
+      },
+    ] as Contributor[],
   },
-  {
-    avatar: './assets/tianqi.jpg',
-    name: '天启',
-    contribution: '插件系统初步',
-    link: { href: 'https://github.com/tianqiqaq', label: 'GitHub', icon: 'fa6-brands:github' }
-  },
-  {
-    avatar: './assets/zhangzhilv.jpg',
-    name: '张之律',
-    contribution: '提供了 v1.3 版本基于 2025 IVL 秋季赛规则的默认前台 UI'
-  },
-  {
-    avatar: './assets/tp.jpg',
-    name: 'tp',
-    contribution: '提供了 v2.0 版本的默认前台 UI'
-  }
-]
+};
+
+const homeI18n = inject("homeI18n", computed(() => fallback));
+const t = computed(() => homeI18n.value ?? fallback);
+const contributors = computed(() => t.value.contributors.items);
 </script>
 
 <template>
-  <h2 class="section-title">贡献者</h2>
+  <h2 class="section-title">{{ t.contributors.title }}</h2>
   <section class="contributors">
     <div class="contributors__grid">
       <div

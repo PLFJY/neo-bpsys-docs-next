@@ -1,23 +1,23 @@
 ---
 home: true
 icon: house
-title: Home
+title: ホーム
 heroImage: logo.png
 heroImageStyle: 
   scale: 0.75
 heroText: neo-bpsys-wpf
-tagline: A live-streaming BP display tool for Identity V unofficial tournament.
+tagline: 第五人格 民間大会専用 配信向けBP表示ツール
 actions:
-  - text: Download for Windows
+  - text: ダウンロードへ
     icon: download
     link: "#download-center"
     type: primary
 
-  - text: User Guide
+  - text: 使い方
     icon: book-open
-    link: en/user-guide/introduction
+    link: ja/user-guide/introduction
 
-  - text: Join Discord
+  - text: Discordに参加
     icon: fa6-brands:discord
     link: https://discord.gg/xMNkSExN
 

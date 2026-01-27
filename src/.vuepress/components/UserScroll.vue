@@ -1,7 +1,7 @@
 <template>
   <h2 class="section-title">
-    庞大的用户群<br />
-    有 {{ tournaments_count }}+ 个民间赛事团队曾有使用
+    {{ t.userScroll.title }}<br />
+    {{ subtitle }}
   </h2>
   <div class="users-wrap">
     <div class="scroll-mask scroll-mask-left"></div>
@@ -16,7 +16,17 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, onBeforeUnmount, ref } from "vue";
+import { computed, inject, onMounted, onBeforeUnmount, ref } from "vue";
+
+const fallback = {
+  userScroll: {
+    title: "庞大的用户群",
+    subtitle: "有 {count}+ 个民间赛事团队曾有使用",
+  },
+};
+
+const homeI18n = inject("homeI18n", computed(() => fallback));
+const t = computed(() => homeI18n.value ?? fallback);
 
 const tournaments = ref<string[]>([
   'ASG<br>(本家定制版)',
@@ -123,6 +133,9 @@ const tournaments = ref<string[]>([
 ]);
 
 const tournaments_count = Math.floor(tournaments.value.length / 10) * 10;
+const subtitle = computed(() =>
+  t.value.userScroll.subtitle.replace("{count}", String(tournaments_count))
+);
 
 // 自动滚动逻辑
 const userScrollRef = ref<HTMLElement | null>(null);

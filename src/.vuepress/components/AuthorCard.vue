@@ -1,33 +1,33 @@
 <template>
-  <h2 class="section-title">主要开发者</h2>
+  <h2 class="section-title">{{ t.author.title }}</h2>
   <section class="author-section">
 
     <div class="author-card acrylic">
       <div class="author-header">
-        <img :src="authorUrl" alt="作者头像" class="author-avatar" />
-        <h2 class="author-name">零风PLFJY</h2>
-        <p class="author-title">第五人格BP软件开发者 &amp; 技术爱好者</p>
+        <img :src="authorUrl" :alt="t.author.avatarAlt" class="author-avatar" />
+        <h2 class="author-name">{{ t.author.name }}</h2>
+        <p class="author-title">{{ t.author.role }}</p>
       </div>
 
-      <p>一个第五人格爱好者，专注于为民间赛开发最好的BP软件</p>
+      <p>{{ t.author.desc }}</p>
 
       <div class="author-links">
         <a target="_blank" rel="noopener noreferrer" href="https://plfjy.top/" class="author-link">
           <VPIcon icon="house" />
-          个人主页
+          {{ t.author.links.home }}
         </a>
         <a target="_blank" rel="noopener noreferrer" href="https://blog.plfjy.top/" class="author-link">
           <VPIcon icon="blog" />
-          个人博客
+          {{ t.author.links.blog }}
         </a>
         <a target="_blank" rel="noopener noreferrer" href="https://space.bilibili.com/453909624/"
           class="author-link">
           <VPIcon icon="fa6-brands:bilibili" />
-          B站主页
+          {{ t.author.links.bilibili }}
         </a>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/PLFJY/" class="author-link">
           <VPIcon icon="fa6-brands:github" />
-          GitHub主页
+          {{ t.author.links.github }}
         </a>
       </div>
     </div>
@@ -35,10 +35,28 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, inject } from "vue";
 import { withBase } from "@vuepress/client";
 
-const authorUrl = computed(() => withBase("assets/plfjy.jpg"));
+const fallback = {
+  author: {
+    title: "主要开发者",
+    name: "零风PLFJY",
+    role: "第五人格BP软件开发者 & 技术爱好者",
+    desc: "一个第五人格爱好者，专注于为民间赛开发最好的BP软件",
+    avatarAlt: "作者头像",
+    links: {
+      home: "个人主页",
+      blog: "个人博客",
+      bilibili: "B站主页",
+      github: "GitHub主页",
+    },
+  },
+};
+
+const homeI18n = inject("homeI18n", computed(() => fallback));
+const t = computed(() => homeI18n.value ?? fallback);
+const authorUrl = computed(() => withBase("assets/avatars/plfjy.jpg"));
 </script>
 
 <style scoped>

@@ -1,11 +1,11 @@
 <template>
-  <h2 class="section-title">项目前身</h2>
+  <h2 class="section-title">{{ t.sections.projectTimeline }}</h2>
   <section class="timeline">
     <a class="project" href="https://github.com/PLFJY/idv-bp-asg-e" target="_blank" rel="noopener noreferrer">
       <VPIcon class="project-icon" icon="code-branch" />
       <div class="project-content">
         <h3>idv-bp-asg-e</h3>
-        <p>最初的BP系统原型，采用易语言制作</p>
+        <p>{{ t.timeline[0].desc }}</p>
       </div>
     </a>
 
@@ -13,7 +13,7 @@
       <VPIcon class="project-icon" icon="code-branch" />
       <div class="project-content">
         <h3>idv-fln-bp-e</h3>
-        <p>FLN/JRL赛事定制版，基于idv-bp-asg-e</p>
+        <p>{{ t.timeline[1].desc }}</p>
       </div>
     </a>
 
@@ -21,11 +21,29 @@
       <VPIcon class="project-icon" icon="code-branch" />
       <div class="project-content">
         <h3>bp-sys-wpf</h3>
-        <p>WPF进行重写，比起上面两个功能更强大，是这个软件的前身</p>
+        <p>{{ t.timeline[2].desc }}</p>
       </div>
     </a>
   </section>
 </template>
+
+<script setup lang="ts">
+import { computed, inject } from "vue";
+
+const fallback = {
+  sections: {
+    projectTimeline: "项目前身",
+  },
+  timeline: [
+    { desc: "最初的BP系统原型，采用易语言制作" },
+    { desc: "FLN/JRL赛事定制版，基于idv-bp-asg-e" },
+    { desc: "WPF进行重写，比起上面两个功能更强大，是这个软件的前身" },
+  ],
+};
+
+const homeI18n = inject("homeI18n", computed(() => fallback));
+const t = computed(() => homeI18n.value ?? fallback);
+</script>
 
 <style scoped>
 /* timeline */

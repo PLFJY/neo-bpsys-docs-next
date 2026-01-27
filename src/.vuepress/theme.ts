@@ -64,7 +64,7 @@ export default hopeTheme({
       // sidebar
       sidebar: jaSidebar,
 
-      footer: "本ドキュメントは、CC BY-NC-SA 4.0 ライセンスに基づき翻訳されています。",
+      footer: "本ドキュメントは CC BY-NC-SA 4.0 ライセンスに基づき公開されています。",
 
       displayFooter: true,
 
