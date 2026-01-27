@@ -12,4 +12,9 @@ export const jaNavbar = navbar([
     icon: "desktop",
     link: "ja/dev/start"
   },
+  {
+    text: "API リファレンス",
+    icon: "cubes",
+    link: "api/"
+  },
 ]);

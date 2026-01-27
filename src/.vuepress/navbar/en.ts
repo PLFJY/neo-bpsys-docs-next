@@ -12,4 +12,9 @@ export const enNavbar = navbar([
     icon: "desktop",
     link: "en/dev/start"
   },
+  {
+    text: "API Reference",
+    icon: "cubes",
+    link: "api/"
+  },
 ]);

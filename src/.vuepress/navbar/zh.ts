@@ -12,4 +12,9 @@ export const zhNavbar = navbar([
     icon: "desktop",
     link: "/dev/start"
   },
+  {
+    text: "API 参考",
+    icon: "cubes",
+    link: "api/"
+  },
 ]);
