@@ -1,9 +1,27 @@
-[neo-bpsys-wpf](https://github.com/PLFJY/neo-bpsys-wpf/)的插件 SDK
+# neo-bpsys-wpf 插件开发指南
 
-# neo-bpsys-wpf 插件开发指南（AI生成）
----
+::: important
+该文档由 AI 根据代码库实际代码生成，不保证的正确性，虽然我审过了一遍
+:::
 
 欢迎使用 neo-bpsys-wpf 插件系统！本指南将帮助您快速开始开发自己的插件。
+
+## 目录
+
+- [快速开始](#快速开始)
+- [插件结构](#插件结构)
+- [插件清单文件](#插件清单文件)
+- [插件入口类](#插件入口类)
+- [插件能力](#插件能力)
+  - [注册后台管理页面](#注册后台管理页面)
+  - [注册前台展示窗口](#注册前台展示窗口)
+  - [注入控件到现有窗口](#注入控件到现有窗口)
+  - [注册自定义服务](#注册自定义服务)
+  - [配置文件管理](#配置文件管理)
+  - [访问共享数据](#访问共享数据)
+- [开发环境设置](#开发环境设置)
+- [打包与发布](#打包与发布)
+- [示例插件](#示例插件)
 
 ---
 
@@ -11,17 +29,17 @@
 
 ### 1. 创建新项目
 
-创建一个新的 .NET WPF 类库项目，并引用 `neo-bpsys-wpf.PluginSdk`:
+创建一个新的 .NET WPF 类库项目，并引用 `neo-bpsys-wpf.PluginSdk`，接着进入插件项目的 `.csporj` 中在 sdk 包后面加上 `ExcludeAssets="runtime"` :
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="neo-bpsys-wpf.PluginSdk" Version="2.0.0" />
+  <PackageReference Include="neo-bpsys-wpf.PluginSdk" Version="0.1.5" ExcludeAssets="runtime"/>
 </ItemGroup>
 ```
 
 ### 2. 创建插件清单文件
 
-在项目根目录创建 `manifest.yml` 文件：
+在项目根目录创建 `manifest.yml` 文件：
 
 ```yaml
 id: your.unique.plugin.id
@@ -37,9 +55,9 @@ icon: icon.png
 
 ### 3. 创建插件入口类
 
-创建一个继承自 `PluginBase` 的类：
+创建一个继承自 `PluginBase` 的类：
 
-```cs
+```csharp
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using neo_bpsys_wpf.Core.Abstractions;
@@ -78,17 +96,17 @@ YourPlugin/
 
 ### manifest.yml 字段说明
 
-| 字段                 | 类型     | 必需  | 说明                                |
-| ------------------ | ------ | --- | --------------------------------- |
-| `id`               | string | ✅   | 插件的唯一标识符，建议使用反向域名格式               |
-| `name`             | string | ✅   | 插件显示名称                            |
-| `description`      | string | ✅   | 插件功能描述                            |
-| `entranceAssembly` | string | ✅   | 插件入口程序集文件名（含 .dll 后缀）             |
-| `url`              | string | ❌   | 插件项目主页或仓库地址                       |
-| `version`          | string | ✅   | 插件版本号（格式：major.minor.patch.build） |
-| `apiVersion`       | string | ✅   | 插件 API 版本，当前必须为 `2.0.0.0` 或更高     |
-| `author`           | string | ✅   | 插件作者名称                            |
-| `icon`             | string | ❌   | 插件图标文件名（PNG 格式，推荐尺寸：256x256）      |
+| 字段 | 类型 | 必需 | 说明 |
+|------|------|------|------|
+| `id` | string | ✅ | 插件的唯一标识符，建议使用反向域名格式 |
+| `name` | string | ✅ | 插件显示名称 |
+| `description` | string | ✅ | 插件功能描述 |
+| `entranceAssembly` | string | ✅ | 插件入口程序集文件名（含 .dll 后缀） |
+| `url` | string | ❌ | 插件项目主页或仓库地址 |
+| `version` | string | ✅ | 插件版本号（格式：major.minor.patch.build） |
+| `apiVersion` | string | ✅ | 插件 API 版本，当前必须为 `2.0.0.0` 或更高 |
+| `author` | string | ✅ | 插件作者名称 |
+| `icon` | string | ❌ | 插件图标文件名（PNG 格式，推荐尺寸：256x256） |
 
 ### 示例
 
@@ -108,11 +126,11 @@ icon: icon.png
 
 ## 插件入口类
 
-插件入口类必须继承 `PluginBase` 并实现 `Initialize` 方法。
+插件入口类必须继承 `PluginBase` 并实现 `Initialize` 方法。
 
 ### 基础结构
 
-```cs
+```csharp
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using neo_bpsys_wpf.Core.Abstractions;
@@ -130,12 +148,11 @@ public class Plugin : PluginBase
 
 ### 可用属性
 
-- **`PluginConfigFolder`**: `string`  
-    插件配置文件目录路径，插件的所有配置文件应保存在此目录中。
-    
-- **`Info`**: `PluginInfo`  
-    当前插件的元数据信息（包含清单信息、状态等）。
-    
+- **`PluginConfigFolder`**: `string`  
+  插件配置文件目录路径，插件的所有配置文件应保存在此目录中。
+
+- **`Info`**: `PluginInfo`  
+  当前插件的元数据信息（包含清单信息、状态等）。
 
 ---
 
@@ -147,7 +164,7 @@ public class Plugin : PluginBase
 
 #### 1. 创建页面和 ViewModel
 
-```cs
+```csharp
 // MainPage.xaml.cs
 using System.Windows.Controls;
 using neo_bpsys_wpf.Core.Attributes;
@@ -170,7 +187,7 @@ public partial class MainPage : Page
 }
 ```
 
-```cs
+```csharp
 // MainPageViewModel.cs
 using CommunityToolkit.Mvvm.ComponentModel;
 
@@ -184,7 +201,7 @@ public partial class MainPageViewModel : ObservableObject
 
 #### 2. 在插件入口注册
 
-```cs
+```csharp
 using neo_bpsys_wpf.Core.Extensions.Registry;
 
 public override void Initialize(HostBuilderContext context, IServiceCollection services)
@@ -193,13 +210,11 @@ public override void Initialize(HostBuilderContext context, IServiceCollection s
 }
 ```
 
-Tip
-
-`BackendPageCategory` 枚举值：
-
-- `External`: 外部插件（默认）
-- `General`: 常规设置
-- `Advanced`: 高级设置
+> [!TIP]
+> `BackendPageCategory` 枚举值：
+> - `External`: 外部插件（默认）
+> - `General`: 常规设置
+> - `Advanced`: 高级设置
 
 ---
 
@@ -209,7 +224,7 @@ Tip
 
 #### 1. 创建窗口和 ViewModel
 
-```cs
+```csharp
 // MainWindow.xaml.cs
 using neo_bpsys_wpf.Core.Attributes;
 using neo_bpsys_wpf.Core.Controls;
@@ -233,7 +248,7 @@ public partial class MainWindow : FrontedWindowBase
 }
 ```
 
-```xml
+```xaml
 <!-- MainWindow.xaml -->
 <controls:FrontedWindowBase
     x:Class="YourPlugin.Views.MainWindow"
@@ -251,7 +266,7 @@ public partial class MainWindow : FrontedWindowBase
 </controls:FrontedWindowBase>
 ```
 
-```cs
+```csharp
 // MainWindowViewModel.cs
 using neo_bpsys_wpf.Core.Abstractions;
 
@@ -265,7 +280,7 @@ public partial class MainWindowViewModel : ViewModelBase
 
 #### 2. 在插件入口注册
 
-```cs
+```csharp
 using neo_bpsys_wpf.Core.Extensions.Registry;
 
 public override void Initialize(HostBuilderContext context, IServiceCollection services)
@@ -274,11 +289,10 @@ public override void Initialize(HostBuilderContext context, IServiceCollection s
 }
 ```
 
-Note
-
-- 前台窗口必须继承 `FrontedWindowBase`
-- ViewModel 必须继承 `ViewModelBase`
-- 画布是可选的，默认包含 `BaseCanvas`
+> [!NOTE]
+> - 前台窗口必须继承 `FrontedWindowBase`
+> - ViewModel 必须继承 `ViewModelBase`
+> - 画布是可选的，默认包含 `BaseCanvas`
 
 ---
 
@@ -288,7 +302,7 @@ Note
 
 #### 1. 创建控件
 
-```xml
+```xaml
 <!-- ExampleInjectedControl.xaml -->
 <UserControl
     x:Class="YourPlugin.Views.ExampleInjectedControl"
@@ -303,7 +317,7 @@ Note
 </UserControl>
 ```
 
-```cs
+```csharp
 // ExampleInjectedControl.xaml.cs
 using System.Windows.Controls;
 
@@ -320,7 +334,7 @@ public partial class ExampleInjectedControl : UserControl
 
 #### 2. 在插件入口注入
 
-```cs
+```csharp
 using neo_bpsys_wpf.Core.Helpers;
 using neo_bpsys_wpf.Core.Enums;
 using neo_bpsys_wpf.Core.Models;
@@ -341,7 +355,7 @@ public override void Initialize(HostBuilderContext context, IServiceCollection s
 
 #### 可用的窗口类型
 
-```cs
+```csharp
 public enum FrontedWindowType
 {
     BpWindow,              // BP 窗口
@@ -355,11 +369,8 @@ public enum FrontedWindowType
 }
 ```
 
-
-> [!Important]
->
- 注入的控件可以在主应用的前台窗口管理界面中手动调整位置和大小，设置会自动保存。
-
+> [!IMPORTANT]
+> 注入的控件可以在主应用的前台窗口管理界面中手动调整位置和大小，设置会自动保存。
 
 ---
 
@@ -369,7 +380,7 @@ public enum FrontedWindowType
 
 #### 1. 创建服务接口和实现
 
-```cs
+```csharp
 // IExampleService.cs
 namespace YourPlugin.Services;
 
@@ -379,7 +390,7 @@ public interface IExampleService
 }
 ```
 
-```cs
+```csharp
 // ExampleService.cs
 namespace YourPlugin.Services;
 
@@ -394,7 +405,7 @@ public class ExampleService : IExampleService
 
 #### 2. 在插件入口注册
 
-```cs
+```csharp
 public override void Initialize(HostBuilderContext context, IServiceCollection services)
 {
     services.AddSingleton<IExampleService, ExampleService>();
@@ -403,7 +414,7 @@ public override void Initialize(HostBuilderContext context, IServiceCollection s
 
 #### 3. 在 ViewModel 中使用
 
-```cs
+```csharp
 using Microsoft.Extensions.DependencyInjection;
 
 public partial class MainPageViewModel : ObservableObject
@@ -421,11 +432,11 @@ public partial class MainPageViewModel : ObservableObject
 
 ### 配置文件管理
 
-插件可以使用 `ConfigureFileHelper` 方便地管理配置文件。
+插件可以使用 `ConfigureFileHelper` 方便地管理配置文件。
 
 #### 1. 创建配置类
 
-```cs
+```csharp
 using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace YourPlugin.Models;
@@ -442,7 +453,7 @@ public partial class PluginSettings : ObservableObject
 
 #### 2. 加载和保存配置
 
-```cs
+```csharp
 using System.IO;
 using neo_bpsys_wpf.Core.Helpers;
 
@@ -469,22 +480,20 @@ public class Plugin : PluginBase
 }
 ```
 
-
-> [!note]
+> [!NOTE]
 > - 配置文件会自动保存为 JSON 格式
-> - 推荐将配置文件保存在 `PluginConfigFolder` 目录中
-> - 使用 `ObservableObject` 可以自动触发属性变化通知
-
+> - 推荐将配置文件保存在 `PluginConfigFolder` 目录中
+> - 使用 `ObservableObject` 可以自动触发属性变化通知
 
 ---
 
 ### 访问共享数据
 
-插件可以通过 `ISharedDataService` 访问和修改主应用的各种数据实例
+插件可以通过 `ISharedDataService` 访问和修改主应用的各种数据实例
 
 #### 获取服务实例
 
-```cs
+```csharp
 using neo_bpsys_wpf.Core.Abstractions.Services;
 
 public partial class MainPageViewModel : ObservableObject
@@ -502,7 +511,7 @@ public partial class MainPageViewModel : ObservableObject
 
 ##### 队伍数据
 
-```cs
+```csharp
 // 主队
 Team mainTeam = _sharedDataService.MainTeam;
 _sharedDataService.MainTeam = newMainTeam;
@@ -514,7 +523,7 @@ _sharedDataService.AwayTeam = newAwayTeam;
 
 ##### 对局数据
 
-```cs
+```csharp
 // 当前对局
 Game currentGame = _sharedDataService.CurrentGame;
 // 新建对局
@@ -523,7 +532,7 @@ _sharedDataService.NewGame();
 
 ##### 角色字典
 
-```cs
+```csharp
 // 求生者角色字典
 SortedDictionary<string, Character> surCharaDict = _sharedDataService.SurCharaDict;
 
@@ -533,7 +542,7 @@ SortedDictionary<string, Character> hunCharaDict = _sharedDataService.HunCharaDi
 
 ##### Ban 位管理
 
-```cs
+```csharp
 // 设置 Ban 位数量
 _sharedDataService.SetBanCount(BanListName.CurrentSurBanned, 3);
 _sharedDataService.SetBanCount(BanListName.CurrentHunBanned, 2);
@@ -547,7 +556,7 @@ ObservableCollection<bool> canGlobalHunBannedList = _sharedDataService.CanGlobal
 
 ##### 倒计时控制
 
-```cs
+```csharp
 // 开始倒计时（秒）
 _sharedDataService.TimerStart(60);
 
@@ -560,7 +569,7 @@ string remainingSeconds = _sharedDataService.RemainingSeconds;
 
 ##### 其他设置
 
-```cs
+```csharp
 // 辅助特质可见性
 bool isTraitVisible = _sharedDataService.IsTraitVisible;
 _sharedDataService.IsTraitVisible = true;
@@ -580,7 +589,7 @@ _sharedDataService.IsMapV2CampVisible = false;
 
 ##### 事件订阅
 
-```cs
+```csharp
 // 订阅数据变化事件
 _sharedDataService.CurrentGameChanged += OnCurrentGameChanged;
 _sharedDataService.BanCountChanged += OnBanCountChanged;
@@ -597,9 +606,8 @@ private void OnCurrentGameChanged(object? sender, EventArgs e)
 }
 ```
 
-
-> [!tip]
-> 由于主应用使用数据绑定，当您修改 `ISharedDataService` 中的数据时，前台界面会自动同步更新！你无需担心数据变更的后续操作
+> [!TIP]
+> 由于主应用使用数据绑定，当您修改 `ISharedDataService` 中的数据时，前台界面会自动同步更新！你无需担心数据变更的后续操作
 
 ---
 
@@ -617,7 +625,7 @@ private void OnCurrentGameChanged(object? sender, EventArgs e)
 
 ### 2. 配置输出
 
-确保 `manifest.yml` 和图标文件被复制到输出目录：
+确保 `manifest.yml` 和图标文件被复制到输出目录：
 
 ```xml
 <ItemGroup>
@@ -633,7 +641,7 @@ private void OnCurrentGameChanged(object? sender, EventArgs e)
 ### 3. 调试插件
 
 - 在调试模式下构建插件
-- 将输出目录中的所有文件复制到主应用的 `Plugins/YourPluginId` 文件夹
+- 将输出目录中的所有文件复制到主应用的 `Plugins/YourPluginId` 文件夹
 - 启动主应用进行测试
 
 ---
@@ -644,7 +652,7 @@ private void OnCurrentGameChanged(object? sender, EventArgs e)
 
 在项目目录运行：
 
-```shell
+```bash
 dotnet publish -p:PluginPack=true
 ```
 
@@ -654,14 +662,15 @@ dotnet publish -p:PluginPack=true
 
 1. 构建项目（Release 配置）
 2. 从输出目录收集以下文件：
-    - 插件 DLL 文件
-    - `manifest.yml`
-    - `icon.png`（如果有）
-    - 所有依赖的 DLL（不包括 PluginSdk 和主应用已有的依赖）
+   - 插件 DLL 文件
+   - `manifest.yml`
+   - `icon.png`（如果有）
+   - 所有依赖的 DLL（不包括 PluginSdk 和主应用已有的依赖）
 3. 将这些文件放入一个文件夹，文件夹名为插件 ID
 4. 压缩成 ZIP 文件进行分发
 
 ### 安装插件
+
 直接在插件页面从文件包导入插件即可
 
 ---
@@ -670,17 +679,16 @@ dotnet publish -p:PluginPack=true
 
 ### ExamplePlugin - 完整功能示例
 
-位置: `neo-bpsys-wpf.ExamplePlugin`
+位置: `neo-bpsys-wpf.ExamplePlugin`
 
 展示了插件的所有能力：
-
 - ✅ 后台管理页面
 - ✅ 前台展示窗口
 - ✅ 控件注入
 - ✅ 自定义服务
 - ✅ 配置文件管理
 
-```cs
+```csharp
 using System.IO;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -739,11 +747,11 @@ public class ExamplePlugin : PluginBase
 
 ### TeamJsonMaker - 简单插件示例
 
-位置: `neo-bpsys-wpf.TeamJsonMaker`
+位置: `neo-bpsys-wpf.TeamJsonMaker`
 
 一个简单的插件，仅包含一个后台页面：
 
-```cs
+```csharp
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using neo_bpsys_wpf.Core.Abstractions;
@@ -765,27 +773,21 @@ public class Plugin : PluginBase
 ## 常见问题
 
 ### Q: 插件 API 版本要求是什么？
-
-A: 当前插件 API 版本必须为 `2.0.0.0` 或更高。低于此版本的插件将无法加载。
+A: 当前插件 API 版本必须为 `2.0.0.0` 或更高。低于此版本的插件将无法加载。
 
 ### Q: 如何在插件之间共享数据？
-
-A: 推荐使用主应用的 `ISharedDataService` 或创建自己的服务并注册为单例。
+A: 推荐使用主应用的 `ISharedDataService` 或创建自己的服务并注册为单例。
 
 ### Q: 插件可以访问主应用的哪些资源？
-
 A: 插件可以访问：
-
-- `ISharedDataService` 中的所有共享数据
+- `ISharedDataService` 中的所有共享数据
 - 主应用注册的所有服务
 - 前台窗口的画布用于控件注入
 
 ### Q: 如何调试插件？
-
 A: 建议将插件构建输出复制到主应用的 Plugins 文件夹，然后使用"附加到进程"调试主应用。
 
 ### Q: 插件可以使用第三方 NuGet 包吗？
-
 A: 可以，但请确保在打包时包含所有依赖的 DLL 文件。
 
 ---
@@ -793,10 +795,9 @@ A: 可以，但请确保在打包时包含所有依赖的 DLL 文件。
 ## 技术支持
 
 如有问题或建议，请访问：
-
-- GitHub 仓库: [https://github.com/PLFJY/neo-bpsys-wpf](https://github.com/PLFJY/neo-bpsys-wpf)
-- 提交 Issue: [https://github.com/PLFJY/neo-bpsys-wpf/issues](https://github.com/PLFJY/neo-bpsys-wpf/issues)
+- GitHub 仓库: https://github.com/PLFJY/neo-bpsys-wpf
+- 提交 Issue: https://github.com/PLFJY/neo-bpsys-wpf/issues
 
 ---
 
-**祝您开发愉快！** 🎉
+**祝您开发愉快！** 🎉

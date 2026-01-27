@@ -1,6 +1,6 @@
 import { navbar } from "vuepress-theme-hope";
 
-export const zhNavbar = navbar([
+export const jaNavbar = navbar([
   "/",
   {
     text: "使用文档",
@@ -10,6 +10,6 @@ export const zhNavbar = navbar([
   {
     text: "开发文档",
     icon: "desktop",
-    link: "/dev/start"
+    link: "/dev/"
   },
 ]);

@@ -2,7 +2,7 @@
 
 ## 软件框架和技术栈：
 
-框架：.Net 9.0.4 WPF
+框架：.NET 9.0.4 WPF
 
 UI库：[WPF-UI](https://wpfui.lepo.co/)
 
@@ -16,8 +16,8 @@ MVVM部分：[CommunityToolkit.Mvvm](https://learn.microsoft.com/zh-cn/dotnet/co
 
 ## 开发工具
 
-Visual Studio 2022、Jetbrains Rider，使用Rider时提交需排除.idea文件夹
+Visual Studio 26、Jetbrains Rider
 
-### IDE插件需要
+### IDE插件需要（只能在Visual Studio上跑，rider 整理出来的格式不一样，不方便跟踪更改）
 
 Xaml Styler

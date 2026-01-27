@@ -5,7 +5,7 @@
 ### 检查系统需求
 在开始使用软件之前，请确保您的设备符合以下推荐配置：
 
-+ Windows 10 20H2 及以上版本的系统（因为这下面的系统没有CET保护，如有需要可参考这篇博文自行拉取修改并编译源码解决 [解决.NET 9 WPF应用在特定Windows版本上无法启动的问题](https://blog.gitcode.com/36cf881744718a915f1506032a8c695c.html)
++ Windows 10 20H2 及以上版本的系统
 + 推荐配置为i5 13400F + RTX 3060 +16GB 运行内存（最低配置为 i5 8300H + GTX 1060 + 8GB 运行内存）*
 + 已安装 [.NET 9.0 桌面运行时 ](https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0) (一般会由安装包自动处理好)
 
@@ -17,7 +17,7 @@
 目前有以下渠道下载本软件：
 
 官方渠道（实时更新）
-+ [项目官网](https://bpsys.plfjy.top/)
++ [官网下载中心](../../#download-center)
 + [GitHub Releases](https://github.com/PLFJY/neo-bpsys-wpf/releases)
 + ~~[Gitee 发行版](https://gitee.com/plfjy/neo-bpsys-wpf/releases)~~（因无法上传大于100MB的文件而弃用）
 
@@ -40,18 +40,18 @@
 
 ![修改上场选手顺序|500](images/修改上场选手顺序.png)
 
-如果需要了解如何更快速的导入队伍信息，请参阅[从Json导入队伍信息](高级选项/从Json导入队伍信息.md)。
+如果需要了解如何更快速的导入队伍信息，请参阅[从Json导入队伍信息](advanced/import-team-from-json.md)。
 
 ---
 
 ### 二、设置赛制
-在软件窗口上可以设置赛制为 BO5 或 BO3，**该设置将影响[对局引导](backend/对局信息及对局引导.md)、比分计算等功能，请如实选择**。
+在软件窗口上可以设置赛制为 BO5 或 BO3，**该设置将影响[对局引导](backend/backend-game-info-and-guidance.md)、比分计算等功能，请如实选择**。
 ![设置赛制|500](images/设置赛制.png)
 
 ---
 
 ### 三、启动前台
-在软件窗口左侧的页面选择区域点击[前台管理](后台/前台管理.md)。在这里可以打开或关闭各个前台画面（一般建议全打开然后在[OBS](https://obsproject.com/download)等直播软件中管理前台画面的显示与隐藏）。**如果没有自定义前台画面布局的需求请勿开启设计模式，如果不慎开启并且移动了组件位置可以点击【重置布局】相关按钮恢复。**
+在软件窗口左侧的页面选择区域点击[前台管理](backend/backend-fronted-manager.md)。在这里可以打开或关闭各个前台画面（一般建议全打开然后在[OBS](https://obsproject.com/download)等直播软件中管理前台画面的显示与隐藏）。**如果没有自定义前台画面布局的需求请勿开启设计模式，如果不慎开启并且移动了组件位置可以点击【重置布局】相关按钮恢复。**
 ![前台管理|500](images/前台管理.png)
 
 ---
@@ -62,22 +62,22 @@
 
 开启对局引导后即可根据引导来进行BP，关于BP过程中各个步骤的详细介绍，详见：
 
-+ [地图禁选](后台/地图禁选.md)
-+ [禁用监管者](后台/禁用监管者.md)
-+ [禁用求生者](后台/禁用求生者.md)
-+ [选择角色](后台/选择角色.md)
-+ [天赋特质](后台/天赋特质.md)
++ [地图禁选](backend/map-bp.md)
++ [禁用监管者](backend/backend-ban-hunter.md)
++ [禁用求生者](backend/backend-ban-survivor.md)
++ [选择角色](backend/backend-pick-character.md)
++ [天赋特质](backend/backend-talents-and-trait.md)
 
 ---
 
 ### 五、赛后数据
-在前台的[赛后数据画面](前台/赛后数据画面.md)可以显示当局双方数据。具体使用方法是在赛后数据页面输入各选手的数据。此时，输入的数据将会显示在[赛后数据画面](前台/赛后数据画面.md)显示。
+在前台的[赛后数据画面](../fronted/fronted-match-statistics.md)可以显示当局双方数据。具体使用方法是在赛后数据页面输入各选手的数据。此时，输入的数据将会显示在[赛后数据画面](../fronted/fronted-match-statistics.md)显示。
 ![赛后数据页面|500](images/赛后数据页面.png)
 
 ---
 
 ### 六、比分控制
-进行完一个对局后，可以在[比分系统](后台/比分系统.md)页面来输入和计算比分，比分将同步到[比分组件](前台/比分组件.md)中。
+进行完一个对局后，可以在[比分系统](后台/比分系统.md)页面来输入和计算比分，比分将同步到[比分组件](../fronted/fronted-score.md)中。
 ![比分控制|500](images/比分控制.png)
 
 本软件内对局结果的加分与官方比赛一致，关于官方比赛加分详见下表。

@@ -1,7 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { enNavbar, zhNavbar, jaNavbar } from "./navbar/index.js";
+import { enSidebar, zhSidebar, jaSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://bpsys.plfjy.top/",
@@ -59,10 +59,10 @@ export default hopeTheme({
      */
     "/ja/": {
       // navbar
-      navbar: enNavbar,
+      navbar: jaNavbar,
 
       // sidebar
-      sidebar: enSidebar,
+      sidebar: jaSidebar,
 
       footer: "本ドキュメントは、CC BY-NC-SA 4.0 ライセンスに基づき翻訳されています。",
 

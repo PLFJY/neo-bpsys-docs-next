@@ -1,6 +1,6 @@
 import { sidebar } from "vuepress-theme-hope";
 
-export const zhSidebar = sidebar({
+export const jaSidebar = sidebar({
   "/user-guide/": [
     {
       text: "前言",
@@ -36,11 +36,4 @@ export const zhSidebar = sidebar({
       link: "faq"
     },
   ],
-  "/dev/": [
-    {
-      text: "开发文档",
-      icon: "screwdriver-wrench",
-      children: "structure",
-    },
-  ]
 });

@@ -33,7 +33,6 @@ export default defineUserConfig({
     registerComponentsPlugin({
       components: {
         HomeLanding: path.resolve(__dirname, './components/HomeLanding.vue'),
-        Contributors: path.resolve(__dirname, './components/Contributors.vue'),
       },
     }),
   ]
