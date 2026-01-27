@@ -3,6 +3,19 @@ name: 部署文档
 
 on:
   workflow_dispatch:
+    inputs:
+      source_repo:
+        description: "Repo that triggered this run"
+        required: true
+        type: string
+      source_sha:
+        description: "Commit SHA from triggering repo"
+        required: true
+        type: string
+      packageId:
+        description: "Package ID from matrix"
+        required: true
+        type: string
   push:
     branches:
       - main
