@@ -14,5 +14,6 @@ Get-ChildItem -Recurse -Filter *.md .\src\api | ForEach-Object {
   }
 }
 
-pnpm i
+corepack enable
+pnpm install --frozen-lockfile
 pnpm run docs:build
