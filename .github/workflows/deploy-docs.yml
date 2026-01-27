@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  deploy-gh-pages:
+  deploy-pages-branch:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -44,10 +44,11 @@ jobs:
           pnpm run docs:build
           > src/.vuepress/dist/.nojekyll
 
-      - name: 部署文档
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          # 部署文档
-          branch: gh-pages
-          folder: src/.vuepress/dist
           force_orphan: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: src/.vuepress/dist
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
