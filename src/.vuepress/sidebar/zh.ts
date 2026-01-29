@@ -42,5 +42,12 @@ export const zhSidebar = sidebar({
       icon: "screwdriver-wrench",
       children: "structure",
     },
+  ],
+  "/api/": [
+    {
+      text: "API 参考",
+      icon: "gears",
+      children: "structure",
+    },
   ]
 });
