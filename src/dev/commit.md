@@ -1,5 +1,9 @@
 # Commit 提交规范
 
+**推荐直接使用 IDE 内的 AI 自动生成 commit 记录，VS Code、装了通义灵码的 Rider 都有，AI 写的足够清楚所以无需按照以下规范**
+
+**如果要手写，请遵循以下规范：**
+
 ```
 类型(作用域):
 
@@ -10,7 +14,7 @@
 
 若出现命名空间、接口上的更改需要在 Commit Message 的第一行添加 `BREAKING CHANGE`，一般只有新大版本研发才会需要到
 
-小版本更新时如果需要更改名称或者删除某个 API，请使用 [Obsolete Attribute](https://learn.microsoft.com/dotnet/api/system.obsoleteattribute?view=net-9.0)，并保留旧的实现或者映射到新的实现
+**小版本更新时如果需要更改名称或者删除某个 API，请使用 [Obsolete Attribute](https://learn.microsoft.com/dotnet/api/system.obsoleteattribute?view=net-9.0)，并保留旧的实现或者映射到新的实现**
 
 Example: 
 ```
