@@ -19,7 +19,7 @@ actions:
 
   - text: Join Discord
     icon: fa6-brands:discord
-    link: https://discord.gg/xMNkSExN
+    link: https://discord.gg/xd2BdYGSYV
 
 highlights:
   
