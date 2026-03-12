@@ -9,7 +9,7 @@
 
     <section ref="userScrollRef" class="user-scroll">
       <div class="user-track">
-        <div v-for="(t, idx) in tournaments" :key="idx" v-html="t" />
+        <div v-for="(t, idx) in marqueeTournaments" :key="`${idx}-${t}`" v-html="t" />
       </div>
     </section>
   </div>
@@ -130,99 +130,115 @@ const tournaments = ref<string[]>([
   "IFL、IUL",
   "ICL",
   "广东财经大学",
+  "温州医科大学校内赛",
+  "第五人格湛江市高中邀请赛"
 ]);
 
 const tournaments_count = Math.floor(tournaments.value.length / 10) * 10;
+const marqueeTournaments = computed(() => [...tournaments.value, ...tournaments.value]);
 const subtitle = computed(() =>
   t.value.userScroll.subtitle.replace("{count}", String(tournaments_count))
 );
 
 // 自动滚动逻辑
 const userScrollRef = ref<HTMLElement | null>(null);
-let rafId = 0;
-let isScrolling = true;
-let isResetting = false;
-let lastTimestamp = 0;
+let teardownAutoScroll: (() => void) | null = null;
 
 function setupEnhancedAutoScroll() {
   const scrollElement = userScrollRef.value as HTMLElement | null;
-  if (!scrollElement) return;
+  if (!scrollElement) return () => {};
+
+  const trackElement = scrollElement.querySelector(".user-track") as HTMLElement | null;
+  if (!trackElement) return () => {};
 
   const scrollSpeed = 2;
   const scrollInterval = 30;
+  let rafId = 0;
+  let isScrolling = true;
+  let lastTimestamp = 0;
+  let loopWidth = trackElement.scrollWidth / 2;
+  let resumeTimer = 0;
+
+  const refreshLoopWidth = () => {
+    loopWidth = trackElement.scrollWidth / 2;
+  };
 
   const scrollStep = (timestamp: number) => {
     if (!lastTimestamp) lastTimestamp = timestamp;
     const delta = timestamp - lastTimestamp;
 
-    if (delta > scrollInterval && isScrolling && !isResetting) {
+    if (delta > scrollInterval && isScrolling && loopWidth > 0) {
       lastTimestamp = timestamp;
       scrollElement.scrollLeft += scrollSpeed;
 
-      if (scrollElement.scrollLeft >= scrollElement.scrollWidth - scrollElement.clientWidth - 50) {
-        startSmoothReset(scrollElement);
+      if (scrollElement.scrollLeft >= loopWidth) {
+        scrollElement.scrollLeft -= loopWidth;
       }
     }
 
-    if (isScrolling || isResetting || scrollElement.scrollLeft > 0) {
-      rafId = requestAnimationFrame(scrollStep);
-    }
+    rafId = requestAnimationFrame(scrollStep);
   };
 
-  const startSmoothReset = (el: HTMLElement) => {
-    if (isResetting) return;
-    isResetting = true;
+  const pauseScroll = () => {
     isScrolling = false;
-
-    const startPosition = el.scrollLeft;
-    const startTime = performance.now();
-    const duration = 500;
-
-    const resetStep = (currentTime: number) => {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-
-      const easeProgress = 1 - Math.pow(1 - progress, 3);
-      el.scrollLeft = startPosition * (1 - easeProgress);
-
-      if (progress < 1) {
-        requestAnimationFrame(resetStep);
-      } else {
-        el.scrollLeft = 0;
-        isResetting = false;
-        isScrolling = true;
-        lastTimestamp = 0;
-      }
-    };
-
-    requestAnimationFrame(resetStep);
+    if (resumeTimer) {
+      window.clearTimeout(resumeTimer);
+      resumeTimer = 0;
+    }
   };
-
-  // hover pause / resume
-  const onEnter = () => {
-    if (!isResetting) isScrolling = false;
-  };
-  const onLeave = () => {
-    if (!isResetting) {
+  const resumeScroll = () => {
+    if (resumeTimer) window.clearTimeout(resumeTimer);
+    resumeTimer = window.setTimeout(() => {
       isScrolling = true;
       lastTimestamp = 0;
-      rafId = requestAnimationFrame(scrollStep);
+    }, 900);
+  };
+  const onFocusIn = () => {
+    pauseScroll();
+  };
+  const onFocusOut = (event: FocusEvent) => {
+    const nextFocused = event.relatedTarget as Node | null;
+    if (!nextFocused || !scrollElement.contains(nextFocused)) {
+      resumeScroll();
     }
   };
 
-  scrollElement.addEventListener("mouseenter", onEnter);
-  scrollElement.addEventListener("mouseleave", onLeave);
+  refreshLoopWidth();
+  const resizeObserver = new ResizeObserver(() => {
+    refreshLoopWidth();
+  });
+  resizeObserver.observe(trackElement);
 
-  // 启动
+  scrollElement.addEventListener("mouseenter", pauseScroll);
+  scrollElement.addEventListener("mouseleave", resumeScroll);
+  scrollElement.addEventListener("touchstart", pauseScroll, { passive: true });
+  scrollElement.addEventListener("touchend", resumeScroll, { passive: true });
+  scrollElement.addEventListener("touchcancel", resumeScroll, { passive: true });
+  scrollElement.addEventListener("focusin", onFocusIn);
+  scrollElement.addEventListener("focusout", onFocusOut);
   rafId = requestAnimationFrame(scrollStep);
+
+  return () => {
+    cancelAnimationFrame(rafId);
+    if (resumeTimer) window.clearTimeout(resumeTimer);
+    resizeObserver.disconnect();
+    scrollElement.removeEventListener("mouseenter", pauseScroll);
+    scrollElement.removeEventListener("mouseleave", resumeScroll);
+    scrollElement.removeEventListener("touchstart", pauseScroll);
+    scrollElement.removeEventListener("touchend", resumeScroll);
+    scrollElement.removeEventListener("touchcancel", resumeScroll);
+    scrollElement.removeEventListener("focusin", onFocusIn);
+    scrollElement.removeEventListener("focusout", onFocusOut);
+  };
 }
 
 onMounted(() => {
-  setupEnhancedAutoScroll();
+  teardownAutoScroll = setupEnhancedAutoScroll();
 });
 
 onBeforeUnmount(() => {
-  if (rafId) cancelAnimationFrame(rafId);
+  teardownAutoScroll?.();
+  teardownAutoScroll = null;
 });
 </script>
 
