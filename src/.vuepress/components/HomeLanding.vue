@@ -1,8 +1,5 @@
 <template>
   <div class="plfjy-home-root">
-    <!-- 项目前身 -->
-    <ProjectTimeline />
-    
     <!-- 用户群滚动展示 -->
     <UserScroll />
     
@@ -23,7 +20,6 @@
 import { computed, provide } from "vue";
 import { useRouteLocale, withBase } from "@vuepress/client";
 
-import ProjectTimeline from "./ProjectTimeline.vue";
 import Contributors from "./Contributors.vue";
 import UserScroll from "./UserScroll.vue";
 import DownloadCenter from "./DownloadCenter.vue";
