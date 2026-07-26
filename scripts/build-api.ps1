@@ -29,9 +29,10 @@ if (-not (Test-Path .\.tools\docfx.exe)) {
 }
 $env:PATH = "$(Resolve-Path .\.tools);$env:PATH"
 
-# 1. 生成 API 文档（metadata + build）
-#    输出到 api-docs/_site，约 590 个页面
-docfx api-docs\docfx.json
+# 1. 生成 API 文档（metadata + build 分两步，避免一体命令的缓存冲突）
+#    输出到 api-docs/_site，约 580 个页面（Core 项目，排除 PluginSdk/系统类型）
+docfx metadata api-docs\docfx.json
+docfx build api-docs\docfx.json
 
 # 2. 同步 dev 文档从 neo-bpsys-wpf/docs 到 src/dev
 #    确保 CI 和本地 docs:dev 都能看到最新开发文档

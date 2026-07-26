@@ -1,4 +1,5 @@
 import { navbar } from "vuepress-theme-hope";
+import { apiLink } from "./apiLink";
 
 export const enNavbar = navbar([
   "/en/",
@@ -15,6 +16,6 @@ export const enNavbar = navbar([
   {
     text: "API Reference",
     icon: "cubes",
-    link: "/api/index.html"
+    link: apiLink
   },
 ]);

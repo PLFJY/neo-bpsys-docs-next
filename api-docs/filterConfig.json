@@ -17,6 +17,12 @@
         "uidRegex": "^CommunityToolkit\\.Mvvm",
         "type": "Type"
       }
+    },
+    {
+      "exclude": {
+        "uidRegex": "^neo_bpsys_wpf\\.PluginSdk",
+        "type": "Type"
+      }
     }
   ]
 }

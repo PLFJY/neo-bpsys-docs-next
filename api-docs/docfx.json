@@ -42,13 +42,14 @@
       "templates/vuepress-alignment"
     ],
     "globalMetadata": {
-      "_appName": "neo-bpsys-wpf API",
-      "_appTitle": "neo-bpsys-wpf API 参考",
+      "_appName": "neo-bpsys-wpf",
+      "_appTitle": "neo-bpsys-wpf",
       "_appLogoPath": "public/logo.png",
+      "_appLogoUrl": "/",
       "_appFaviconPath": "public/favicon.ico",
       "_enableSearch": true,
       "_lang": "zh-CN",
-      "_appFooter": "<p>neo-bpsys-wpf API 参考 &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>",
+      "_appFooter": "<p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>",
       "_gitContribute": {
         "repo": "https://github.com/PLFJY/neo-bpsys-wpf",
         "branch": "dev"
@@ -56,7 +57,7 @@
       "_disableNewTab": false
     },
     "sitemap": {
-      "baseUrl": "https://bpsys.plfjy.top/api/"
+      "baseUrl": "https://docs.bpsys.plfjy.top/api/"
     },
     "fileMetadata": {
       "_noindex": {

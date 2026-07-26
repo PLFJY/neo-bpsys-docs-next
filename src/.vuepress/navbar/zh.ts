@@ -1,4 +1,5 @@
 import { navbar } from "vuepress-theme-hope";
+import { apiLink } from "./apiLink";
 
 export const zhNavbar = navbar([
   "/",
@@ -15,6 +16,6 @@ export const zhNavbar = navbar([
   {
     text: "API 参考",
     icon: "cubes",
-    link: "/api/index.html"
+    link: apiLink
   },
 ]);

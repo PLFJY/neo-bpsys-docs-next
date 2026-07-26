@@ -4,7 +4,7 @@ import { enNavbar, zhNavbar, jaNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar, jaSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://bpsys.plfjy.top/",
+  hostname: "https://docs.bpsys.plfjy.top/",
 
   author: {
     name: "Zero PLFJY",
