@@ -1,10 +1,16 @@
 name: 部署文档
 
 on:
-  repository_dispatch:
-    types:
-      - docs-update
   workflow_dispatch:
+    inputs:
+      source_repo:
+        description: "Repo that triggered this run"
+        required: true
+        type: string
+      source_sha:
+        description: "Commit SHA from triggering repo"
+        required: true
+        type: string
   push:
     branches:
       - main
@@ -16,11 +22,10 @@ jobs:
   deploy-pages-branch:
     runs-on: windows-latest
     steps:
-      - name: Print trigger info
+      - name: Print inputs
         run: |
-          echo "event_name=${{ github.event_name }}"
-          echo "source_repo=${{ github.event.client_payload.source_repo }}"
-          echo "source_sha=${{ github.event.client_payload.source_sha }}"
+          echo "source_repo=${{ inputs.source_repo }}"
+          echo "source_sha=${{ inputs.source_sha }}"
 
       - name: Checkout
         uses: actions/checkout@v4
@@ -35,7 +40,7 @@ jobs:
       - name: Install .NET Core
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 10.0.x
+          dotnet-version: 9.0.x
 
       - name: 设置 Node.js
         uses: actions/setup-node@v4
