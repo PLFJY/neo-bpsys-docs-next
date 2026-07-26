@@ -19,4 +19,7 @@ if (Test-Path .\src\dev) { Remove-Item -Recurse -Force .\src\dev }
 Copy-Item -Recurse .\neo-bpsys-wpf\docs .\src\dev
 
 pnpm install --frozen-lockfile
+
+# VuePress 渲染约 4000 页时默认堆内存（约 4GB）不足，提升到 8GB
+$env:NODE_OPTIONS = "--max-old-space-size=8192"
 pnpm run docs:build
