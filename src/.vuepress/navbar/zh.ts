@@ -10,7 +10,7 @@ export const zhNavbar = navbar([
   {
     text: "开发文档",
     icon: "desktop",
-    link: "/dev/start"
+    link: "/dev/"
   },
   {
     text: "API 参考",

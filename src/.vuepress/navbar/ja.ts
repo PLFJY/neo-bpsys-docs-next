@@ -10,7 +10,7 @@ export const jaNavbar = navbar([
   {
     text: "開発ドキュメント",
     icon: "desktop",
-    link: "ja/dev/start"
+    link: "/dev/"
   },
   {
     text: "API リファレンス",
