@@ -37,19 +37,16 @@ jobs:
         with:
           version: 10.28.0
 
-      - name: Install .NET Core
+      - name: Install .NET SDK 10
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 9.0.x
+          dotnet-version: 10.0.x
 
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: pnpm
-
-      - name: 安装依赖
-        run: pnpm install --frozen-lockfile
 
       - name: 安装依赖&构建文档
         shell: pwsh

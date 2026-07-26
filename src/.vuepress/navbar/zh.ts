@@ -15,6 +15,6 @@ export const zhNavbar = navbar([
   {
     text: "API 参考",
     icon: "cubes",
-    link: "api/"
+    link: "/api/index.html"
   },
 ]);

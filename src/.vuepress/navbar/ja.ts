@@ -15,6 +15,6 @@ export const jaNavbar = navbar([
   {
     text: "API リファレンス",
     icon: "cubes",
-    link: "api/"
+    link: "/api/index.html"
   },
 ]);

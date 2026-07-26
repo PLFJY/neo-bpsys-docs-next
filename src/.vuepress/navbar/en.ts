@@ -15,6 +15,6 @@ export const enNavbar = navbar([
   {
     text: "API Reference",
     icon: "cubes",
-    link: "api/"
+    link: "/api/index.html"
   },
 ]);

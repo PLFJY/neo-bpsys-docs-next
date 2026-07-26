@@ -43,11 +43,4 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
   ],
-  "/api/": [
-    {
-      text: "API 参考",
-      icon: "gears",
-      children: "structure",
-    },
-  ]
 });

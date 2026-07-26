@@ -5,3 +5,20 @@ src/.vuepress/dist/
 .DS_Store
 src/api
 neo-bpsys-wpf
+# docfx (API 文档由 docfx 生成，中间产物不提交)
+api-docs/_site/
+api-docs/obj/
+api-docs/api/*.yml
+api-docs/api/**/*.yml
+api-docs/xrefmap.yml
+.tools/
+
+# docfx (API 文档由 docfx 生成，中间产物不提交)
+api-docs/_site/
+api-docs/obj/
+api-docs/api/*.yml
+api-docs/api/**/*.yml
+api-docs/xrefmap.yml
+.tools/
+# docfx API junction（由 scripts/build-api.ps1 创建，不提交）
+src/.vuepress/public/api
