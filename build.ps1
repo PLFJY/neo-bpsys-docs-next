@@ -14,6 +14,10 @@ Get-ChildItem -Recurse -Filter *.md .\src\api | ForEach-Object {
   }
 }
 
+# Sync dev docs from neo-bpsys-wpf/docs to src/dev
+if (Test-Path .\src\dev) { Remove-Item -Recurse -Force .\src\dev }
+Copy-Item -Recurse .\neo-bpsys-wpf\docs .\src\dev
+
 corepack enable
 pnpm install --frozen-lockfile
 pnpm run docs:build

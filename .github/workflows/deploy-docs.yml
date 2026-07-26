@@ -1,21 +1,10 @@
-
 name: 部署文档
 
 on:
+  repository_dispatch:
+    types:
+      - docs-update
   workflow_dispatch:
-    inputs:
-      source_repo:
-        description: "Repo that triggered this run"
-        required: true
-        type: string
-      source_sha:
-        description: "Commit SHA from triggering repo"
-        required: true
-        type: string
-      packageId:
-        description: "Package ID from matrix"
-        required: true
-        type: string
   push:
     branches:
       - main
@@ -27,18 +16,16 @@ jobs:
   deploy-pages-branch:
     runs-on: windows-latest
     steps:
-      - name: Print inputs
+      - name: Print trigger info
         run: |
-          echo "source_repo=${{ inputs.source_repo }}"
-          echo "source_sha=${{ inputs.source_sha }}"
-          echo "packageId=${{ inputs.packageId }}"
+          echo "event_name=${{ github.event_name }}"
+          echo "source_repo=${{ github.event.client_payload.source_repo }}"
+          echo "source_sha=${{ github.event.client_payload.source_sha }}"
 
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-          # 如果你文档需要 Git 子模块，取消注释下一行
-          # submodules: true
 
       - name: 设置 pnpm
         uses: pnpm/action-setup@v4
@@ -55,11 +42,6 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
-
-      - name: Install .NET Core
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 9.0.x
 
       - name: 安装依赖
         run: |
