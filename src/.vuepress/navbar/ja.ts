@@ -18,4 +18,9 @@ export const jaNavbar = navbar([
     icon: "cubes",
     link: apiLink
   },
+  {
+    text: "公式サイト",
+    icon: "window-restore",
+    link: "https://bpsys.plfjy.top/"
+  },
 ]);

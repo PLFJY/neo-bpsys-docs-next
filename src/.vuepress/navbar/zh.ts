@@ -18,4 +18,9 @@ export const zhNavbar = navbar([
     icon: "cubes",
     link: apiLink
   },
+  {
+    text: "软件官网",
+    icon: "window-restore",
+    link: "https://bpsys.plfjy.top/"
+  },
 ]);

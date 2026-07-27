@@ -18,4 +18,9 @@ export const enNavbar = navbar([
     icon: "cubes",
     link: apiLink
   },
+  {
+    text: "Official Site",
+    icon: "window-restore",
+    link: "https://bpsys.plfjy.top/"
+  },
 ]);
