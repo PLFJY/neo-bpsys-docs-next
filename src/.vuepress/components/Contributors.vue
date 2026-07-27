@@ -50,7 +50,11 @@ const fallback = {
         avatar: "/assets/avatars/paperwings.PNG",
         name: "paperwings",
         contribution: "提供了强大的 3D 插件支持<br>Provides powerful 3D Plugin support",
-        link: "https://github.com/jefcrb"
+        link: {
+          href: "https://github.com/jefcrb",
+          label: "GitHub",
+          icon: "fa6-brands:github",
+        },
       }
     ] as Contributor[],
   },
