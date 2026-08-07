@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class CollectionItemGeometryTarget | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CollectionItemGeometryTarget | neo-bpsys-wpf ">
+      
+      <meta name="description" content="PartCollection 集合项的几何操作目标，将 Designer 的 Move/Resize 通过集合项的 Storage 写入 Config。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget" class="text-break">
+Class CollectionItemGeometryTarget  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Geometry/CollectionItemGeometryTarget.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.html">V3</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>PartCollection 集合项的几何操作目标，将 Designer 的 Move/Resize 通过集合项的 Storage 写入 Config。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class CollectionItemGeometryTarget : IFrontedV3GeometryTarget</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">CollectionItemGeometryTarget</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedV3GeometryTarget.html">IFrontedV3GeometryTarget</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+该实现遵守 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html">FrontedV3PartCapabilities</a> 约束：
+<ul><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanMove">CanMove</a> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 时 <a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.html#neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_MoveTo_System_Double_System_Double_">MoveTo(double, double)</a> 不写入。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanResize">CanResize</a> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 时 <a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.html#neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_ResizeTo_System_Double_System_Double_System_Nullable_System_Double__System_Nullable_System_Double__">ResizeTo(double, double, double?, double?)</a> 不写入。</li></ul>
+
+<p>
+几何值通过集合项的 CLR 属性（<code>X</code>/<code>Y</code>/<code>Width</code>/<code>Height</code>）读写到 Config 的现有集合字段，
+不直接操作 Visual 的尺寸。坐标相对于父 Control，而非 Canvas 绝对坐标。
+</p>
+<p>
+构造时通过 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_CollectionGetter">CollectionGetter</a> 与
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ItemKeySelector">ItemKeySelector</a> 创建绑定到指定项键的存储访问器。
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget__ctor_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget__ctor_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_String_System_Action_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.#ctor(neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,System.String,System.Action)">
+  CollectionItemGeometryTarget(FrontedV3PartCollectionDefinition, FrontedControlConfigBase, string, Action?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Geometry/CollectionItemGeometryTarget.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化 <a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.html">CollectionItemGeometryTarget</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CollectionItemGeometryTarget(FrontedV3PartCollectionDefinition collection, FrontedControlConfigBase config, string itemKey, Action? onVisualSync = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a></dt>
+    <dd><p>集合定义，决定可操作的维度与能力约束。</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>控件配置实例，作为集合项几何字段的单一事实来源。</p>
+</dd>
+    <dt><code>itemKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要操作的集合项唯一键。</p>
+</dd>
+    <dt><code>onVisualSync</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd><p>可选的视觉同步回调，在几何值变更后由调用方触发视觉更新。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">collection</code>、<code class="paramref">config</code> 或 <code class="paramref">itemKey</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_Height_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.Height*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_Height" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.Height">
+  Height
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Geometry/CollectionItemGeometryTarget.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前根控件高度；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时表示控件使用自适应尺寸。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? Height { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_Height_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>返回集合项的显式高度；找不到项时返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_ItemKey_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.ItemKey*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_ItemKey" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.ItemKey">
+  ItemKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Geometry/CollectionItemGeometryTarget.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前集合项的唯一键。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ItemKey { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_Left_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.Left*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_Left" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.Left">
+  Left
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Geometry/CollectionItemGeometryTarget.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前根控件左侧坐标。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Left { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_Left_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>返回集合项相对于父 Control 的 X 坐标；找不到项时返回 0。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_Top_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.Top*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_Top" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.Top">
+  Top
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Geometry/CollectionItemGeometryTarget.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前根控件顶部坐标。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Top { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_Top_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>返回集合项相对于父 Control 的 Y 坐标；找不到项时返回 0。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_Width_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.Width*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_Width" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.Width">
+  Width
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Geometry/CollectionItemGeometryTarget.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前根控件宽度；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时表示控件使用自适应尺寸。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? Width { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_Width_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>返回集合项的显式宽度；找不到项时返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_ApplyToVisual_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.ApplyToVisual*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_ApplyToVisual" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.ApplyToVisual">
+  ApplyToVisual()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Geometry/CollectionItemGeometryTarget.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将当前 Config 中的几何值重新应用到视觉宿主，用于 Config 被外部修改后恢复一致性。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyToVisual()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_MoveTo_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.MoveTo*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_MoveTo_System_Double_System_Double_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.MoveTo(System.Double,System.Double)">
+  MoveTo(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Geometry/CollectionItemGeometryTarget.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将根控件移动到指定坐标，并同步视觉。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveTo(double left, double top)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>目标左侧坐标。</p>
+</dd>
+    <dt><code>top</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>目标顶部坐标。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_MoveTo_System_Double_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>当 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanMove">CanMove</a> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 时不执行任何写入。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_ResizeTo_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.ResizeTo*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_ResizeTo_System_Double_System_Double_System_Nullable_System_Double__System_Nullable_System_Double__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.ResizeTo(System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Double})">
+  ResizeTo(double, double, double?, double?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Geometry/CollectionItemGeometryTarget.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将根控件调整为指定矩形，并同步视觉。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResizeTo(double left, double top, double? width, double? height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>目标左侧坐标。</p>
+</dd>
+    <dt><code>top</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>目标顶部坐标。</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd><p>目标宽度；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时清除显式宽度（恢复自适应）。</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd><p>目标高度；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时清除显式高度（恢复自适应）。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Geometry_CollectionItemGeometryTarget_ResizeTo_System_Double_System_Double_System_Nullable_System_Double__System_Nullable_System_Double___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>当 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanResize">CanResize</a> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 时不执行任何写入。
+当 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanMove">CanMove</a> 同时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> 时，
+将 <code class="paramref">left</code>/<code class="paramref">top</code> 写入 X/Y 属性。</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Geometry/CollectionItemGeometryTarget.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

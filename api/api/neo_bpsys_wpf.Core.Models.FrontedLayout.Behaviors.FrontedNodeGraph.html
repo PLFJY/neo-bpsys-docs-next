@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedNodeGraph | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedNodeGraph | neo-bpsys-wpf ">
+      
+      <meta name="description" content="行为节点图，包含节点和连接。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph" class="text-break">
+Class FrontedNodeGraph  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeGraph.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.html">Behaviors</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>行为节点图，包含节点和连接。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedNodeGraph</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedNodeGraph</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph__ctor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.#ctor">
+  FrontedNodeGraph()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeGraph.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedNodeGraph()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_Connections_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.Connections*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_Connections" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.Connections">
+  Connections
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeGraph.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>连接列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FrontedNodeConnection&gt; Connections { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeConnection.html">FrontedNodeConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_Nodes_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.Nodes*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_Nodes" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.Nodes">
+  Nodes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeGraph.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>节点列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FrontedNode&gt; Nodes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNode.html">FrontedNode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_FindNode_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.FindNode*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_FindNode_System_Guid_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.FindNode(System.Guid)">
+  FindNode(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeGraph.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据节点 ID 查找节点。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedNode? FindNode(Guid nodeId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nodeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>节点 ID。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNode.html">FrontedNode</a></dt>
+    <dd><p>找到的节点，未找到时返回 null。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_GetIncoming_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.GetIncoming*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_GetIncoming_System_Guid_System_String_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.GetIncoming(System.Guid,System.String)">
+  GetIncoming(Guid, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeGraph.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取节点的输入连接。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;FrontedNodeConnection&gt; GetIncoming(Guid nodeId, string? port = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nodeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>节点 ID。</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>端口名称（可选）。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeConnection.html">FrontedNodeConnection</a>&gt;</dt>
+    <dd><p>输入连接列表。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_GetOutgoing_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.GetOutgoing*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_GetOutgoing_System_Guid_System_String_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.GetOutgoing(System.Guid,System.String)">
+  GetOutgoing(Guid, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeGraph.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取节点的输出连接。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;FrontedNodeConnection&gt; GetOutgoing(Guid nodeId, string? port = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nodeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>节点 ID。</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>端口名称（可选）。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeConnection.html">FrontedNodeConnection</a>&gt;</dt>
+    <dd><p>输出连接列表。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_RemoveConnectionsForNode_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.RemoveConnectionsForNode*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_RemoveConnectionsForNode_System_Guid_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.RemoveConnectionsForNode(System.Guid)">
+  RemoveConnectionsForNode(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeGraph.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>移除指定节点的所有连接。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemoveConnectionsForNode(Guid nodeId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nodeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>节点 ID。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>移除的连接数量。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_RemoveNode_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.RemoveNode*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodeGraph_RemoveNode_System_Guid_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodeGraph.RemoveNode(System.Guid)">
+  RemoveNode(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeGraph.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>移除指定节点及其连接。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveNode(Guid nodeId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nodeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>节点 ID。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否成功移除。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeGraph.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

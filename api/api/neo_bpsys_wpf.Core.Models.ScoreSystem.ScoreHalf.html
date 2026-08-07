@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ScoreHalf | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ScoreHalf | neo-bpsys-wpf ">
+      
+      <meta name="description" content="Score System v2 中一个计分 Game 的半场结果。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf" class="text-break">
+Class ScoreHalf  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.ScoreSystem.html">ScoreSystem</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Score System v2 中一个计分 Game 的半场结果。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ScoreHalf : ObservableObjectBase, INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">ObservableObject</span></div>
+      <div><span class="xref">ObservableRecipient</span></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.ObservableObjectBase.html">ObservableObjectBase</a></div>
+      <div><span class="xref">ScoreHalf</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.ObservableObjectBase.html#neo_bpsys_wpf_Core_Abstractions_ObservableObjectBase_SetPropertyWithAction__1___0____0_System_Action___0__System_String_">ObservableObjectBase.SetPropertyWithAction&lt;T&gt;(ref T, T, Action&lt;T&gt;, string)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>半场会保存记录结果时的求生者 / 监管者对应主客队关系。这样导入对局、换边或后续改变当前阵营后，
+历史比分仍能归属到当时正确的主队或客队。</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf__ctor_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf__ctor_neo_bpsys_wpf_Core_Enums_GameProgress_neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalfKind_System_Nullable_neo_bpsys_wpf_Core_Enums_GameResult__System_Nullable_neo_bpsys_wpf_Core_Enums_TeamType__System_Nullable_neo_bpsys_wpf_Core_Enums_TeamType__" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.#ctor(neo_bpsys_wpf.Core.Enums.GameProgress,neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalfKind,System.Nullable{neo_bpsys_wpf.Core.Enums.GameResult},System.Nullable{neo_bpsys_wpf.Core.Enums.TeamType},System.Nullable{neo_bpsys_wpf.Core.Enums.TeamType})">
+  ScoreHalf(GameProgress, ScoreHalfKind, GameResult?, TeamType?, TeamType?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建半场比分。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonConstructor]
+public ScoreHalf(GameProgress progress, ScoreHalfKind halfKind, GameResult? result = null, TeamType? surTeamTypeWhenRecorded = null, TeamType? hunTeamTypeWhenRecorded = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>progress</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.GameProgress.html">GameProgress</a></dt>
+    <dd><p>该半场对应的对局进度。</p>
+</dd>
+    <dt><code>halfKind</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalfKind.html">ScoreHalfKind</a></dt>
+    <dd><p>第一半或第二半。</p>
+</dd>
+    <dt><code>result</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.GameResult.html">GameResult</a>?</dt>
+    <dd><p>可空比赛结果；<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 表示未记录或已清除。</p>
+</dd>
+    <dt><code>surTeamTypeWhenRecorded</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.TeamType.html">TeamType</a>?</dt>
+    <dd><p>记录时求生者阵营对应的主客队。</p>
+</dd>
+    <dt><code>hunTeamTypeWhenRecorded</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.TeamType.html">TeamType</a>?</dt>
+    <dd><p>记录时监管者阵营对应的主客队。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_AwayDisplayText_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.AwayDisplayText*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_AwayDisplayText" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.AwayDisplayText">
+  AwayDisplayText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>客队小比分显示文本；未记录时为 <code>-</code>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string AwayDisplayText { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_AwayMinorScore_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.AwayMinorScore*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_AwayMinorScore" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.AwayMinorScore">
+  AwayMinorScore
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据记录时阵营映射派生的客队小比分。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public int? AwayMinorScore { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_HalfKind_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.HalfKind*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_HalfKind" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.HalfKind">
+  HalfKind
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>该半场在所属计分 Game 中的位置。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScoreHalfKind HalfKind { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalfKind.html">ScoreHalfKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_HasResult_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.HasResult*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_HasResult" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.HasResult">
+  HasResult
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否已有半场结果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public bool HasResult { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_HomeDisplayText_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.HomeDisplayText*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_HomeDisplayText" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.HomeDisplayText">
+  HomeDisplayText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>主队小比分显示文本；未记录时为 <code>-</code>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string HomeDisplayText { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_HomeMinorScore_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.HomeMinorScore*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_HomeMinorScore" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.HomeMinorScore">
+  HomeMinorScore
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据记录时阵营映射派生的主队小比分。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public int? HomeMinorScore { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_HunMinorScore_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.HunMinorScore*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_HunMinorScore" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.HunMinorScore">
+  HunMinorScore
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>从 <a class="xref" href="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.html#neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_Result">Result</a> 派生的监管者小比分。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public int? HunMinorScore { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_HunTeamTypeWhenRecorded_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.HunTeamTypeWhenRecorded*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_HunTeamTypeWhenRecorded" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.HunTeamTypeWhenRecorded">
+  HunTeamTypeWhenRecorded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>记录本半场时，监管者阵营对应的主客队。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TeamType? HunTeamTypeWhenRecorded { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Enums.TeamType.html">TeamType</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_Progress_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.Progress*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_Progress" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.Progress">
+  Progress
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>该半场对应的对局进度。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameProgress Progress { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Enums.GameProgress.html">GameProgress</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_Result_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.Result*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_Result" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.Result">
+  Result
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>半场比赛结果；<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 表示未记录或已清除。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameResult? Result { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Enums.GameResult.html">GameResult</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_SurMinorScore_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.SurMinorScore*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_SurMinorScore" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.SurMinorScore">
+  SurMinorScore
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>从 <a class="xref" href="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.html#neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_Result">Result</a> 派生的求生者小比分。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public int? SurMinorScore { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_SurTeamTypeWhenRecorded_" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.SurTeamTypeWhenRecorded*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_ScoreSystem_ScoreHalf_SurTeamTypeWhenRecorded" data-uid="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.SurTeamTypeWhenRecorded">
+  SurTeamTypeWhenRecorded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>记录本半场时，求生者阵营对应的主客队。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TeamType? SurTeamTypeWhenRecorded { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Enums.TeamType.html">TeamType</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/ScoreSystem/ScoreHalf.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

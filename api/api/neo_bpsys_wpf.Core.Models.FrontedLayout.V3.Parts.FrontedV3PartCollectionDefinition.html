@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedV3PartCollectionDefinition | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedV3PartCollectionDefinition | neo-bpsys-wpf ">
+      
+      <meta name="description" content="PartCollection 的已解析定义，描述集合的标识、策略、项能力、集合访问方式与模板补齐逻辑。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition" class="text-break">
+Class FrontedV3PartCollectionDefinition  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.html">V3</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.html">Parts</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>PartCollection 的已解析定义，描述集合的标识、策略、项能力、集合访问方式与模板补齐逻辑。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedV3PartCollectionDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedV3PartCollectionDefinition</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+PartCollection 是控件内部可变子项集合的抽象（如 GlobalScoreRow 的 Cells）。
+与固定 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition.html">FrontedV3PartDefinition</a> 不同，PartCollection 的项数可变（受 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Strategy">Strategy</a> 约束），
+每个项通过 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ItemKeySelector">ItemKeySelector</a> 获取唯一键，几何值通过 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_CollectionGetter">CollectionGetter</a> 返回的列表项上的属性读写。
+</p>
+<p>
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Strategy">Strategy</a> 决定增删与模板补齐行为：
+<ul><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionStrategy.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionStrategy_FixedTemplate">FixedTemplate</a>：通过 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_EnsureTemplateItems">EnsureTemplateItems</a> 补齐缺失项，拒绝增删。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionStrategy.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionStrategy_Dynamic">Dynamic</a>：允许增删，不补齐。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionStrategy.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionStrategy_ReadOnly">ReadOnly</a>：只读。</li></ul>
+
+<p>
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ItemCapabilities">ItemCapabilities</a> 决定 Designer 中对单个集合项允许的几何操作类型；
+<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedV3GeometryTarget.html">IFrontedV3GeometryTarget</a> 实现必须遵守能力约束。
+</p>
+<p>
+集合项的几何值直接读写列表项上的 CLR 属性（如 <code>X</code>/<code>Y</code>/<code>Width</code>/<code>Height</code>），
+不改变 JSON 结构，继续使用现有字段。
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition__ctor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.#ctor">
+  FrontedV3PartCollectionDefinition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3PartCollectionDefinition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition__ctor_System_String_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionStrategy_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_System_Func_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Collections_IList__System_Func_System_Object_System_String__System_Action_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase__" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.#ctor(System.String,neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionStrategy,neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities,System.Func{neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,System.Collections.IList},System.Func{System.Object,System.String},System.Action{neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase})">
+  FrontedV3PartCollectionDefinition(string, FrontedV3PartCollectionStrategy, FrontedV3PartCapabilities, Func&lt;FrontedControlConfigBase, IList&gt;, Func&lt;object, string&gt;, Action&lt;FrontedControlConfigBase&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a> 并指定全部属性。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3PartCollectionDefinition(string id, FrontedV3PartCollectionStrategy strategy, FrontedV3PartCapabilities itemCapabilities, Func&lt;FrontedControlConfigBase, IList&gt; collectionGetter, Func&lt;object, string&gt; itemKeySelector, Action&lt;FrontedControlConfigBase&gt;? ensureTemplateItems = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>集合标识，在同一控件内必须唯一。</p>
+</dd>
+    <dt><code>strategy</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionStrategy.html">FrontedV3PartCollectionStrategy</a></dt>
+    <dd><p>集合策略，决定增删与模板补齐行为。</p>
+</dd>
+    <dt><code>itemCapabilities</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html">FrontedV3PartCapabilities</a></dt>
+    <dd><p>单个集合项的操作能力。</p>
+</dd>
+    <dt><code>collectionGetter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a>&gt;</dt>
+    <dd><p>从 Config 获取集合列表的函数。</p>
+</dd>
+    <dt><code>itemKeySelector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span class="xref">object</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>从集合项获取唯一键的函数。</p>
+</dd>
+    <dt><code>ensureTemplateItems</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a>&gt;</dt>
+    <dd><p>对于 FixedTemplate 策略，补齐缺失模板项的回调；其他策略可为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ApplyTemplate_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.ApplyTemplate*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ApplyTemplate" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.ApplyTemplate">
+  ApplyTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置根据控件自身模板（如 BO3/BO5、列表项间距等）重新分配集合项位置/可见性的回调；
+为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时表示该集合不支持模板分配。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;FrontedControlConfigBase, FrontedV3TemplateContext, bool&gt;? ApplyTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a>, <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html">FrontedV3TemplateContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ApplyTemplate_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+这是通用机制，控件可通过此回调暴露"按模板重新分配布局"能力。
+回调接收父控件 Config 与 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html">FrontedV3TemplateContext</a>，由控件自身实现决定如何分配位置与可见性。
+</p>
+<p>
+例如 GlobalScoreRow 在此回调中调用
+<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.html#neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_AutoArrangeBySpacing_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Boolean_">AutoArrangeBySpacing(FrontedControlConfigBase, bool)</a>
+与可见性模板方法，按 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_CurrentBoModeState">CurrentBoModeState</a> 或
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_TemplateId">TemplateId</a> 指定的模板重新分配 Cell 的 <code>X</code>/<code>Y</code> 与 <code>Visibility</code>。
+</p>
+<p>
+该回调只负责位置/可见性的模板分配，不修改外观属性（Color/FontFamily 等）。
+回调返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> 表示发生了修改；<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 表示无变更。
+</p>
+<p>
+Designer 在选中根控件且该回调非 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时显示"按模板重新分配"按钮：
+当 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Templates">Templates</a> 非空时按模板逐个渲染；否则渲染单一通用按钮（无 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_TemplateId">TemplateId</a>）。
+</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_CollectionGetter_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.CollectionGetter*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_CollectionGetter" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.CollectionGetter">
+  CollectionGetter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置从 Config 获取集合列表的函数。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;FrontedControlConfigBase, IList&gt; CollectionGetter { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_EnsureTemplateItems_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.EnsureTemplateItems*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_EnsureTemplateItems" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.EnsureTemplateItems">
+  EnsureTemplateItems
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置对于 FixedTemplate 策略，补齐缺失模板项的回调；其他策略可为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;FrontedControlConfigBase&gt;? EnsureTemplateItems { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_EnsureTemplateItems_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>该回调只负责初始化与补齐，不负责 Designer 的几何操作。Designer 几何操作通过
+<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.CollectionItemGeometryTarget.html">CollectionItemGeometryTarget</a> 完成。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Id_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.Id*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Id" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.Id">
+  Id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置集合标识，在同一控件内必须唯一（例如 <code>Cells</code>）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ItemCapabilities_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.ItemCapabilities*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ItemCapabilities" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.ItemCapabilities">
+  ItemCapabilities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置单个集合项的操作能力，决定 Designer 中允许的几何操作类型。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3PartCapabilities ItemCapabilities { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html">FrontedV3PartCapabilities</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ItemKeySelector_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.ItemKeySelector*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ItemKeySelector" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.ItemKeySelector">
+  ItemKeySelector
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置从集合项获取唯一键的函数，用于项的身份识别与选择恢复。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;object, string&gt; ItemKeySelector { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span class="xref">object</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ItemPropertiesFactory_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.ItemPropertiesFactory*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ItemPropertiesFactory" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.ItemPropertiesFactory">
+  ItemPropertiesFactory
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置集合项外观属性的工厂；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时表示集合项仅支持几何编辑。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;string, IReadOnlyList&lt;FrontedV3PropertyDefinition&gt;&gt;? ItemPropertiesFactory { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html">FrontedV3PropertyDefinition</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ItemPropertiesFactory_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+当 PartCollection 集合项在 Designer 中被选中时，
+<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3DesignSelectionBuilder.html#neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3DesignSelectionBuilder_BuildCollectionItemSelection_neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedControlDesignItem_System_String_System_String_System_Action_">BuildCollectionItemSelection(FrontedControlDesignItem, string, string, Action?)</a>
+会将几何属性（<code>X</code>/<code>Y</code>/<code>Width</code>/<code>Height</code>）与该工厂返回的外观属性合并，
+作为选中目标的 <code>Properties</code> 返回。
+</p>
+<p>
+工厂参数 <code class="paramref">itemKey</code> 为选中集合项的唯一键（仅在选中时确定），
+工厂返回的 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html">FrontedV3PropertyDefinition</a> 必须使用
+FrontedV3Storage.CollectionItemProperty 绑定到该 itemKey 对应的集合项 CLR 属性。
+</p>
+<p>
+采用工厂而非预构建列表的原因：FrontedV3Storage.CollectionItemProperty
+在构造时即需要 <code>itemKey</code> 参数，而 <code>itemKey</code> 仅在 Designer 选中具体集合项时才确定。
+工厂模式将 Storage 构造延迟到选中时，避免引入额外描述类型。
+</p>
+<p>
+默认 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 表示集合项只支持几何编辑。
+</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Strategy_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.Strategy*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Strategy" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.Strategy">
+  Strategy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置集合策略，决定增删与模板补齐行为。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3PartCollectionStrategy Strategy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionStrategy.html">FrontedV3PartCollectionStrategy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Templates_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.Templates*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Templates" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.Templates">
+  Templates
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置该集合支持的具名布局模板列表（如 BO3、BO5、Default、Compact）；
+为空列表时 Designer 渲染单一通用&quot;按模板重新分配&quot;按钮，由控件基于
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_CurrentBoModeState">CurrentBoModeState</a> 决定具体模板。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;FrontedV3LayoutTemplate&gt; Templates { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3LayoutTemplate.html">FrontedV3LayoutTemplate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Templates_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+非空列表时 Designer 不再渲染通用按钮，而是为每个 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3LayoutTemplate.html">FrontedV3LayoutTemplate</a> 渲染独立按钮，
+用户点击后调用 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ApplyTemplate">ApplyTemplate</a> 并通过 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_TemplateId">TemplateId</a>
+传递被点击模板的 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3LayoutTemplate.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3LayoutTemplate_Id">Id</a>。
+</p>
+<p>
+列表为空但 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ApplyTemplate">ApplyTemplate</a> 非 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时，
+Designer 渲染单一通用按钮，<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_TemplateId">TemplateId</a> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+</p>
+<p>
+默认为空列表，控件无需显式声明具名模板即可使用基于 BO 状态的默认行为。
+</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCollectionDefinition.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

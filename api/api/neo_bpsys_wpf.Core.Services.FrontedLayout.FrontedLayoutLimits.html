@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedLayoutLimits | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedLayoutLimits | neo-bpsys-wpf ">
+      
+      
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits" class="text-break">
+Class FrontedLayoutLimits  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FrontedLayoutLimits</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedLayoutLimits</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxBackgroundImageBytes" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxBackgroundImageBytes">
+  MaxBackgroundImageBytes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxBackgroundImageBytes = 2621440</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxBackgroundImageLongSide" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxBackgroundImageLongSide">
+  MaxBackgroundImageLongSide
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxBackgroundImageLongSide = 4096</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxBackgroundImagePixels" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxBackgroundImagePixels">
+  MaxBackgroundImagePixels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxBackgroundImagePixels = 16777216</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxBindingPathLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxBindingPathLength">
+  MaxBindingPathLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxBindingPathLength = 256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxCompressiblePackageImageSourceBytes" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxCompressiblePackageImageSourceBytes">
+  MaxCompressiblePackageImageSourceBytes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxCompressiblePackageImageSourceBytes = 52428800</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxControlNameLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxControlNameLength">
+  MaxControlNameLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxControlNameLength = 64</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxControlTypeLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxControlTypeLength">
+  MaxControlTypeLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxControlTypeLength = 64</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxControlsPerCanvas" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxControlsPerCanvas">
+  MaxControlsPerCanvas
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxControlsPerCanvas = 256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxDesignerUndoSnapshots" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxDesignerUndoSnapshots">
+  MaxDesignerUndoSnapshots
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxDesignerUndoSnapshots = 50</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxFontFamilyLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxFontFamilyLength">
+  MaxFontFamilyLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxFontFamilyLength = 256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxJsonDepth" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxJsonDepth">
+  MaxJsonDepth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxJsonDepth = 32</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxLayoutJsonBytes" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxLayoutJsonBytes">
+  MaxLayoutJsonBytes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxLayoutJsonBytes = 2097152</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxLayoutsPerPackage" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxLayoutsPerPackage">
+  MaxLayoutsPerPackage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxLayoutsPerPackage = 100</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxLegacyConfigBytes" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxLegacyConfigBytes">
+  MaxLegacyConfigBytes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxLegacyConfigBytes = 2097152</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxManifestBytes" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxManifestBytes">
+  MaxManifestBytes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxManifestBytes = 262144</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxPackageArchiveBytes" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxPackageArchiveBytes">
+  MaxPackageArchiveBytes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxPackageArchiveBytes = 52428800</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxPackageAuthorLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxPackageAuthorLength">
+  MaxPackageAuthorLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxPackageAuthorLength = 64</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxPackageDescriptionLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxPackageDescriptionLength">
+  MaxPackageDescriptionLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxPackageDescriptionLength = 2048</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxPackageEntries" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxPackageEntries">
+  MaxPackageEntries
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxPackageEntries = 1000</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxPackageExtractedBytes" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxPackageExtractedBytes">
+  MaxPackageExtractedBytes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxPackageExtractedBytes = 104857600</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxPackageIdLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxPackageIdLength">
+  MaxPackageIdLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxPackageIdLength = 128</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxPackageMinVersionLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxPackageMinVersionLength">
+  MaxPackageMinVersionLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxPackageMinVersionLength = 32</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxPackageNameLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxPackageNameLength">
+  MaxPackageNameLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxPackageNameLength = 128</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxPackageSingleEntryBytes" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxPackageSingleEntryBytes">
+  MaxPackageSingleEntryBytes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxPackageSingleEntryBytes = 10485760</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxResourcePathLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxResourcePathLength">
+  MaxResourcePathLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxResourcePathLength = 1024</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxResourcesPerPackage" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxResourcesPerPackage">
+  MaxResourcesPerPackage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxResourcesPerPackage = 500</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxSearchTextLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxSearchTextLength">
+  MaxSearchTextLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxSearchTextLength = 128</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxStaticTextLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxStaticTextLength">
+  MaxStaticTextLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxStaticTextLength = 512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxUiImageBytes" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxUiImageBytes">
+  MaxUiImageBytes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxUiImageBytes = 1048576</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxUiImageLongSide" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxUiImageLongSide">
+  MaxUiImageLongSide
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxUiImageLongSide = 2048</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxUiImagePixels" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxUiImagePixels">
+  MaxUiImagePixels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxUiImagePixels = 4194304</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxValidationMessageLength" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxValidationMessageLength">
+  MaxValidationMessageLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxValidationMessageLength = 512</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxValidationMessagesShown" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxValidationMessagesShown">
+  MaxValidationMessagesShown
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxValidationMessagesShown = 200</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_MaxWindowOptionsJsonBytes" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.MaxWindowOptionsJsonBytes">
+  MaxWindowOptionsJsonBytes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxWindowOptionsJsonBytes = 65536</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutLimits_WarningControlsPerCanvas" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutLimits.WarningControlsPerCanvas">
+  WarningControlsPerCanvas
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int WarningControlsPerCanvas = 160</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutLimits.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

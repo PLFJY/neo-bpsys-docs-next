@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class GlobalScoreRowCellLayoutHelper | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GlobalScoreRowCellLayoutHelper | neo-bpsys-wpf ">
+      
+      <meta name="description" content="用于实例化和排列 GlobalScoreRow 子单元格的设计时帮助程序。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper" class="text-break">
+Class GlobalScoreRowCellLayoutHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>用于实例化和排列 GlobalScoreRow 子单元格的设计时帮助程序。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GlobalScoreRowCellLayoutHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">GlobalScoreRowCellLayoutHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_DefaultCellHeight" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.DefaultCellHeight">
+  DefaultCellHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double DefaultCellHeight = 32</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_DefaultCellWidth" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.DefaultCellWidth">
+  DefaultCellWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double DefaultCellWidth = 75</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_CompleteCellIds_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.CompleteCellIds*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_CompleteCellIds" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.CompleteCellIds">
+  CompleteCellIds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取 BO3 和 BO5 模板中的所有内置单元格标识。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;string&gt; CompleteCellIds { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_ApplyBo3VisibilityTemplate_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.ApplyBo3VisibilityTemplate*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_ApplyBo3VisibilityTemplate_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.ApplyBo3VisibilityTemplate(neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase)">
+  ApplyBo3VisibilityTemplate(FrontedControlConfigBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对指定控件应用 BO3 可见性模板。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ApplyBo3VisibilityTemplate(FrontedControlConfigBase config)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>控件配置实例。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>当 config 为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a> 且调用适用时返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>；否则 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_ApplyBo3VisibilityTemplate_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+该重载是 Phase 6 Designer 去特化的桥梁：Designer ViewModel 调用此方法时
+不需要引用 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a>，类型判定在本 Helper 内完成。
+当 <code class="paramref">config</code> 不是 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a> 时返回
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 且不修改任何状态。
+</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_ApplyBo3VisibilityTemplate_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.ApplyBo3VisibilityTemplate*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_ApplyBo3VisibilityTemplate_neo_bpsys_wpf_Core_Models_FrontedLayout_GlobalScoreRowControlConfig_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.ApplyBo3VisibilityTemplate(neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig)">
+  ApplyBo3VisibilityTemplate(GlobalScoreRowControlConfig)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ApplyBo3VisibilityTemplate(GlobalScoreRowControlConfig row)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_ApplyBo5VisibilityTemplate_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.ApplyBo5VisibilityTemplate*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_ApplyBo5VisibilityTemplate_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.ApplyBo5VisibilityTemplate(neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase)">
+  ApplyBo5VisibilityTemplate(FrontedControlConfigBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对指定控件应用 BO5 可见性模板。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ApplyBo5VisibilityTemplate(FrontedControlConfigBase config)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>控件配置实例。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>当 config 为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a> 且调用适用时返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>；否则 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_ApplyBo5VisibilityTemplate_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+该重载是 Phase 6 Designer 去特化的桥梁：Designer ViewModel 调用此方法时
+不需要引用 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a>，类型判定在本 Helper 内完成。
+当 <code class="paramref">config</code> 不是 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a> 时返回
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 且不修改任何状态。
+</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_ApplyBo5VisibilityTemplate_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.ApplyBo5VisibilityTemplate*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_ApplyBo5VisibilityTemplate_neo_bpsys_wpf_Core_Models_FrontedLayout_GlobalScoreRowControlConfig_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.ApplyBo5VisibilityTemplate(neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig)">
+  ApplyBo5VisibilityTemplate(GlobalScoreRowControlConfig)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ApplyBo5VisibilityTemplate(GlobalScoreRowControlConfig row)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_AutoArrangeBySpacing_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.AutoArrangeBySpacing*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_AutoArrangeBySpacing_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Boolean_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.AutoArrangeBySpacing(neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,System.Boolean)">
+  AutoArrangeBySpacing(FrontedControlConfigBase, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对指定控件按间距自动排列单元格。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AutoArrangeBySpacing(FrontedControlConfigBase config, bool isBo3Mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>控件配置实例。</p>
+</dd>
+    <dt><code>isBo3Mode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否为 BO3 模式。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>当 config 为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a> 且调用适用时返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>；否则 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_AutoArrangeBySpacing_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+该重载是 Phase 6 Designer 去特化的桥梁：Designer ViewModel 调用此方法时
+不需要引用 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a>，类型判定在本 Helper 内完成。
+当 <code class="paramref">config</code> 不是 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a> 时返回
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 且不修改任何状态。
+</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_AutoArrangeBySpacing_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.AutoArrangeBySpacing*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_AutoArrangeBySpacing_neo_bpsys_wpf_Core_Models_FrontedLayout_GlobalScoreRowControlConfig_System_Boolean_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.AutoArrangeBySpacing(neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig,System.Boolean)">
+  AutoArrangeBySpacing(GlobalScoreRowControlConfig, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AutoArrangeBySpacing(GlobalScoreRowControlConfig row, bool isBo3Mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a></dt>
+    <dd></dd>
+    <dt><code>isBo3Mode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_CreateCompleteCellTemplate_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.CreateCompleteCellTemplate*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_CreateCompleteCellTemplate_System_Double_System_Double_System_Boolean_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.CreateCompleteCellTemplate(System.Double,System.Double,System.Boolean)">
+  CreateCompleteCellTemplate(double, double, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>为选中的 BO 模式创建内置单元格模板。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;GlobalScoreCellConfig&gt; CreateCompleteCellTemplate(double majorGameGap = 180, double halfGameGap = 90, bool isBo3Mode = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>majorGameGap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>halfGameGap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>isBo3Mode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreCellConfig.html">GlobalScoreCellConfig</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_EnsureCompleteCells_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.EnsureCompleteCells*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_EnsureCompleteCells_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Boolean_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.EnsureCompleteCells(neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,System.Boolean)">
+  EnsureCompleteCells(FrontedControlConfigBase, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>确保指定控件包含所选 BO 模式所需的每个单元格。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EnsureCompleteCells(FrontedControlConfigBase config, bool isBo3Mode = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>控件配置实例。</p>
+</dd>
+    <dt><code>isBo3Mode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否为 BO3 模式。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>当 config 为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a> 且调用适用时返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>；否则 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_EnsureCompleteCells_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+该重载是 Phase 6 Designer 去特化的桥梁：Designer ViewModel 调用此方法时
+不需要引用 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a>，类型判定在本 Helper 内完成。
+当 <code class="paramref">config</code> 不是 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a> 时返回
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 且不修改任何状态。
+</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_EnsureCompleteCells_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.EnsureCompleteCells*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_EnsureCompleteCells_neo_bpsys_wpf_Core_Models_FrontedLayout_GlobalScoreRowControlConfig_System_Boolean_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.EnsureCompleteCells(neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig,System.Boolean)">
+  EnsureCompleteCells(GlobalScoreRowControlConfig, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>确保行包含所选 BO 模式所需的每个单元格。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EnsureCompleteCells(GlobalScoreRowControlConfig row, bool isBo3Mode = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a></dt>
+    <dd></dd>
+    <dt><code>isBo3Mode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_SupportsTemplateOperations_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.SupportsTemplateOperations*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_GlobalScoreRowCellLayoutHelper_SupportsTemplateOperations_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.GlobalScoreRowCellLayoutHelper.SupportsTemplateOperations(neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase)">
+  SupportsTemplateOperations(FrontedControlConfigBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>判断给定控件是否支持 GlobalScoreRow 模板操作。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SupportsTemplateOperations(FrontedControlConfigBase config)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>控件配置实例。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>支持模板操作时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/GlobalScoreRowCellLayoutHelper.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

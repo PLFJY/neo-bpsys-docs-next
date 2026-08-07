@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedNodePropertyDescriptor | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedNodePropertyDescriptor | neo-bpsys-wpf ">
+      
+      
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor" class="text-break">
+Class FrontedNodePropertyDescriptor  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeDescriptors.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.html">Behaviors</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedNodePropertyDescriptor</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedNodePropertyDescriptor</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor__ctor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.#ctor">
+  FrontedNodePropertyDescriptor()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeDescriptors.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedNodePropertyDescriptor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_DefaultValue_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.DefaultValue*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_DefaultValue" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.DefaultValue">
+  DefaultValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeDescriptors.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取新建节点的默认 JSON 值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonElement DefaultValue { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonelement">JsonElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_DisplayNameKey_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.DisplayNameKey*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_DisplayNameKey" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.DisplayNameKey">
+  DisplayNameKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeDescriptors.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取属性标签的本地化键。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required string DisplayNameKey { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_EditorKind_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.EditorKind*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_EditorKind" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.EditorKind">
+  EditorKind
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeDescriptors.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取设计器 UI 使用的编辑器类型。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedNodePropertyEditorKind EditorKind { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyEditorKind.html">FrontedNodePropertyEditorKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_IsRequired_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.IsRequired*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_IsRequired" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.IsRequired">
+  IsRequired
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeDescriptors.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取指示该属性是否为必需的值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRequired { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_Name_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.Name*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_Name" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeDescriptors.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取存储在节点 JSON 中的稳定属性名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required string Name { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_Options_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.Options*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_Options" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.Options">
+  Options
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeDescriptors.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可用的编辑器选项。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; Options { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_PropertyType_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.PropertyType*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_PropertyType" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.PropertyType">
+  PropertyType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeDescriptors.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取高级别持久化值类型。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedNodePropertyType PropertyType { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyType.html">FrontedNodePropertyType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_Unit_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.Unit*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedNodePropertyDescriptor_Unit" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedNodePropertyDescriptor.Unit">
+  Unit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeDescriptors.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取数值的可选显示单位。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Unit { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedNodeDescriptors.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

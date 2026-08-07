@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IWebLocalizationProvider | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IWebLocalizationProvider | neo-bpsys-wpf ">
+      
+      <meta name="description" content="Web Renderer 使用的后端本地化权威接口。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider" class="text-break">
+Interface IWebLocalizationProvider  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.html">Abstractions</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Web Renderer 使用的后端本地化权威接口。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IWebLocalizationProvider</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider_Create_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider.Create*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider_Create_System_Collections_Generic_IReadOnlyCollection_neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationRequest__System_Globalization_CultureInfo_System_Int64_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider.Create(System.Collections.Generic.IReadOnlyCollection{neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationRequest},System.Globalization.CultureInfo,System.Int64)">
+  Create(IReadOnlyCollection&lt;WebLocalizationRequest&gt;, CultureInfo, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>按指定 culture 和 revision 构建本地化快照。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">WebLocalizationSnapshot Create(IReadOnlyCollection&lt;WebLocalizationRequest&gt; requests, CultureInfo culture, long revision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationRequest.html">WebLocalizationRequest</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+    <dt><code>revision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.html">WebLocalizationSnapshot</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider_CreateGameProgress_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider.CreateGameProgress*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider_CreateGameProgress_neo_bpsys_wpf_Core_Enums_GameProgress_System_Boolean_neo_bpsys_wpf_Core_Enums_LanguageKey_neo_bpsys_wpf_Core_Enums_GameProgressNumberStyle_System_Globalization_CultureInfo_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider.CreateGameProgress(neo_bpsys_wpf.Core.Enums.GameProgress,System.Boolean,neo_bpsys_wpf.Core.Enums.LanguageKey,neo_bpsys_wpf.Core.Enums.GameProgressNumberStyle,System.Globalization.CultureInfo)">
+  CreateGameProgress(GameProgress, bool, LanguageKey, GameProgressNumberStyle, CultureInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>生成指定对局进度和控件配置的最终显示部件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">WebGameProgressDisplayState CreateGameProgress(GameProgress progress, bool isBo3Mode, LanguageKey displayLanguage, GameProgressNumberStyle numberStyle, CultureInfo culture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>progress</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.GameProgress.html">GameProgress</a></dt>
+    <dd></dd>
+    <dt><code>isBo3Mode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>displayLanguage</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.LanguageKey.html">LanguageKey</a></dt>
+    <dd></dd>
+    <dt><code>numberStyle</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.GameProgressNumberStyle.html">GameProgressNumberStyle</a></dt>
+    <dd></dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebGameProgressDisplayState.html">WebGameProgressDisplayState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider_ResolveCamp_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider.ResolveCamp*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider_ResolveCamp_neo_bpsys_wpf_Core_Enums_Camp_System_Globalization_CultureInfo_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider.ResolveCamp(neo_bpsys_wpf.Core.Enums.Camp,System.Globalization.CultureInfo)">
+  ResolveCamp(Camp, CultureInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析阵营名称的最终文本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ResolveCamp(Camp camp, CultureInfo culture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>camp</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.Camp.html">Camp</a></dt>
+    <dd></dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider_ResolveLocalizedControl_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider.ResolveLocalizedControl*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider_ResolveLocalizedControl_System_String_System_String_System_String_System_Globalization_CultureInfo_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider.ResolveLocalizedControl(System.String,System.String,System.String,System.Globalization.CultureInfo)">
+  ResolveLocalizedControl(string, string?, string?, CultureInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析 LocalizedText 的最终文本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">WebLocalizedControlState ResolveLocalizedControl(string controlId, string? key, string? fallbackText, CultureInfo culture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controlId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fallbackText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizedControlState.html">WebLocalizedControlState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider_ResolveMapName_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider.ResolveMapName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider_ResolveMapName_System_String_System_Nullable_neo_bpsys_wpf_Core_Enums_Map__System_String_System_Globalization_CultureInfo_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider.ResolveMapName(System.String,System.Nullable{neo_bpsys_wpf.Core.Enums.Map},System.String,System.Globalization.CultureInfo)">
+  ResolveMapName(string, Map?, string?, CultureInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析地图名称的最终文本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">WebLocalizedControlState ResolveMapName(string controlId, Map? map, string? emptyText, CultureInfo culture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controlId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.Map.html">Map</a>?</dt>
+    <dd></dd>
+    <dt><code>emptyText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizedControlState.html">WebLocalizedControlState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider_ResolveWindowDisplayName_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider.ResolveWindowDisplayName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWebLocalizationProvider_ResolveWindowDisplayName_neo_bpsys_wpf_Core_Models_FrontedLayout_Registrations_FrontedWindowRegistration_neo_bpsys_wpf_Core_Enums_LanguageKey_System_Globalization_CultureInfo_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWebLocalizationProvider.ResolveWindowDisplayName(neo_bpsys_wpf.Core.Models.FrontedLayout.Registrations.FrontedWindowRegistration,neo_bpsys_wpf.Core.Enums.LanguageKey,System.Globalization.CultureInfo)">
+  ResolveWindowDisplayName(FrontedWindowRegistration, LanguageKey, CultureInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析窗口注册的最终显示名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ResolveWindowDisplayName(FrontedWindowRegistration registration, LanguageKey language, CultureInfo culture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>registration</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Registrations.FrontedWindowRegistration.html">FrontedWindowRegistration</a></dt>
+    <dd></dd>
+    <dt><code>language</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.LanguageKey.html">LanguageKey</a></dt>
+    <dd></dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
