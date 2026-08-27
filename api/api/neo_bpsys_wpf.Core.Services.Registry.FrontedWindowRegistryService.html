@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedWindowRegistryService | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedWindowRegistryService | neo-bpsys-wpf ">
+      
+      <meta name="description" content="前台窗口注册表服务，从 DI 接收  集合并提供查询。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.Registry.FrontedWindowRegistryService">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_Registry_FrontedWindowRegistryService" data-uid="neo_bpsys_wpf.Core.Services.Registry.FrontedWindowRegistryService" class="text-break">
+Class FrontedWindowRegistryService  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Registry/FrontedWindowRegistryService.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.Registry.html">Registry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>前台窗口注册表服务，从 DI 接收 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Registrations.FrontedWindowRegistration.html">FrontedWindowRegistration</a> 集合并提供查询。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedWindowRegistryService : IFrontedWindowRegistry</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedWindowRegistryService</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowRegistry.html">IFrontedWindowRegistry</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Services_Registry_FrontedWindowRegistryService_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>该实现维护唯一的 Canonical ID 索引。Canonical ID 比较使用
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.stringcomparer.ordinalignorecase">OrdinalIgnoreCase</a>，与 Windows 文件系统、路径和符号
+大小写不敏感语义一致。重复 Canonical ID 在构造时抛出
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a>，保证 fail-fast；空 ID 同样 fail-fast。</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_Registry_FrontedWindowRegistryService__ctor_" data-uid="neo_bpsys_wpf.Core.Services.Registry.FrontedWindowRegistryService.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_Registry_FrontedWindowRegistryService__ctor_System_Collections_Generic_IEnumerable_neo_bpsys_wpf_Core_Models_FrontedLayout_Registrations_FrontedWindowRegistration__" data-uid="neo_bpsys_wpf.Core.Services.Registry.FrontedWindowRegistryService.#ctor(System.Collections.Generic.IEnumerable{neo_bpsys_wpf.Core.Models.FrontedLayout.Registrations.FrontedWindowRegistration})">
+  FrontedWindowRegistryService(IEnumerable&lt;FrontedWindowRegistration&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Registry/FrontedWindowRegistryService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>从 DI 接收的 registration 集合初始化注册表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedWindowRegistryService(IEnumerable&lt;FrontedWindowRegistration&gt; registrations)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>registrations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Registrations.FrontedWindowRegistration.html">FrontedWindowRegistration</a>&gt;</dt>
+    <dd><p>由 DI 注册的所有前台窗口 registration。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>当出现重复 Canonical ID 或空 Canonical ID 时抛出。
+重复 ID 的异常信息含 ID、PackageId、IsBuiltIn、Kind、XAML WindowType（若存在）。
+空 ID 的异常信息明确说明 ID 为空。</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_Registry_FrontedWindowRegistryService_GetManageableWindows_" data-uid="neo_bpsys_wpf.Core.Services.Registry.FrontedWindowRegistryService.GetManageableWindows*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_Registry_FrontedWindowRegistryService_GetManageableWindows" data-uid="neo_bpsys_wpf.Core.Services.Registry.FrontedWindowRegistryService.GetManageableWindows">
+  GetManageableWindows()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Registry/FrontedWindowRegistryService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取在前台管理页可见的窗口，使用稳定的回退分组和排序。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;FrontedWindowRegistration&gt; GetManageableWindows()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Registrations.FrontedWindowRegistration.html">FrontedWindowRegistration</a>&gt;</dt>
+    <dd><p>可管理的窗口注册列表。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_Registry_FrontedWindowRegistryService_GetV3LayoutWindows_" data-uid="neo_bpsys_wpf.Core.Services.Registry.FrontedWindowRegistryService.GetV3LayoutWindows*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_Registry_FrontedWindowRegistryService_GetV3LayoutWindows" data-uid="neo_bpsys_wpf.Core.Services.Registry.FrontedWindowRegistryService.GetV3LayoutWindows">
+  GetV3LayoutWindows()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Registry/FrontedWindowRegistryService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取所有 v3 Layout host 前台窗口注册。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;FrontedV3LayoutWindowRegistration&gt; GetV3LayoutWindows()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Registrations.FrontedV3LayoutWindowRegistration.html">FrontedV3LayoutWindowRegistration</a>&gt;</dt>
+    <dd><p>v3 Layout 窗口注册列表。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_Registry_FrontedWindowRegistryService_GetWindows_" data-uid="neo_bpsys_wpf.Core.Services.Registry.FrontedWindowRegistryService.GetWindows*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_Registry_FrontedWindowRegistryService_GetWindows" data-uid="neo_bpsys_wpf.Core.Services.Registry.FrontedWindowRegistryService.GetWindows">
+  GetWindows()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Registry/FrontedWindowRegistryService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取所有已注册的前台窗口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;FrontedWindowRegistration&gt; GetWindows()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Registrations.FrontedWindowRegistration.html">FrontedWindowRegistration</a>&gt;</dt>
+    <dd><p>前台窗口注册列表。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_Registry_FrontedWindowRegistryService_TryGet_" data-uid="neo_bpsys_wpf.Core.Services.Registry.FrontedWindowRegistryService.TryGet*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_Registry_FrontedWindowRegistryService_TryGet_System_String_neo_bpsys_wpf_Core_Models_FrontedLayout_Registrations_FrontedWindowRegistration__" data-uid="neo_bpsys_wpf.Core.Services.Registry.FrontedWindowRegistryService.TryGet(System.String,neo_bpsys_wpf.Core.Models.FrontedLayout.Registrations.FrontedWindowRegistration@)">
+  TryGet(string, out FrontedWindowRegistration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Registry/FrontedWindowRegistryService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>按 Canonical ID 查找窗口注册。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGet(string canonicalId, out FrontedWindowRegistration registration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canonicalId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>窗口的 Canonical ID。</p>
+</dd>
+    <dt><code>registration</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Registrations.FrontedWindowRegistration.html">FrontedWindowRegistration</a></dt>
+    <dd><p>匹配的注册（若找到）。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否找到匹配的注册。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Registry/FrontedWindowRegistryService.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

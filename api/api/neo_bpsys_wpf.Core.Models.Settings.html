@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class Settings | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Settings | neo-bpsys-wpf ">
+      
+      <meta name="description" content="设置">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.Settings">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_Settings" data-uid="neo_bpsys_wpf.Core.Models.Settings" class="text-break">
+Class Settings  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>设置</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Settings : ObservableObjectBase, INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">ObservableObject</span></div>
+      <div><span class="xref">ObservableRecipient</span></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.ObservableObjectBase.html">ObservableObjectBase</a></div>
+      <div><span class="xref">Settings</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.ObservableObjectBase.html#neo_bpsys_wpf_Core_Abstractions_ObservableObjectBase_SetPropertyWithAction__1___0____0_System_Action___0__System_String_">ObservableObjectBase.SetPropertyWithAction&lt;T&gt;(ref T, T, Action&lt;T&gt;, string)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings__ctor_" data-uid="neo_bpsys_wpf.Core.Models.Settings.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings__ctor" data-uid="neo_bpsys_wpf.Core.Models.Settings.#ctor">
+  Settings()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Settings()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_AssociateBpuiFiles_" data-uid="neo_bpsys_wpf.Core.Models.Settings.AssociateBpuiFiles*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_AssociateBpuiFiles" data-uid="neo_bpsys_wpf.Core.Models.Settings.AssociateBpuiFiles">
+  AssociateBpuiFiles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否将 <code>.bpui</code> 布局包文件关联到本应用。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AssociateBpuiFiles { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_CultureInfo_" data-uid="neo_bpsys_wpf.Core.Models.Settings.CultureInfo*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_CultureInfo" data-uid="neo_bpsys_wpf.Core.Models.Settings.CultureInfo">
+  CultureInfo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>语言</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public CultureInfo CultureInfo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_ForceCpuForNextLaunch_" data-uid="neo_bpsys_wpf.Core.Models.Settings.ForceCpuForNextLaunch*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_ForceCpuForNextLaunch" data-uid="neo_bpsys_wpf.Core.Models.Settings.ForceCpuForNextLaunch">
+  ForceCpuForNextLaunch
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>一次性 CPU 强制标记。CUDA 推理失败时设置为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>，
+下次启动 Bootstrap 检测到此标记后强制使用 CPU 并立即消费（置回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>），
+避免永久锁死 CPU。与 <a class="xref" href="neo_bpsys_wpf.Core.Models.Settings.html#neo_bpsys_wpf_Core_Models_Settings_LastCudaFailure">LastCudaFailure</a>（仅诊断）分离。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ForceCpuForNextLaunch { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_GameStateSaveDirectory_" data-uid="neo_bpsys_wpf.Core.Models.Settings.GameStateSaveDirectory*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_GameStateSaveDirectory" data-uid="neo_bpsys_wpf.Core.Models.Settings.GameStateSaveDirectory">
+  GameStateSaveDirectory
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对局状态文件的输出目录。为空时，保存前需要由用户选择目录。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GameStateSaveDirectory { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_GhProxyMirror_" data-uid="neo_bpsys_wpf.Core.Models.Settings.GhProxyMirror*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_GhProxyMirror" data-uid="neo_bpsys_wpf.Core.Models.Settings.GhProxyMirror">
+  GhProxyMirror
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/obj/Release/net10.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/neo_bpsys_wpf.Core.Models.Settings.g.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ObservableProperty]
+[ExcludeFromCodeCoverage]
+public string GhProxyMirror { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_IsAllowCharacterReselect_" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsAllowCharacterReselect*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_IsAllowCharacterReselect" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsAllowCharacterReselect">
+  IsAllowCharacterReselect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否允许角色复选（在 Pick 选择器中允许已 Pick 的角色被再次选择）。
+已 Ban 角色的禁用规则不受此开关影响。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAllowCharacterReselect { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_IsClassicMode_" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsClassicMode*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_IsClassicMode" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsClassicMode">
+  IsClassicMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否启用经典模式（旧版 BP 流程）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsClassicMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_IsFindPreRelease_" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsFindPreRelease*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_IsFindPreRelease" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsFindPreRelease">
+  IsFindPreRelease
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/obj/Release/net10.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/neo_bpsys_wpf.Core.Models.Settings.g.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ObservableProperty]
+[ExcludeFromCodeCoverage]
+public bool IsFindPreRelease { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_IsGameStateSaveDirectoryPromptSuppressed_" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsGameStateSaveDirectoryPromptSuppressed*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_IsGameStateSaveDirectoryPromptSuppressed" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsGameStateSaveDirectoryPromptSuppressed">
+  IsGameStateSaveDirectoryPromptSuppressed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否在保存对局状态时沿用 <a class="xref" href="neo_bpsys_wpf.Core.Models.Settings.html#neo_bpsys_wpf_Core_Models_Settings_GameStateSaveDirectory">GameStateSaveDirectory</a>，不再询问保存路径。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGameStateSaveDirectoryPromptSuppressed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_IsNextGameConfirmationSuppressed_" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsNextGameConfirmationSuppressed*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_IsNextGameConfirmationSuppressed" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsNextGameConfirmationSuppressed">
+  IsNextGameConfirmationSuppressed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否在点击下一局时不再显示确认对话框。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNextGameConfirmationSuppressed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_IsPageTransitionAnimationEnabled_" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsPageTransitionAnimationEnabled*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_IsPageTransitionAnimationEnabled" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsPageTransitionAnimationEnabled">
+  IsPageTransitionAnimationEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否启用后台页面切换时的过渡动画。关闭后页面切换将立即完成。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPageTransitionAnimationEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_IsProductTourDebugEnabled_" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsProductTourDebugEnabled*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_IsProductTourDebugEnabled" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsProductTourDebugEnabled">
+  IsProductTourDebugEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否启用产品导览调试队列窗口。DEBUG 构建默认开启，其余构建默认关闭，用户可在设置调试区切换。
+运行期以持久化值（或缺省值）为准。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProductTourDebugEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_IsRecordGlobalBan_" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsRecordGlobalBan*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_IsRecordGlobalBan" data-uid="neo_bpsys_wpf.Core.Models.Settings.IsRecordGlobalBan">
+  IsRecordGlobalBan
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否记录全局禁用角色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRecordGlobalBan { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_Language_" data-uid="neo_bpsys_wpf.Core.Models.Settings.Language*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_Language" data-uid="neo_bpsys_wpf.Core.Models.Settings.Language">
+  Language
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>应用程序界面语言。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LanguageKey Language { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Enums.LanguageKey.html">LanguageKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_LastCudaFailure_" data-uid="neo_bpsys_wpf.Core.Models.Settings.LastCudaFailure*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_LastCudaFailure" data-uid="neo_bpsys_wpf.Core.Models.Settings.LastCudaFailure">
+  LastCudaFailure
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>最近一次 CUDA 故障描述；仅用于诊断展示，不参与后端决策。
+后端短路由 <a class="xref" href="neo_bpsys_wpf.Core.Models.Settings.html#neo_bpsys_wpf_Core_Models_Settings_ForceCpuForNextLaunch">ForceCpuForNextLaunch</a> 一次性消费控制。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? LastCudaFailure { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_LastCudaFailureRuntimeVersion_" data-uid="neo_bpsys_wpf.Core.Models.Settings.LastCudaFailureRuntimeVersion*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_LastCudaFailureRuntimeVersion" data-uid="neo_bpsys_wpf.Core.Models.Settings.LastCudaFailureRuntimeVersion">
+  LastCudaFailureRuntimeVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>最近一次 CUDA 故障发生时的 PaddleInference runtime 版本。
+用于版本升级后清除旧故障诊断信息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? LastCudaFailureRuntimeVersion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_LogLevel_" data-uid="neo_bpsys_wpf.Core.Models.Settings.LogLevel*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_LogLevel" data-uid="neo_bpsys_wpf.Core.Models.Settings.LogLevel">
+  LogLevel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/obj/Release/net10.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/neo_bpsys_wpf.Core.Models.Settings.g.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ObservableProperty]
+[ExcludeFromCodeCoverage]
+public AppLogLevel LogLevel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Enums.AppLogLevel.html">AppLogLevel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_OcrModelKey_" data-uid="neo_bpsys_wpf.Core.Models.Settings.OcrModelKey*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_OcrModelKey" data-uid="neo_bpsys_wpf.Core.Models.Settings.OcrModelKey">
+  OcrModelKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前选择的 OCR 模型标识键。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? OcrModelKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_PluginMarketSource_" data-uid="neo_bpsys_wpf.Core.Models.Settings.PluginMarketSource*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_PluginMarketSource" data-uid="neo_bpsys_wpf.Core.Models.Settings.PluginMarketSource">
+  PluginMarketSource
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/obj/Release/net10.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/neo_bpsys_wpf.Core.Models.Settings.g.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ObservableProperty]
+[ExcludeFromCodeCoverage]
+public string PluginMarketSource { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_PreferredCudaDeviceId_" data-uid="neo_bpsys_wpf.Core.Models.Settings.PreferredCudaDeviceId*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_PreferredCudaDeviceId" data-uid="neo_bpsys_wpf.Core.Models.Settings.PreferredCudaDeviceId">
+  PreferredCudaDeviceId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>用户偏好的 CUDA 设备 ID；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时自动选择。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? PreferredCudaDeviceId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_PreferredOcrBackend_" data-uid="neo_bpsys_wpf.Core.Models.Settings.PreferredOcrBackend*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_PreferredOcrBackend" data-uid="neo_bpsys_wpf.Core.Models.Settings.PreferredOcrBackend">
+  PreferredOcrBackend
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>用户偏好的 Paddle OCR 推理后端。实际加载的后端由 Bootstrap 根据硬件和组件状态决定。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OcrInferenceBackend PreferredOcrBackend { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.OcrInferenceBackend.html">OcrInferenceBackend</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_ShowAfterUpdateTip_" data-uid="neo_bpsys_wpf.Core.Models.Settings.ShowAfterUpdateTip*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_ShowAfterUpdateTip" data-uid="neo_bpsys_wpf.Core.Models.Settings.ShowAfterUpdateTip">
+  ShowAfterUpdateTip
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否在更新后显示提示信息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowAfterUpdateTip { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_Settings_Version_" data-uid="neo_bpsys_wpf.Core.Models.Settings.Version*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_Settings_Version" data-uid="neo_bpsys_wpf.Core.Models.Settings.Version">
+  Version
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>主设置配置版本</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Version { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/Settings.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

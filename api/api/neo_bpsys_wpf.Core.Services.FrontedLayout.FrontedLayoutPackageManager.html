@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedLayoutPackageManager | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedLayoutPackageManager | neo-bpsys-wpf ">
+      
+      <meta name="description" content="前台布局包管理器，负责布局包的安装、激活、删除、复制以及包列表查询等功能。 内置包（PackageId = &amp;quot;builtin&amp;quot;）为只读的默认布局方案，本地包（PackageId = &amp;quot;local&amp;quot;）为不可激活的资源包。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager" class="text-break">
+Class FrontedLayoutPackageManager  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>前台布局包管理器，负责布局包的安装、激活、删除、复制以及包列表查询等功能。
+内置包（PackageId = &quot;builtin&quot;）为只读的默认布局方案，本地包（PackageId = &quot;local&quot;）为不可激活的资源包。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedLayoutPackageManager : IFrontedLayoutPackageManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedLayoutPackageManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedLayoutPackageManager.html">IFrontedLayoutPackageManager</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager__ctor_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager__ctor" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.#ctor">
+  FrontedLayoutPackageManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedLayoutPackageManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager__ctor_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager__ctor_Microsoft_Extensions_Logging_ILogger_neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.#ctor(Microsoft.Extensions.Logging.ILogger{neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager})">
+  FrontedLayoutPackageManager(ILogger&lt;FrontedLayoutPackageManager&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>使用默认路径和指定的日志记录器初始化布局包管理器。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedLayoutPackageManager(ILogger&lt;FrontedLayoutPackageManager&gt; logger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.html">FrontedLayoutPackageManager</a>&gt;</dt>
+    <dd><p>日志记录器。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager__ctor_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager__ctor_Microsoft_Extensions_Logging_ILogger_neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager__System_Func_System_String_System_String__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.#ctor(Microsoft.Extensions.Logging.ILogger{neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager},System.Func{System.String,System.String})">
+  FrontedLayoutPackageManager(ILogger&lt;FrontedLayoutPackageManager&gt;, Func&lt;string, string&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>使用默认路径、日志记录器和本地化委托初始化布局包管理器。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedLayoutPackageManager(ILogger&lt;FrontedLayoutPackageManager&gt; logger, Func&lt;string, string&gt;? localize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.html">FrontedLayoutPackageManager</a>&gt;</dt>
+    <dd><p>日志记录器。</p>
+</dd>
+    <dt><code>localize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>本地化委托，用于翻译包名称和描述。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager__ctor_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager__ctor_System_String_System_String_System_String_Microsoft_Extensions_Logging_ILogger_neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager__System_Func_System_String_System_String__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.#ctor(System.String,System.String,System.String,Microsoft.Extensions.Logging.ILogger{neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager},System.Func{System.String,System.String})">
+  FrontedLayoutPackageManager(string, string, string?, ILogger&lt;FrontedLayoutPackageManager&gt;?, Func&lt;string, string&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>使用自定义根路径初始化布局包管理器。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedLayoutPackageManager(string packageRoot, string builtInLayoutRoot, string? userLayoutRoot = null, ILogger&lt;FrontedLayoutPackageManager&gt;? logger = null, Func&lt;string, string&gt;? localize = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageRoot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>包存储根目录。</p>
+</dd>
+    <dt><code>builtInLayoutRoot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>内置布局根目录。</p>
+</dd>
+    <dt><code>userLayoutRoot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>用户布局根目录，默认使用 <a class="xref" href="neo_bpsys_wpf.Core.AppConstants.html#neo_bpsys_wpf_Core_AppConstants_FrontedLayoutsPath">FrontedLayoutsPath</a>。</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.html">FrontedLayoutPackageManager</a>&gt;</dt>
+    <dd><p>日志记录器。</p>
+</dd>
+    <dt><code>localize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>本地化委托。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_BuiltInPackageId" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.BuiltInPackageId">
+  BuiltInPackageId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>内置布局包的 PackageId。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string BuiltInPackageId = &quot;builtin&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_LocalPackageId" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.LocalPackageId">
+  LocalPackageId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>本地资源包的 PackageId，不可激活为布局方案。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string LocalPackageId = &quot;local&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_ActivatePackageAsync_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.ActivatePackageAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_ActivatePackageAsync_System_String_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.ActivatePackageAsync(System.String,System.Threading.CancellationToken)">
+  ActivatePackageAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>激活指定的布局包。激活内置包时删除激活状态文件恢复默认；本地包不可激活。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ActivatePackageAsync(string packageId, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要激活的包 ID。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>本地包不可激活。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.directorynotfoundexception">DirectoryNotFoundException</a></dt>
+    <dd><p>包目录不存在。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a></dt>
+    <dd><p>包清单文件缺失。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_DeletePackageAsync_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.DeletePackageAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_DeletePackageAsync_System_String_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.DeletePackageAsync(System.String,System.Threading.CancellationToken)">
+  DeletePackageAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>删除指定的布局包。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeletePackageAsync(string packageId, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要删除的包 ID。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_DuplicatePackageAsync_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.DuplicatePackageAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_DuplicatePackageAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.DuplicatePackageAsync(System.String,System.String,System.Threading.CancellationToken)">
+  DuplicatePackageAsync(string, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>复制指定包为新的布局方案。内置包会从内置资源复制，已安装包从源目录复制。
+复制完成后自动激活新包。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;FrontedLayoutPackageInfo&gt; DuplicatePackageAsync(string sourcePackageId, string? requestedName = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourcePackageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>源包 ID。</p>
+</dd>
+    <dt><code>requestedName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>请求的新方案名称，为 null 时自动生成。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageInfo.html">FrontedLayoutPackageInfo</a>&gt;</dt>
+    <dd><p>复制后的新包信息。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_EnsureWritableActivePackageAsync_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.EnsureWritableActivePackageAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_EnsureWritableActivePackageAsync_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.EnsureWritableActivePackageAsync(System.Threading.CancellationToken)">
+  EnsureWritableActivePackageAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>确保当前激活的包可写，必要时创建副本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;FrontedLayoutPackageInfo&gt; EnsureWritableActivePackageAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageInfo.html">FrontedLayoutPackageInfo</a>&gt;</dt>
+    <dd><p>可写的布局包信息。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_GetActivePackageStateAsync_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.GetActivePackageStateAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_GetActivePackageStateAsync_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.GetActivePackageStateAsync(System.Threading.CancellationToken)">
+  GetActivePackageStateAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前激活的布局包状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;FrontedLayoutActivePackageState&gt; GetActivePackageStateAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutActivePackageState.html">FrontedLayoutActivePackageState</a>&gt;</dt>
+    <dd><p>激活包状态。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_GetPackageLayoutPath_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.GetPackageLayoutPath*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_GetPackageLayoutPath_System_String_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.GetPackageLayoutPath(System.String,System.String)">
+  GetPackageLayoutPath(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取指定包中特定窗口的布局文件完整路径。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPackageLayoutPath(string packageId, string canonicalWindowId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>包 ID。</p>
+</dd>
+    <dt><code>canonicalWindowId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>窗口 Canonical ID。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>布局文件的完整路径。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_GetPackageLayoutsRootFolder_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.GetPackageLayoutsRootFolder*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_GetPackageLayoutsRootFolder_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.GetPackageLayoutsRootFolder(System.String)">
+  GetPackageLayoutsRootFolder(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取指定包的布局存储根目录。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPackageLayoutsRootFolder(string packageId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>包 ID。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>布局存储根目录路径。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_GetPackageRootFolder_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.GetPackageRootFolder*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_GetPackageRootFolder" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.GetPackageRootFolder">
+  GetPackageRootFolder()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取包管理器的根目录。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPackageRootFolder()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>包管理器根目录路径。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_IsSafePackageId_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.IsSafePackageId*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_IsSafePackageId_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.IsSafePackageId(System.String)">
+  IsSafePackageId(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>验证 PackageId 是否安全（仅包含字母数字和 <code>._-</code> 字符，不含 <code>..</code> 或 <code>%</code>）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSafePackageId(string packageId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>待验证的包 ID。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否安全。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_ListPackagesAsync_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.ListPackagesAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_ListPackagesAsync_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.ListPackagesAsync(System.Threading.CancellationToken)">
+  ListPackagesAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列出所有可用的布局包（包括内置包和已安装包）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;FrontedLayoutPackageInfo&gt;&gt; ListPackagesAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageInfo.html">FrontedLayoutPackageInfo</a>&gt;&gt;</dt>
+    <dd><p>布局包信息列表。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_RenamePackageAsync_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.RenamePackageAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_RenamePackageAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.RenamePackageAsync(System.String,System.String,System.Threading.CancellationToken)">
+  RenamePackageAsync(string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>更新已安装布局包的显示名称，不改变包 ID、目录或包内资源 URI。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;FrontedLayoutPackageInfo&gt; RenamePackageAsync(string packageId, string name, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要改名的包 ID。</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>新的显示名称。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageInfo.html">FrontedLayoutPackageInfo</a>&gt;</dt>
+    <dd><p>改名后的布局包信息。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">packageId</code> 不安全或 <code class="paramref">name</code> 为空白时抛出。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>尝试改名内置包或本地资源包时抛出。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.directorynotfoundexception">DirectoryNotFoundException</a></dt>
+    <dd><p>包目录不存在时抛出。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a></dt>
+    <dd><p>包清单文件缺失时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_UpdatePackageDescriptionAsync_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.UpdatePackageDescriptionAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageManager_UpdatePackageDescriptionAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageManager.UpdatePackageDescriptionAsync(System.String,System.String,System.Threading.CancellationToken)">
+  UpdatePackageDescriptionAsync(string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>更新已安装布局包的描述，不改变包 ID、目录或包内资源 URI。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;FrontedLayoutPackageInfo&gt; UpdatePackageDescriptionAsync(string packageId, string description, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要更新描述的包 ID。</p>
+</dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>新的包描述，可以为空。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageInfo.html">FrontedLayoutPackageInfo</a>&gt;</dt>
+    <dd><p>更新后的布局包信息。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">packageId</code> 不安全时抛出。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>尝试更新内置包或本地资源包时抛出。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.directorynotfoundexception">DirectoryNotFoundException</a></dt>
+    <dd><p>包目录不存在时抛出。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a></dt>
+    <dd><p>包清单文件缺失时抛出。</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageManager.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedV3PartCapabilities | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedV3PartCapabilities | neo-bpsys-wpf ">
+      
+      <meta name="description" content="固定 Part 的操作能力，决定 Designer 中允许对该 Part 执行的几何操作类型。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities" class="text-break">
+Class FrontedV3PartCapabilities  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCapabilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.html">V3</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.html">Parts</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>固定 Part 的操作能力，决定 Designer 中允许对该 Part 执行的几何操作类型。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedV3PartCapabilities</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedV3PartCapabilities</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+能力是显式约束：<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanMove">CanMove</a> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 时 Designer 不得调用
+<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedV3GeometryTarget.html#neo_bpsys_wpf_Core_Abstractions_Services_IFrontedV3GeometryTarget_MoveTo_System_Double_System_Double_">MoveTo(double, double)</a>；
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanResize">CanResize</a> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 时 Designer 不得调用
+<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedV3GeometryTarget.html#neo_bpsys_wpf_Core_Abstractions_Services_IFrontedV3GeometryTarget_ResizeTo_System_Double_System_Double_System_Nullable_System_Double__System_Nullable_System_Double__">ResizeTo(double, double, double?, double?)</a>。
+</p>
+<p>
+典型用法：
+<ul><li>BorderedImage 内层 Image：<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_Resize">Resize</a>（只允许 Resize，不允许 Move）。</li><li>MapV2 内部部件：<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_MoveAndResize">MoveAndResize</a>（允许 Move 与 Resize）。</li><li>只读装饰部件：<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_None">None</a>（不允许任何操作）。</li></ul>
+
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities__ctor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.#ctor">
+  FrontedV3PartCapabilities()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCapabilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3PartCapabilities()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanMove_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.CanMove*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanMove" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.CanMove">
+  CanMove
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCapabilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取该 Part 是否允许移动。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanMove { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanResize_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.CanResize*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanResize" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.CanResize">
+  CanResize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCapabilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取该 Part 是否允许缩放。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanResize { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_Move_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.Move*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_Move" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.Move">
+  Move
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCapabilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>仅允许移动。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedV3PartCapabilities Move { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html">FrontedV3PartCapabilities</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_MoveAndResize_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.MoveAndResize*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_MoveAndResize" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.MoveAndResize">
+  MoveAndResize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCapabilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>同时允许移动与缩放。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedV3PartCapabilities MoveAndResize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html">FrontedV3PartCapabilities</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_None_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.None*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_None" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.None">
+  None
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCapabilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>不允许任何几何操作。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedV3PartCapabilities None { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html">FrontedV3PartCapabilities</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_Resize_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.Resize*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_Resize" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.Resize">
+  Resize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCapabilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>仅允许缩放。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedV3PartCapabilities Resize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html">FrontedV3PartCapabilities</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3PartCapabilities.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

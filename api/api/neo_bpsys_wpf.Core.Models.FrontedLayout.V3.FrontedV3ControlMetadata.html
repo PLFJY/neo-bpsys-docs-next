@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedV3ControlMetadata | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedV3ControlMetadata | neo-bpsys-wpf ">
+      
+      <meta name="description" content="v3 前台控件在 Designer 与运行时的元数据，由 FrontedV3ControlAttribute 推导并 通过  暴露。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata" class="text-break">
+Class FrontedV3ControlMetadata  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.html">V3</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>v3 前台控件在 Designer 与运行时的元数据，由 FrontedV3ControlAttribute 推导并
+通过 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_Metadata">Metadata</a> 暴露。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedV3ControlMetadata</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedV3ControlMetadata</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+该类型只描述控件在 UI 上的"如何展示与创建"，不参与 JSON 序列化，也不决定属性读写位置。
+字段全部可选，缺失时由调用方按合理默认值回退（如显示名回退到 <code>LocalControlId</code>）。
+</p>
+<p>
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_DefaultWidth">DefaultWidth</a>/<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_DefaultHeight">DefaultHeight</a> 用于新添加控件时的初始根尺寸；
+为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时由 Designer 按最小命中框回退。
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata__ctor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.#ctor">
+  FrontedV3ControlMetadata()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.html">FrontedV3ControlMetadata</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3ControlMetadata()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_DefaultHeight_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.DefaultHeight*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_DefaultHeight" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.DefaultHeight">
+  DefaultHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>新添加控件时的默认根高度；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时由 Designer 按最小命中框回退。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? DefaultHeight { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_DefaultWidth_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.DefaultWidth*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_DefaultWidth" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.DefaultWidth">
+  DefaultWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>新添加控件时的默认根宽度；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时由 Designer 按最小命中框回退。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? DefaultWidth { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_DescriptionKey_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.DescriptionKey*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_DescriptionKey" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.DescriptionKey">
+  DescriptionKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件描述的本地化键；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时 Designer 不显示描述。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DescriptionKey { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_DisplayNameKey_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.DisplayNameKey*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_DisplayNameKey" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.DisplayNameKey">
+  DisplayNameKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件在 Designer 控件目录中显示的本地化键；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时回退到
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_LocalControlId">LocalControlId</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DisplayNameKey { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_DisplayOrder_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.DisplayOrder*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_DisplayOrder" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.DisplayOrder">
+  DisplayOrder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件在 Designer 控件目录中的显示顺序；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时按注册顺序追加。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? DisplayOrder { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_Icon_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.Icon*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlMetadata_Icon" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.Icon">
+  Icon
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件在 Designer 控件目录中显示的图标资源名（WPF-UI Symbol 或资源键）；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时显示默认图标。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Icon { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlMetadata.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

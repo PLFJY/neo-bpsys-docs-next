@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedEffectHostFactory | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedEffectHostFactory | neo-bpsys-wpf ">
+      
+      <meta name="description" content="创建并查询 v3 控件的纯运行时效果宿主。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedEffectHostFactory">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedEffectHostFactory" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedEffectHostFactory" class="text-break">
+Class FrontedEffectHostFactory  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedEffectHostFactory.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>创建并查询 v3 控件的纯运行时效果宿主。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FrontedEffectHostFactory</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedEffectHostFactory</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedEffectHostFactory_BuildEffectChain_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedEffectHostFactory.BuildEffectChain*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedEffectHostFactory_BuildEffectChain_System_Windows_FrameworkElement_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedEffectHostFactory.BuildEffectChain(System.Windows.FrameworkElement,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase)">
+  BuildEffectChain(FrameworkElement, FrontedControlConfigBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedEffectHostFactory.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据 Config 效果配置，为内容元素构建 Border 包装链并返回最外层元素。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrameworkElement BuildEffectChain(FrameworkElement content, FrontedControlConfigBase config)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <span class="xref">FrameworkElement</span></dt>
+    <dd><p>要包装的内容元素。</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>提供效果配置的控件配置实例。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FrameworkElement</span></dt>
+    <dd><p>最外层元素（无效果时为 <code class="paramref">content</code> 本身）。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedEffectHostFactory_BuildEffectChain_System_Windows_FrameworkElement_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>包装顺序从内到外为：高斯模糊 → 发光 → 阴影。
+每层 Border 都是透明背景、无边框的纯效果载体。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedEffectHostFactory_FindEffectHost_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedEffectHostFactory.FindEffectHost*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedEffectHostFactory_FindEffectHost_System_Windows_DependencyObject_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedEffectHostFactory.FindEffectHost(System.Windows.DependencyObject)">
+  FindEffectHost(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedEffectHostFactory.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取元素所属的最近效果宿主。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedEffectHost? FindEffectHost(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">DependencyObject</span></dt>
+    <dd><p>要检查的元素。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedEffectHost.html">FrontedEffectHost</a></dt>
+    <dd><p>最近的效果宿主；找不到时为 <code>null</code>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedEffectHostFactory_ResolveSemanticElement_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedEffectHostFactory.ResolveSemanticElement*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedEffectHostFactory_ResolveSemanticElement_System_Windows_FrameworkElement_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedEffectHostFactory.ResolveSemanticElement(System.Windows.FrameworkElement)">
+  ResolveSemanticElement(FrameworkElement)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedEffectHostFactory.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取效果宿主或元素本身保持的语义生成元素。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrameworkElement ResolveSemanticElement(FrameworkElement element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">FrameworkElement</span></dt>
+    <dd><p>效果宿主或语义元素。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FrameworkElement</span></dt>
+    <dd><p>语义生成元素。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">element</code> 为 <code>null</code> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedEffectHostFactory_Wrap_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedEffectHostFactory.Wrap*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedEffectHostFactory_Wrap_System_Windows_FrameworkElement_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedEffectHostFactory.Wrap(System.Windows.FrameworkElement)">
+  Wrap(FrameworkElement)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedEffectHostFactory.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>为元素创建效果宿主，并仅转移直接父面板需要的附加布局属性。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedEffectHost Wrap(FrameworkElement element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">FrameworkElement</span></dt>
+    <dd><p>要保持为语义身份的元素。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedEffectHost.html">FrontedEffectHost</a></dt>
+    <dd><p>现有或新建的效果宿主。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">element</code> 为 <code>null</code> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedEffectHostFactory.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

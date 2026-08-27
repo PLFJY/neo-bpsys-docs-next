@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedV3Parts | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedV3Parts | neo-bpsys-wpf ">
+      
+      <meta name="description" content="v3 前台控件 PartCollection 的声明，作为控件类上的 public static readonly 字段使用。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts" class="text-break">
+Class FrontedV3Parts  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.html">V3</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.html">Parts</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>v3 前台控件 PartCollection 的声明，作为控件类上的 <code>public static readonly</code> 字段使用。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedV3Parts</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedV3Parts</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+典型用法：
+</p>
+<pre><code class="lang-csharp">public static readonly FrontedV3Parts CellsCollection =
+    FrontedV3Parts.RegisterCollection&lt;GlobalScoreRowControl&gt;("Cells")
+        .WithStrategy(FrontedV3PartCollectionStrategy.FixedTemplate)
+        .WithItemCapabilities(FrontedV3PartCapabilities.MoveAndResize)
+        .WithCollectionGetter(c =&gt; ((GlobalScoreRowControlConfig)c).Cells)
+        .WithItemKeySelector(item =&gt; ((GlobalScoreCellConfig)item).Id)
+        .WithEnsureTemplateItems(c =&gt; EnsureCells((GlobalScoreRowControlConfig)c));</code></pre>
+<p>
+框架在注册控件时通过反射发现这些字段，转换为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a>。
+</p>
+<p>
+对于尚未迁移到 V3 注册的内置控件（如 GlobalScoreRow），使用
+<code>BuiltInPartCollectionDefinitionResolver</code> 提供集合定义，作为迁移期的 internal 桥梁。
+</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_ControlType_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.ControlType*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_ControlType" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.ControlType">
+  ControlType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取该集合声明的控件类型。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type ControlType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_Id_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.Id*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_Id" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.Id">
+  Id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取集合标识。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_ItemCapabilities_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.ItemCapabilities*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_ItemCapabilities" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.ItemCapabilities">
+  ItemCapabilities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取集合项的操作能力。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3PartCapabilities ItemCapabilities { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html">FrontedV3PartCapabilities</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_Strategy_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.Strategy*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_Strategy" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.Strategy">
+  Strategy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取集合策略。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3PartCollectionStrategy Strategy { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionStrategy.html">FrontedV3PartCollectionStrategy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_Discover_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.Discover*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_Discover_System_Type_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.Discover(System.Type)">
+  Discover(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>从控件类型上发现所有 <code>public static readonly FrontedV3Parts</code> 字段并转换为定义列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;FrontedV3PartCollectionDefinition&gt; Discover(Type controlType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controlType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>控件类型。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a>&gt;</dt>
+    <dd><p>该控件声明的所有 PartCollection 定义列表。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_RegisterCollection_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.RegisterCollection*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_RegisterCollection__1_System_String_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.RegisterCollection``1(System.String)">
+  RegisterCollection&lt;TControl&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>开始为指定控件类型注册 PartCollection。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedV3Parts RegisterCollection&lt;TControl&gt;(string id) where TControl : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>集合标识，在同一控件内必须唯一。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a></dt>
+    <dd><p>用于链式配置的 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a> 实例。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TControl</code></dt>
+    <dd><p>控件类型。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">id</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_ToDefinition_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.ToDefinition*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_ToDefinition" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.ToDefinition">
+  ToDefinition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将该集合声明转换为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3PartCollectionDefinition ToDefinition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a></dt>
+    <dd><p>与该声明等价的 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_ToDefinition_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>返回的定义会复制 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ItemPropertiesFactory">ItemPropertiesFactory</a>、
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ApplyTemplate">ApplyTemplate</a> 与
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Templates">Templates</a>，确保声明链路上配置的字段不会丢失。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithApplyTemplate_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithApplyTemplate*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithApplyTemplate_System_Func_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_System_Boolean__" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithApplyTemplate(System.Func{neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext,System.Boolean})">
+  WithApplyTemplate(Func&lt;FrontedControlConfigBase, FrontedV3TemplateContext, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置按模板重新分配集合项位置/可见性的回调。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3Parts WithApplyTemplate(Func&lt;FrontedControlConfigBase, FrontedV3TemplateContext, bool&gt; applyTemplate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>applyTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a>, <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html">FrontedV3TemplateContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>模板分配回调，接收父控件 Config 与 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html">FrontedV3TemplateContext</a>，返回是否发生修改。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a></dt>
+    <dd><p>当前 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a> 实例，支持链式配置。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">applyTemplate</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithCollectionGetter_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithCollectionGetter*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithCollectionGetter_System_Func_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Collections_IList__" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithCollectionGetter(System.Func{neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,System.Collections.IList})">
+  WithCollectionGetter(Func&lt;FrontedControlConfigBase, IList&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置从 Config 获取集合列表的函数。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3Parts WithCollectionGetter(Func&lt;FrontedControlConfigBase, IList&gt; collectionGetter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collectionGetter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a>&gt;</dt>
+    <dd><p>从 Config 获取集合列表的函数。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a></dt>
+    <dd><p>当前 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a> 实例，支持链式配置。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">collectionGetter</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithEnsureTemplateItems_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithEnsureTemplateItems*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithEnsureTemplateItems_System_Action_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase__" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithEnsureTemplateItems(System.Action{neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase})">
+  WithEnsureTemplateItems(Action&lt;FrontedControlConfigBase&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置 FixedTemplate 策略下补齐缺失模板项的回调。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3Parts WithEnsureTemplateItems(Action&lt;FrontedControlConfigBase&gt; ensureTemplateItems)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ensureTemplateItems</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a>&gt;</dt>
+    <dd><p>补齐缺失模板项的回调。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a></dt>
+    <dd><p>当前 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a> 实例，支持链式配置。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">ensureTemplateItems</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithItemCapabilities_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithItemCapabilities*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithItemCapabilities_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithItemCapabilities(neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities)">
+  WithItemCapabilities(FrontedV3PartCapabilities)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置集合项的操作能力。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3Parts WithItemCapabilities(FrontedV3PartCapabilities capabilities)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capabilities</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html">FrontedV3PartCapabilities</a></dt>
+    <dd><p>集合项的操作能力。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a></dt>
+    <dd><p>当前 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a> 实例，支持链式配置。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">capabilities</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithItemKeySelector_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithItemKeySelector*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithItemKeySelector_System_Func_System_Object_System_String__" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithItemKeySelector(System.Func{System.Object,System.String})">
+  WithItemKeySelector(Func&lt;object, string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置从集合项获取唯一键的函数。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3Parts WithItemKeySelector(Func&lt;object, string&gt; itemKeySelector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemKeySelector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span class="xref">object</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>从集合项获取唯一键的函数。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a></dt>
+    <dd><p>当前 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a> 实例，支持链式配置。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">itemKeySelector</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithItemPropertiesFactory_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithItemPropertiesFactory*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithItemPropertiesFactory_System_Func_System_String_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition___" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithItemPropertiesFactory(System.Func{System.String,System.Collections.Generic.IReadOnlyList{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition}})">
+  WithItemPropertiesFactory(Func&lt;string, IReadOnlyList&lt;FrontedV3PropertyDefinition&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置集合项外观属性的工厂。工厂参数 <code class="paramref">itemKey</code> 为选中集合项的唯一键，
+工厂返回的属性定义应使用 FrontedV3Storage.CollectionItemProperty 绑定到该 itemKey 对应的项属性。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3Parts WithItemPropertiesFactory(Func&lt;string, IReadOnlyList&lt;FrontedV3PropertyDefinition&gt;&gt; itemPropertiesFactory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemPropertiesFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html">FrontedV3PropertyDefinition</a>&gt;&gt;</dt>
+    <dd><p>集合项外观属性工厂。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a></dt>
+    <dd><p>当前 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a> 实例，支持链式配置。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">itemPropertiesFactory</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithStrategy_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithStrategy*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithStrategy_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionStrategy_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithStrategy(neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionStrategy)">
+  WithStrategy(FrontedV3PartCollectionStrategy)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置集合策略。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3Parts WithStrategy(FrontedV3PartCollectionStrategy strategy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strategy</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionStrategy.html">FrontedV3PartCollectionStrategy</a></dt>
+    <dd><p>集合策略。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a></dt>
+    <dd><p>当前 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a> 实例，支持链式配置。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">strategy</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithTemplates_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithTemplates*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_WithTemplates_System_Collections_Generic_IEnumerable_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3LayoutTemplate__" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.WithTemplates(System.Collections.Generic.IEnumerable{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3LayoutTemplate})">
+  WithTemplates(IEnumerable&lt;FrontedV3LayoutTemplate&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置该集合支持的具名布局模板列表（如 BO3、BO5、Default、Compact）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3Parts WithTemplates(IEnumerable&lt;FrontedV3LayoutTemplate&gt; templates)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>templates</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3LayoutTemplate.html">FrontedV3LayoutTemplate</a>&gt;</dt>
+    <dd><p>具名模板列表；为空列表时 Designer 渲染单一通用按钮。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a></dt>
+    <dd><p>当前 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html">FrontedV3Parts</a> 实例，支持链式配置。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">templates</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3Parts.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedControlConfigBase | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedControlConfigBase | neo-bpsys-wpf ">
+      
+      <meta name="description" content="v3 前台控件配置基类。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase" class="text-break">
+Class FrontedControlConfigBase  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>v3 前台控件配置基类。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FrontedControlConfigBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedControlConfigBase</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.BackgroundTintFrontedControlConfigBase.html">BackgroundTintFrontedControlConfigBase</a></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GameProgressTextControlConfig.html">GameProgressTextControlConfig</a></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.GlobalScoreRowControlConfig.html">GlobalScoreRowControlConfig</a></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.ImageFrontedControlConfig.html">ImageFrontedControlConfig</a></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.LocalizedTextControlConfig.html">LocalizedTextControlConfig</a></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.MapNameTextControlConfig.html">MapNameTextControlConfig</a></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.MapV2DisplayControlConfig.html">MapV2DisplayControlConfig</a></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.PluginFrontedControlConfig.html">PluginFrontedControlConfig</a></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.ShapeFrontedControlConfigBase.html">ShapeFrontedControlConfigBase</a></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.TalentTraitDisplayControlConfig.html">TalentTraitDisplayControlConfig</a></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.TextFrontedControlConfig.html">TextFrontedControlConfig</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase__ctor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.#ctor">
+  FrontedControlConfigBase()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedControlConfigBase()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_BehaviorGuid_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.BehaviorGuid*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_BehaviorGuid" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.BehaviorGuid">
+  BehaviorGuid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>前台行为系统内部使用的控件标识符。
+普通用户不应编辑此值，普通 PropertyGrid 也不应显示此字段。
+复制/粘贴控件时会重新生成，重命名控件时保持不变。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+public Guid BehaviorGuid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_BindingPath_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.BindingPath*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_BindingPath" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.BindingPath">
+  BindingPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>绑定到共享数据服务的属性路径。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? BindingPath { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ControlType_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ControlType*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ControlType" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ControlType">
+  ControlType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件类型。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ControlType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_GaussianBlurRadius_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.GaussianBlurRadius*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_GaussianBlurRadius" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.GaussianBlurRadius">
+  GaussianBlurRadius
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置应用于控件运行时效果宿主的静态高斯模糊半径（像素）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GaussianBlurRadius { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_GlowColor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.GlowColor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_GlowColor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.GlowColor">
+  GlowColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置发光颜色文本（如 <code>#FFFFFFFF</code> 或 WPF 颜色名）；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时默认白色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GlowColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_GlowOpacity_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.GlowOpacity*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_GlowOpacity" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.GlowOpacity">
+  GlowOpacity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置发光不透明度（0–1）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GlowOpacity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_GlowRadius_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.GlowRadius*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_GlowRadius" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.GlowRadius">
+  GlowRadius
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置发光模糊半径（像素）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GlowRadius { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_Height_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.Height*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_Height" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.Height">
+  Height
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件高度。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? Height { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_IsGaussianBlurEnabled_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.IsGaussianBlurEnabled*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_IsGaussianBlurEnabled" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.IsGaussianBlurEnabled">
+  IsGaussianBlurEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置是否启用控件的静态高斯模糊。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGaussianBlurEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_IsGlowEnabled_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.IsGlowEnabled*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_IsGlowEnabled" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.IsGlowEnabled">
+  IsGlowEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置是否启用控件的静态发光效果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGlowEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_IsShadowEnabled_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.IsShadowEnabled*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_IsShadowEnabled" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.IsShadowEnabled">
+  IsShadowEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置是否启用控件的静态阴影效果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsShadowEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_Left_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.Left*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_Left" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.Left">
+  Left
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Canvas 左侧坐标。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Left { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ShadowColor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ShadowColor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ShadowColor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ShadowColor">
+  ShadowColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置阴影颜色文本（如 <code>#FF000000</code> 或 WPF 颜色名）；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时默认黑色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ShadowColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ShadowDepth_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ShadowDepth*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ShadowDepth" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ShadowDepth">
+  ShadowDepth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置阴影深度（投影距离，像素）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ShadowDepth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ShadowDirection_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ShadowDirection*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ShadowDirection" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ShadowDirection">
+  ShadowDirection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置阴影方向（角度，0 = 右，270 = 下）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ShadowDirection { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ShadowOpacity_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ShadowOpacity*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ShadowOpacity" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ShadowOpacity">
+  ShadowOpacity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置阴影不透明度（0–1）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ShadowOpacity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ShadowRadius_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ShadowRadius*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ShadowRadius" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ShadowRadius">
+  ShadowRadius
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置阴影模糊半径（像素）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ShadowRadius { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_Top_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.Top*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_Top" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.Top">
+  Top
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Canvas 顶部坐标。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Top { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_Visibility_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.Visibility*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_Visibility" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.Visibility">
+  Visibility
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件可见性。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedControlVisibility Visibility { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlVisibility.html">FrontedControlVisibility</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_Width_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.Width*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_Width" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.Width">
+  Width
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件宽度。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? Width { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ZIndex_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ZIndex*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_ZIndex" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.ZIndex">
+  ZIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Canvas 层级。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ZIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/FrontedControlConfigBase.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

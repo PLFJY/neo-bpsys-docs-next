@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IMatchScoreService | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IMatchScoreService | neo-bpsys-wpf ">
+      
+      <meta name="description" content="操作当前赛事 Score System v2 比分状态的服务。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService" class="text-break">
+Interface IMatchScoreService  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IMatchScoreService.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.html">Abstractions</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>操作当前赛事 Score System v2 比分状态的服务。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMatchScoreService</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>服务本身不持有权威比分数据；权威状态来自 <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.ISharedDataService.html#neo_bpsys_wpf_Core_Abstractions_Services_ISharedDataService_CurrentGame">CurrentGame</a> 的
+<a class="xref" href="neo_bpsys_wpf.Core.Models.Game.html#neo_bpsys_wpf_Core_Models_Game_MatchScore">MatchScore</a>。它负责按当前 <a class="xref" href="neo_bpsys_wpf.Core.Enums.GameProgress.html">GameProgress</a>、BO3/BO5 模式和实时阵营映射，
+将半场赛果写入 v2 状态并刷新派生显示字段。</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_Current_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.Current*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_Current" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.Current">
+  Current
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IMatchScoreService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前赛事的权威 Score System v2 状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MatchScoreState Current { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.ScoreSystem.MatchScoreState.html">MatchScoreState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_CurrentGameScore_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.CurrentGameScore*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_CurrentGameScore" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.CurrentGameScore">
+  CurrentGameScore
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IMatchScoreService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前进度对应的单局比分；当进度不属于已建模单局时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ScoreGame? CurrentGameScore { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreGame.html">ScoreGame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_CurrentHalf_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.CurrentHalf*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_CurrentHalf" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.CurrentHalf">
+  CurrentHalf
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IMatchScoreService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前进度对应的半场比分；当进度不属于可记录比分的半场时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ScoreHalf? CurrentHalf { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.html">ScoreHalf</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_ClearCurrentHalfResult_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.ClearCurrentHalfResult*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_ClearCurrentHalfResult" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.ClearCurrentHalfResult">
+  ClearCurrentHalfResult()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IMatchScoreService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>清除当前半场赛果和写入时的阵营记录。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ClearCurrentHalfResult()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_GetGame_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.GetGame*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_GetGame_neo_bpsys_wpf_Core_Enums_GameProgress_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.GetGame(neo_bpsys_wpf.Core.Enums.GameProgress)">
+  GetGame(GameProgress)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IMatchScoreService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取指定进度对应的单局比分。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ScoreGame? GetGame(GameProgress progress)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>progress</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.GameProgress.html">GameProgress</a></dt>
+    <dd><p>赛事进度。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreGame.html">ScoreGame</a></dt>
+    <dd><p>匹配到的单局比分；无法映射时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_GetHalf_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.GetHalf*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_GetHalf_neo_bpsys_wpf_Core_Enums_GameProgress_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.GetHalf(neo_bpsys_wpf.Core.Enums.GameProgress)">
+  GetHalf(GameProgress)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IMatchScoreService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取指定进度对应的半场比分。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ScoreHalf? GetHalf(GameProgress progress)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>progress</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.GameProgress.html">GameProgress</a></dt>
+    <dd><p>赛事进度。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.ScoreSystem.ScoreHalf.html">ScoreHalf</a></dt>
+    <dd><p>匹配到的半场比分；无法映射时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_Recalculate_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.Recalculate*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_Recalculate" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.Recalculate">
+  Recalculate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IMatchScoreService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据所有已记录半场赛果重新计算小分、大分和当前显示文本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Recalculate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_RefreshCurrentProgress_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.RefreshCurrentProgress*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_RefreshCurrentProgress" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.RefreshCurrentProgress">
+  RefreshCurrentProgress()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IMatchScoreService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>按当前赛事进度、阵营映射和 BO3/BO5 模式刷新当前半场显示文本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RefreshCurrentProgress()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_SetCurrentHalfResult_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.SetCurrentHalfResult*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IMatchScoreService_SetCurrentHalfResult_System_Nullable_neo_bpsys_wpf_Core_Enums_GameResult__" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IMatchScoreService.SetCurrentHalfResult(System.Nullable{neo_bpsys_wpf.Core.Enums.GameResult})">
+  SetCurrentHalfResult(GameResult?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IMatchScoreService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>为当前半场写入赛果，并记录写入时求生者方和监管者方对应的主客场。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetCurrentHalfResult(GameResult? result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.GameResult.html">GameResult</a>?</dt>
+    <dd><p>半场赛果；传入 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时清除当前半场赛果和阵营记录。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IMatchScoreService.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

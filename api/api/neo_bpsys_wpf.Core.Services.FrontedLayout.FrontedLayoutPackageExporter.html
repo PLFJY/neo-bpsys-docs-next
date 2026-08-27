@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedLayoutPackageExporter | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedLayoutPackageExporter | neo-bpsys-wpf ">
+      
+      <meta name="description" content="前台布局包导出器，负责将指定的 v3 布局包导出为 .bpui 格式的压缩包。 导出时会收集布局文件中引用的外部资源（图片、字体等）并一同打包。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageExporter" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter" class="text-break">
+Class FrontedLayoutPackageExporter  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageExporter.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>前台布局包导出器，负责将指定的 v3 布局包导出为 .bpui 格式的压缩包。
+导出时会收集布局文件中引用的外部资源（图片、字体等）并一同打包。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedLayoutPackageExporter : IFrontedLayoutPackageExporter</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedLayoutPackageExporter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedLayoutPackageExporter.html">IFrontedLayoutPackageExporter</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageExporter__ctor_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageExporter__ctor_neo_bpsys_wpf_Core_Abstractions_Services_IFrontedLayoutPackageManager_Microsoft_Extensions_Logging_ILogger_neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageExporter__neo_bpsys_wpf_Core_Abstractions_Services_IFrontedV3ControlRegistry_neo_bpsys_wpf_Core_Abstractions_Services_IFrontedPluginMetadataProvider_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter.#ctor(neo_bpsys_wpf.Core.Abstractions.Services.IFrontedLayoutPackageManager,Microsoft.Extensions.Logging.ILogger{neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter},neo_bpsys_wpf.Core.Abstractions.Services.IFrontedV3ControlRegistry,neo_bpsys_wpf.Core.Abstractions.Services.IFrontedPluginMetadataProvider)">
+  FrontedLayoutPackageExporter(IFrontedLayoutPackageManager, ILogger&lt;FrontedLayoutPackageExporter&gt;, IFrontedV3ControlRegistry?, IFrontedPluginMetadataProvider?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageExporter.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>使用默认路径初始化导出器。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedLayoutPackageExporter(IFrontedLayoutPackageManager packageManager, ILogger&lt;FrontedLayoutPackageExporter&gt; logger, IFrontedV3ControlRegistry? controlRegistry = null, IFrontedPluginMetadataProvider? pluginMetadataProvider = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageManager</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedLayoutPackageManager.html">IFrontedLayoutPackageManager</a></dt>
+    <dd><p>布局包管理器，用于获取活动包状态和路径。</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter.html">FrontedLayoutPackageExporter</a>&gt;</dt>
+    <dd><p>日志记录器。</p>
+</dd>
+    <dt><code>controlRegistry</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedV3ControlRegistry.html">IFrontedV3ControlRegistry</a></dt>
+    <dd><p>控件注册表（可选）。</p>
+</dd>
+    <dt><code>pluginMetadataProvider</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedPluginMetadataProvider.html">IFrontedPluginMetadataProvider</a></dt>
+    <dd><p>插件元数据提供者（可选）。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageExporter__ctor_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageExporter__ctor_neo_bpsys_wpf_Core_Abstractions_Services_IFrontedLayoutPackageManager_System_String_System_String_Microsoft_Extensions_Logging_ILogger_neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageExporter__neo_bpsys_wpf_Core_Abstractions_Services_IFrontedV3ControlRegistry_neo_bpsys_wpf_Core_Abstractions_Services_IFrontedPluginMetadataProvider_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter.#ctor(neo_bpsys_wpf.Core.Abstractions.Services.IFrontedLayoutPackageManager,System.String,System.String,Microsoft.Extensions.Logging.ILogger{neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter},neo_bpsys_wpf.Core.Abstractions.Services.IFrontedV3ControlRegistry,neo_bpsys_wpf.Core.Abstractions.Services.IFrontedPluginMetadataProvider)">
+  FrontedLayoutPackageExporter(IFrontedLayoutPackageManager, string, string, ILogger&lt;FrontedLayoutPackageExporter&gt;?, IFrontedV3ControlRegistry?, IFrontedPluginMetadataProvider?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageExporter.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>使用自定义包根路径和临时路径初始化导出器。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedLayoutPackageExporter(IFrontedLayoutPackageManager packageManager, string packageRoot, string tempRoot, ILogger&lt;FrontedLayoutPackageExporter&gt;? logger = null, IFrontedV3ControlRegistry? controlRegistry = null, IFrontedPluginMetadataProvider? pluginMetadataProvider = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageManager</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedLayoutPackageManager.html">IFrontedLayoutPackageManager</a></dt>
+    <dd><p>布局包管理器，用于获取活动包状态和路径。</p>
+</dd>
+    <dt><code>packageRoot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>包存储根目录。</p>
+</dd>
+    <dt><code>tempRoot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>临时文件根目录。</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter.html">FrontedLayoutPackageExporter</a>&gt;</dt>
+    <dd><p>日志记录器。</p>
+</dd>
+    <dt><code>controlRegistry</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedV3ControlRegistry.html">IFrontedV3ControlRegistry</a></dt>
+    <dd><p>控件注册表（可选）。</p>
+</dd>
+    <dt><code>pluginMetadataProvider</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedPluginMetadataProvider.html">IFrontedPluginMetadataProvider</a></dt>
+    <dd><p>插件元数据提供者（可选）。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageExporter_ExportAsync_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter.ExportAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageExporter_ExportAsync_neo_bpsys_wpf_Core_Models_FrontedLayout_Packages_FrontedLayoutPackageExportRequest_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter.ExportAsync(neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageExportRequest,System.Threading.CancellationToken)">
+  ExportAsync(FrontedLayoutPackageExportRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageExporter.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>执行布局包导出，将选定的 v3 布局及其引用的资源打包为 .bpui 文件。
+未指定源包时导出当前活动包；指定源包时从该包磁盘上已有的合法 Layout 文件导出。
+未注册或未安装插件的 layout/behavior 文件原样保留；未保存的 Registry 窗口不会被补成空模板。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;FrontedLayoutPackageExportResult&gt; ExportAsync(FrontedLayoutPackageExportRequest request, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageExportRequest.html">FrontedLayoutPackageExportRequest</a></dt>
+    <dd><p>导出请求参数。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageExportResult.html">FrontedLayoutPackageExportResult</a>&gt;</dt>
+    <dd><p>导出结果。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageExporter_IsSafePackageId_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter.IsSafePackageId*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedLayoutPackageExporter_IsSafePackageId_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedLayoutPackageExporter.IsSafePackageId(System.String)">
+  IsSafePackageId(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageExporter.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>验证 PackageId 是否安全（仅包含小写字母数字和 <code>._-</code> 字符，不含空白、<code>..</code> 或 <code>%</code>）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSafePackageId(string packageId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>待验证的包 ID。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否安全。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedLayoutPackageExporter.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

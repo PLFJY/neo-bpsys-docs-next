@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IGameGuidanceService | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IGameGuidanceService | neo-bpsys-wpf ">
+      
+      <meta name="description" content="对局引导服务接口">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService" class="text-break">
+Interface IGameGuidanceService  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.html">Abstractions</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>对局引导服务接口</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IGameGuidanceService</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_IsGuidanceStarted_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.IsGuidanceStarted*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_IsGuidanceStarted" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.IsGuidanceStarted">
+  IsGuidanceStarted
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否启动引导</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsGuidanceStarted { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_CompleteGuidance_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.CompleteGuidance*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_CompleteGuidance_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.CompleteGuidance(System.String)">
+  CompleteGuidance(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>完成活动对局引导工作流，不将其视为用户取消。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CompleteGuidance(string reason = &quot;SmartBpCharacterBpEnded&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reason</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>随停止事件发布的完成原因。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_GetRuntimeSnapshot_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.GetRuntimeSnapshot*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_GetRuntimeSnapshot" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.GetRuntimeSnapshot">
+  GetRuntimeSnapshot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取活动工作流和当前步骤的不可变快照。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GameGuidanceRuntimeSnapshot GetRuntimeSnapshot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.GameGuidanceRuntimeSnapshot.html">GameGuidanceRuntimeSnapshot</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_MoveToStepAsync_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.MoveToStepAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_MoveToStepAsync_System_Int32_System_Boolean_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.MoveToStepAsync(System.Int32,System.Boolean)">
+  MoveToStepAsync(int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>通过常规引导过渡路径移动到已校验的工作流步骤。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string?&gt; MoveToStepAsync(int stepIndex, bool isNavigatePageEnable = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stepIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>目标工作流步骤索引。</p>
+</dd>
+    <dt><code>isNavigatePageEnable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否启用页面切换。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>遵循现有引导命令约定的错误/显示文本。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_NextStepAsync_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.NextStepAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_NextStepAsync_System_Boolean_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.NextStepAsync(System.Boolean)">
+  NextStepAsync(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>下一步</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string?&gt; NextStepAsync(bool isNavigatePageEnable = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isNavigatePageEnable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否开启页面导航</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>错误信息，如果执行成功则返回 <code>null</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_PrevStepAsync_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.PrevStepAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_PrevStepAsync_System_Boolean_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.PrevStepAsync(System.Boolean)">
+  PrevStepAsync(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>上一步</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string?&gt; PrevStepAsync(bool isNavigatePageEnable = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isNavigatePageEnable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>错误信息，如果执行成功则返回 <code>null</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_StartGuidance_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.StartGuidance*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_StartGuidance_System_Boolean_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.StartGuidance(System.Boolean)">
+  StartGuidance(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>启动对局引导</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string?&gt; StartGuidance(bool isNavigatePageEnable = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isNavigatePageEnable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否开启页面导航</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>错误信息，如果启动成功则返回 <code>null</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_StopGuidance_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.StopGuidance*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_StopGuidance" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.StopGuidance">
+  StopGuidance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>停止对局引导</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void StopGuidance()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_GuidanceCancelled" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.GuidanceCancelled">
+  GuidanceCancelled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>引导取消事件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FrontedBehaviorEvent(&quot;Guidance.Cancelled&quot;, DisplayNameKey = &quot;Designer.Behaviors.Event.GuidanceCancelled&quot;, DescriptionKey = &quot;Designer.Behaviors.Event.GuidanceCancelled.Description&quot;, Category = &quot;Guidance&quot;, CategoryKey = &quot;Designer.Behaviors.Category.Guidance&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.Reason&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.Reason&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;Reason&quot;, TypeName = &quot;string&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.Time&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.Time&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;Time&quot;, TypeName = &quot;int?&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousStepIndex&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousStepIndex&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousStepIndex&quot;, TypeName = &quot;int?&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousAction&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousAction&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousAction&quot;, TypeName = &quot;GameAction?&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousIndexes&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousIndexes&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousIndexes&quot;, TypeName = &quot;int[]&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousIndexesText&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousIndexesText&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousIndexesText&quot;, TypeName = &quot;string&quot;)]
+event EventHandler&lt;GameGuidanceStateChangedEventArgs&gt;? GuidanceCancelled</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Events.GameGuidanceStateChangedEventArgs.html">GameGuidanceStateChangedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_GuidanceHighlightChanged" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.GuidanceHighlightChanged">
+  GuidanceHighlightChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>引导高亮变化事件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GameGuidanceHighlightChangedEventArgs&gt;? GuidanceHighlightChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Events.GameGuidanceHighlightChangedEventArgs.html">GameGuidanceHighlightChangedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_GuidanceHighlightCleared" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.GuidanceHighlightCleared">
+  GuidanceHighlightCleared
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>引导高亮清除事件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GameGuidanceHighlightChangedEventArgs&gt;? GuidanceHighlightCleared</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Events.GameGuidanceHighlightChangedEventArgs.html">GameGuidanceHighlightChangedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_GuidanceStarted" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.GuidanceStarted">
+  GuidanceStarted
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>引导启动事件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FrontedBehaviorEvent(&quot;Guidance.Started&quot;, DisplayNameKey = &quot;Designer.Behaviors.Event.GuidanceStarted&quot;, DescriptionKey = &quot;Designer.Behaviors.Event.GuidanceStarted.Description&quot;, Category = &quot;Guidance&quot;, CategoryKey = &quot;Designer.Behaviors.Category.Guidance&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.IsStarted&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.IsStarted&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;IsStarted&quot;, TypeName = &quot;bool&quot;)]
+event EventHandler&lt;GameGuidanceStateChangedEventArgs&gt;? GuidanceStarted</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Events.GameGuidanceStateChangedEventArgs.html">GameGuidanceStateChangedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_GuidanceStateChanged" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.GuidanceStateChanged">
+  GuidanceStateChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>引导状态变化事件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FrontedBehaviorEvent(&quot;Guidance.StateChanged&quot;, DisplayNameKey = &quot;Designer.Behaviors.Event.GuidanceStateChanged&quot;, DescriptionKey = &quot;Designer.Behaviors.Event.GuidanceStateChanged.Description&quot;, Category = &quot;Guidance&quot;, CategoryKey = &quot;Designer.Behaviors.Category.Guidance&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.IsStarted&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.IsStarted&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;IsStarted&quot;, TypeName = &quot;bool&quot;)]
+event EventHandler&lt;GameGuidanceStateChangedEventArgs&gt;? GuidanceStateChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Events.GameGuidanceStateChangedEventArgs.html">GameGuidanceStateChangedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_GuidanceStepChanged" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.GuidanceStepChanged">
+  GuidanceStepChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>引导步骤变化事件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FrontedBehaviorEvent(&quot;Guidance.StepChanged&quot;, DisplayNameKey = &quot;Designer.Behaviors.Event.GuidanceStepChanged&quot;, DescriptionKey = &quot;Designer.Behaviors.Event.GuidanceStepChanged.Description&quot;, Category = &quot;Guidance&quot;, CategoryKey = &quot;Designer.Behaviors.Category.Guidance&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.StepIndex&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.StepIndex&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;StepIndex&quot;, TypeName = &quot;int&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.Action&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.Action&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;Action&quot;, TypeName = &quot;GameAction&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.Indexes&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.Indexes&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;Indexes&quot;, TypeName = &quot;int[]&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.IndexesText&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.IndexesText&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;IndexesText&quot;, TypeName = &quot;string&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.Index&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.Index&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;FirstIndex&quot;, TypeName = &quot;int&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.Time&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.Time&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;Time&quot;, TypeName = &quot;int&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousStepIndex&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousStepIndex&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousStepIndex&quot;, TypeName = &quot;int?&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousAction&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousAction&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousAction&quot;, TypeName = &quot;GameAction?&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousIndexes&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousIndexes&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousIndexes&quot;, TypeName = &quot;int[]&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousIndexesText&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousIndexesText&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousIndexesText&quot;, TypeName = &quot;string&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousIndex&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousIndex&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousFirstIndex&quot;, TypeName = &quot;int?&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousTime&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousTime&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousTime&quot;, TypeName = &quot;int?&quot;)]
+event EventHandler&lt;GameGuidanceStepChangedEventArgs&gt;? GuidanceStepChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Events.GameGuidanceStepChangedEventArgs.html">GameGuidanceStepChangedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IGameGuidanceService_GuidanceStopped" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IGameGuidanceService.GuidanceStopped">
+  GuidanceStopped
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>引导停止事件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FrontedBehaviorEvent(&quot;Guidance.Stopped&quot;, DisplayNameKey = &quot;Designer.Behaviors.Event.GuidanceStopped&quot;, DescriptionKey = &quot;Designer.Behaviors.Event.GuidanceStopped.Description&quot;, Category = &quot;Guidance&quot;, CategoryKey = &quot;Designer.Behaviors.Category.Guidance&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.IsStarted&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.IsStarted&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;IsStarted&quot;, TypeName = &quot;bool&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.Reason&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.Reason&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;Reason&quot;, TypeName = &quot;string&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.Time&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.Time&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;Time&quot;, TypeName = &quot;int?&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousStepIndex&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousStepIndex&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousStepIndex&quot;, TypeName = &quot;int?&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousAction&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousAction&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousAction&quot;, TypeName = &quot;GameAction?&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousIndexes&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousIndexes&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousIndexes&quot;, TypeName = &quot;int[]&quot;)]
+[FrontedBehaviorEventPayload(&quot;Event.PreviousIndexesText&quot;, DisplayNameKey = &quot;Designer.Behaviors.Payload.PreviousIndexesText&quot;, Source = FrontedBehaviorPayloadSource.EventArgsProperty, SourcePath = &quot;PreviousIndexesText&quot;, TypeName = &quot;string&quot;)]
+event EventHandler&lt;GameGuidanceStateChangedEventArgs&gt;? GuidanceStopped</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Events.GameGuidanceStateChangedEventArgs.html">GameGuidanceStateChangedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IGameGuidanceService.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

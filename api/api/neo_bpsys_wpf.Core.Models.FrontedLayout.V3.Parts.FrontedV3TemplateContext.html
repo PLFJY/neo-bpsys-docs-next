@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedV3TemplateContext | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedV3TemplateContext | neo-bpsys-wpf ">
+      
+      <meta name="description" content="按模板重新分配集合项布局时由 Designer 提供给控件回调的上下文。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext" class="text-break">
+Class FrontedV3TemplateContext  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3TemplateContext.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.html">V3</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.html">Parts</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>按模板重新分配集合项布局时由 Designer 提供给控件回调的上下文。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedV3TemplateContext</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedV3TemplateContext</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+该上下文为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ApplyTemplate">ApplyTemplate</a> 回调提供 Designer 侧信息，
+让控件可以根据当前编辑状态（例如 BO3/BO5）或被点击的具名模板决定如何重新分配子项位置与可见性。
+</p>
+<p>
+上下文携带的字段：
+<ul><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_Services">Services</a>：DI 服务提供器，控件可解析 <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.ISharedDataService.html">ISharedDataService</a> 等运行时服务。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_CurrentBoModeState">CurrentBoModeState</a>：当前正在编辑的 BO 状态（BO3/BO5）。控件据此选择对应模板。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_WindowTypeName">WindowTypeName</a>：当前编辑的窗口类型名（如 <code>BpWindow</code>）。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_CanvasName">CanvasName</a>：当前编辑的 Canvas 名称。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_Document">Document</a>：当前 Designer 文档实例，控件可读取 Canvas 配置、其他控件等信息。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_TemplateId">TemplateId</a>：当 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Templates">Templates</a> 非空且用户点击了具名模板按钮时，
+该字段为被点击模板的 Id；否则为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>，控件应回退到基于 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_CurrentBoModeState">CurrentBoModeState</a> 的默认模板。</li></ul>
+
+<p>
+回调只负责位置/可见性的模板分配，不修改外观属性（Color/FontFamily 等）。
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext__ctor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.#ctor">
+  FrontedV3TemplateContext()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3TemplateContext.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html">FrontedV3TemplateContext</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3TemplateContext()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext__ctor_System_IServiceProvider_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedCanvasBoModeState_System_String_System_String_neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedCanvasDesignDocument_System_String_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.#ctor(System.IServiceProvider,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasBoModeState,System.String,System.String,neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedCanvasDesignDocument,System.String)">
+  FrontedV3TemplateContext(IServiceProvider, FrontedCanvasBoModeState, string, string, FrontedCanvasDesignDocument?, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3TemplateContext.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html">FrontedV3TemplateContext</a> 并指定全部属性。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3TemplateContext(IServiceProvider services, FrontedCanvasBoModeState currentBoModeState, string windowTypeName, string canvasName, FrontedCanvasDesignDocument? document, string? templateId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
+    <dd><p>DI 服务提供器。</p>
+</dd>
+    <dt><code>currentBoModeState</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasBoModeState.html">FrontedCanvasBoModeState</a></dt>
+    <dd><p>当前编辑的 BO 状态。</p>
+</dd>
+    <dt><code>windowTypeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>当前编辑的窗口类型名。</p>
+</dd>
+    <dt><code>canvasName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>当前编辑的 Canvas 名称。</p>
+</dd>
+    <dt><code>document</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedCanvasDesignDocument.html">FrontedCanvasDesignDocument</a></dt>
+    <dd><p>当前 Designer 文档实例。</p>
+</dd>
+    <dt><code>templateId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>被点击的具名模板 Id；无具名模板时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_CanvasName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.CanvasName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_CanvasName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.CanvasName">
+  CanvasName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3TemplateContext.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置当前编辑的 Canvas 名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CanvasName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_CurrentBoModeState_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.CurrentBoModeState*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_CurrentBoModeState" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.CurrentBoModeState">
+  CurrentBoModeState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3TemplateContext.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置当前编辑的 BO 状态（BO3/BO5）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedCanvasBoModeState CurrentBoModeState { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasBoModeState.html">FrontedCanvasBoModeState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_Document_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.Document*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_Document" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.Document">
+  Document
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3TemplateContext.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置当前 Designer 文档实例，控件可读取 Canvas 配置、其他控件等信息；测试场景下可为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedCanvasDesignDocument? Document { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedCanvasDesignDocument.html">FrontedCanvasDesignDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_Services_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.Services*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_Services" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.Services">
+  Services
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3TemplateContext.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置 DI 服务提供器，控件可解析运行时服务。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IServiceProvider Services { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_TemplateId_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.TemplateId*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_TemplateId" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.TemplateId">
+  TemplateId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3TemplateContext.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置被点击的具名模板 Id；无具名模板（控件未声明 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Templates">Templates</a>）
+或调用方未指定时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>，控件应回退到基于 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_CurrentBoModeState">CurrentBoModeState</a> 的默认模板。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? TemplateId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_WindowTypeName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.WindowTypeName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_WindowTypeName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.WindowTypeName">
+  WindowTypeName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3TemplateContext.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置当前编辑的窗口类型名（如 <code>BpWindow</code>）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WindowTypeName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_Default_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.Default*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3TemplateContext_Default" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.Default">
+  Default()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3TemplateContext.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建一个使用空服务提供器与 BO5 默认状态的默认上下文，供测试与无 Designer 链路场景使用。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedV3TemplateContext Default()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html">FrontedV3TemplateContext</a></dt>
+    <dd><p>默认 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3TemplateContext.html">FrontedV3TemplateContext</a> 实例。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Parts/FrontedV3TemplateContext.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
