@@ -1,26 +1,39 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const enSidebar = sidebar({
-  "/en/": [
-    "",
-    "portfolio",
+  "/en/user-guide/": [
     {
-      text: "Demo",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
+      text: "Introduction",
+      icon: "book-open",
+      link: "introduction",
+    },
+    {
+      text: "Quick Start",
+      icon: "compass",
+      link: "quick-start",
+    },
+    {
+      text: "Backend",
+      icon: "sliders",
+      prefix: "backend/",
       children: "structure",
     },
     {
-      text: "Docs",
-      icon: "book",
-      prefix: "guide/",
+      text: "Frontend Output",
+      icon: "window-maximize",
+      prefix: "fronted/",
       children: "structure",
     },
     {
-      text: "Slides",
-      icon: "person-chalkboard",
-      link: "https://ecosystem.vuejs.press/plugins/markdown/revealjs/demo.html",
+      text: "Advanced Options",
+      icon: "screwdriver-wrench",
+      prefix: "advanced/",
+      children: "structure",
+    },
+    {
+      text: "FAQ",
+      icon: "question",
+      link: "faq",
     },
   ],
 });

@@ -1,39 +1,39 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const jaSidebar = sidebar({
-  "/user-guide/": [
+  "/ja/user-guide/": [
     {
-      text: "前言",
+      text: "はじめに",
       icon: "book-open",
-      link: "introduction"
+      link: "introduction",
     },
     {
-      text: "快速开始",
+      text: "クイックスタート",
       icon: "compass",
-      link: "quick-start"
+      link: "quick-start",
     },
     {
-      text: "后台",
+      text: "バックエンド",
       icon: "sliders",
       prefix: "backend/",
       children: "structure",
     },
     {
-      text: "前台输出",
+      text: "フロントエンド出力",
       icon: "window-maximize",
       prefix: "fronted/",
       children: "structure",
     },
     {
-      text: "高级选项",
+      text: "詳細設定",
       icon: "screwdriver-wrench",
       prefix: "advanced/",
       children: "structure",
     },
     {
-      text: "常见问题及解决方案",
+      text: "よくある質問",
       icon: "question",
-      link: "faq"
+      link: "faq",
     },
   ],
 });
