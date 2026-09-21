@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
 import { computed, provide } from "vue";
-import { useRouteLocale, withBase } from "@vuepress/client";
+import { useRouteLocale, withBase } from "vuepress/client";
 
 import Contributors from "./Contributors.vue";
 import UserScroll from "./UserScroll.vue";

@@ -36,7 +36,7 @@
 
 <script setup lang="ts">
 import { computed, inject } from "vue";
-import { withBase } from "@vuepress/client";
+import { withBase } from "vuepress/client";
 
 const fallback = {
   author: {

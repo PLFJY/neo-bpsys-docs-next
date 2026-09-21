@@ -62,7 +62,7 @@
 
 <script setup lang="ts">
 import { computed, inject, onMounted, ref, watch } from "vue";
-import { useRouteLocale } from "@vuepress/client";
+import { useRouteLocale } from "vuepress/client";
 
 const fallback = {
   download: {
