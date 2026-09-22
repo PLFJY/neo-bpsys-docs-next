@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class LegacyConvertMessageHelper | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LegacyConvertMessageHelper | neo-bpsys-wpf ">
+      
+      <meta name="description" content="旧版布局包转换消息的构建与本地化辅助类。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper" class="text-break">
+Class LegacyConvertMessageHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>旧版布局包转换消息的构建与本地化辅助类。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class LegacyConvertMessageHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">LegacyConvertMessageHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeBo3GlobalScoreBackgroundMapped" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeBo3GlobalScoreBackgroundMapped">
+  CodeBo3GlobalScoreBackgroundMapped
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— BO3 总比分背景已映射。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeBo3GlobalScoreBackgroundMapped = &quot;LegacyConvert.Bo3GlobalScoreBackgroundMapped&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeBpOverviewOutOfBounds" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeBpOverviewOutOfBounds">
+  CodeBpOverviewOutOfBounds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— BP 概览内容超出原始区域。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeBpOverviewOutOfBounds = &quot;LegacyConvert.BpOverviewOutOfBounds&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeConfigJsonReadFailed" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeConfigJsonReadFailed">
+  CodeConfigJsonReadFailed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版 Config.json 读取失败。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeConfigJsonReadFailed = &quot;LegacyConvert.ConfigJsonReadFailed&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeConfigJsonTooLarge" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeConfigJsonTooLarge">
+  CodeConfigJsonTooLarge
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版 Config.json 过大。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeConfigJsonTooLarge = &quot;LegacyConvert.ConfigJsonTooLarge&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeControlCreateFailed" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeControlCreateFailed">
+  CodeControlCreateFailed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 控件创建失败。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeControlCreateFailed = &quot;LegacyConvert.ControlCreateFailed&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeControlGeometryFuzzyMatched" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeControlGeometryFuzzyMatched">
+  CodeControlGeometryFuzzyMatched
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版控件几何被模糊匹配。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeControlGeometryFuzzyMatched = &quot;LegacyConvert.ControlGeometryFuzzyMatched&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeControlNotInBlueprintMap" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeControlNotInBlueprintMap">
+  CodeControlNotInBlueprintMap
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 控件不在显式转换映射表中。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeControlNotInBlueprintMap = &quot;LegacyConvert.ControlNotInBlueprintMap&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeFoldedControlConsumed" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeFoldedControlConsumed">
+  CodeFoldedControlConsumed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版折叠控件被消费。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeFoldedControlConsumed = &quot;LegacyConvert.FoldedControlConsumed&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeFoldedControlNoTarget" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeFoldedControlNoTarget">
+  CodeFoldedControlNoTarget
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版折叠控件无 v3 目标。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeFoldedControlNoTarget = &quot;LegacyConvert.FoldedControlNoTarget&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeFoldedGeometryNotRepresentable" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeFoldedGeometryNotRepresentable">
+  CodeFoldedGeometryNotRepresentable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 折叠控件几何无法独立表示。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeFoldedGeometryNotRepresentable = &quot;LegacyConvert.FoldedGeometryNotRepresentable&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeFrontElementsFolderMissing" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeFrontElementsFolderMissing">
+  CodeFrontElementsFolderMissing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版包中缺少 FrontElementsConfig 文件夹。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeFrontElementsFolderMissing = &quot;LegacyConvert.FrontElementsFolderMissing&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeGlobalScoreCellsAggregated" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeGlobalScoreCellsAggregated">
+  CodeGlobalScoreCellsAggregated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版全局比分格已聚合。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeGlobalScoreCellsAggregated = &quot;LegacyConvert.GlobalScoreCellsAggregated&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeImageCompressed" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeImageCompressed">
+  CodeImageCompressed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版图片超过安全阈值，已在转换后的包中压缩。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeImageCompressed = &quot;LegacyConvert.ImageCompressed&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeIrregularCellSpacingApproximated" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeIrregularCellSpacingApproximated">
+  CodeIrregularCellSpacingApproximated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 单元格间距被近似计算。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeIrregularCellSpacingApproximated = &quot;LegacyConvert.IrregularCellSpacingApproximated&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeLayoutFileReadFailed" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeLayoutFileReadFailed">
+  CodeLayoutFileReadFailed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版布局文件读取失败。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeLayoutFileReadFailed = &quot;LegacyConvert.LayoutFileReadFailed&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeLayoutFileTooLargeSkipped" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeLayoutFileTooLargeSkipped">
+  CodeLayoutFileTooLargeSkipped
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版布局文件过大被跳过。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeLayoutFileTooLargeSkipped = &quot;LegacyConvert.LayoutFileTooLargeSkipped&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeLayoutValidationError" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeLayoutValidationError">
+  CodeLayoutValidationError
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 转换后布局存在校验错误。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeLayoutValidationError = &quot;LegacyConvert.LayoutValidationError&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeLegacyFieldIgnored" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeLegacyFieldIgnored">
+  CodeLegacyFieldIgnored
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版字段被忽略。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeLegacyFieldIgnored = &quot;LegacyConvert.LegacyFieldIgnored&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeLockImageMapped" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeLockImageMapped">
+  CodeLockImageMapped
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版锁定图片已合并。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeLockImageMapped = &quot;LegacyConvert.LockImageMapped&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeLockOverlayFolded" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeLockOverlayFolded">
+  CodeLockOverlayFolded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版锁定图层已合并。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeLockOverlayFolded = &quot;LegacyConvert.LockOverlayFolded&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeLockOverlayGeometryConsumed" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeLockOverlayGeometryConsumed">
+  CodeLockOverlayGeometryConsumed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版锁定图层几何被消费。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeLockOverlayGeometryConsumed = &quot;LegacyConvert.LockOverlayGeometryConsumed&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeLockOverlayTargetMissing" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeLockOverlayTargetMissing">
+  CodeLockOverlayTargetMissing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 锁定图层目标控件不存在。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeLockOverlayTargetMissing = &quot;LegacyConvert.LockOverlayTargetMissing&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeMapBpV1Skipped" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeMapBpV1Skipped">
+  CodeMapBpV1Skipped
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版 Map BP V1 窗口被跳过。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeMapBpV1Skipped = &quot;LegacyConvert.MapBpV1Skipped&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeMapV2PickingBorderMapped" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeMapV2PickingBorderMapped">
+  CodeMapV2PickingBorderMapped
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版 MapV2 选中边框已映射。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeMapV2PickingBorderMapped = &quot;LegacyConvert.MapV2PickingBorderMapped&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeNoBlueprintForLayout" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeNoBlueprintForLayout">
+  CodeNoBlueprintForLayout
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 没有该旧版窗口的转换蓝图。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeNoBlueprintForLayout = &quot;LegacyConvert.NoBlueprintForLayout&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeOvertimeScoreCellsAggregated" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeOvertimeScoreCellsAggregated">
+  CodeOvertimeScoreCellsAggregated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版加赛比分格已合并。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeOvertimeScoreCellsAggregated = &quot;LegacyConvert.OvertimeScoreCellsAggregated&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodePickingBorderImageMapped" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodePickingBorderImageMapped">
+  CodePickingBorderImageMapped
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版选中边框图片已合并。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodePickingBorderImageMapped = &quot;LegacyConvert.PickingBorderImageMapped&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeResourceCopied" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeResourceCopied">
+  CodeResourceCopied
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版资源已复制。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeResourceCopied = &quot;LegacyConvert.ResourceCopied&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeResourceMissing" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeResourceMissing">
+  CodeResourceMissing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版资源未找到。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeResourceMissing = &quot;LegacyConvert.ResourceMissing&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeTextSettingsApplied" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeTextSettingsApplied">
+  CodeTextSettingsApplied
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版文字设置已应用。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeTextSettingsApplied = &quot;LegacyConvert.TextSettingsApplied&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeTextSettingsFieldInvalid" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeTextSettingsFieldInvalid">
+  CodeTextSettingsFieldInvalid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 单个旧版文本设置字段格式无效，已跳过该字段。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeTextSettingsFieldInvalid = &quot;LegacyConvert.TextSettingsFieldInvalid&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeTextSettingsReadFailed" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeTextSettingsReadFailed">
+  CodeTextSettingsReadFailed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版文本设置无法读取。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeTextSettingsReadFailed = &quot;LegacyConvert.TextSettingsReadFailed&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeUnknownLayoutFileSkipped" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeUnknownLayoutFileSkipped">
+  CodeUnknownLayoutFileSkipped
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 未知的旧版布局文件被跳过。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeUnknownLayoutFileSkipped = &quot;LegacyConvert.UnknownLayoutFileSkipped&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeWindowSettingsInspectFailed" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeWindowSettingsInspectFailed">
+  CodeWindowSettingsInspectFailed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版窗口设置无法检查。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeWindowSettingsInspectFailed = &quot;LegacyConvert.WindowSettingsInspectFailed&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_CodeWindowSizeDiffersFromCanvas" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.CodeWindowSizeDiffersFromCanvas">
+  CodeWindowSizeDiffersFromCanvas
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>代码常量 —— 旧版窗口尺寸与画布默认尺寸不一致。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CodeWindowSizeDiffersFromCanvas = &quot;LegacyConvert.WindowSizeDiffersFromCanvas&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_LocalizeTemplate_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.LocalizeTemplate*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_LocalizeTemplate" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.LocalizeTemplate">
+  LocalizeTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>本地化委托。接收消息代码，返回本地化模板字符串。
+模板中的 <code>{ArgName}</code> 占位符会被对应的参数值替换。
+若未设置，将使用代码本身作为回退。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;string, string&gt;? LocalizeTemplate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_Args_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.Args*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_Args_System_Object_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.Args(System.Object)">
+  Args(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>从匿名对象创建参数字典。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, string&gt; Args(object? args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <span class="xref">object</span></dt>
+    <dd><p>匿名对象，其属性名和值将被转换为字典条目。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>参数字典。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_BuildLocalizedMessage_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.BuildLocalizedMessage*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_BuildLocalizedMessage_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.BuildLocalizedMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+  BuildLocalizedMessage(string, Dictionary&lt;string, string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据代码和参数构建本地化消息文本。
+若设置了 <a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.html#neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_LocalizeTemplate">LocalizeTemplate</a>，则先获取本地化模板，再替换占位符。
+否则使用代码本身，并附加参数信息作为回退消息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildLocalizedMessage(string code, Dictionary&lt;string, string&gt; args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>消息代码。</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>参数字典。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>本地化后的消息文本。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_Compat_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.Compat*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_Compat_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.Compat(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+  Compat(string, Dictionary&lt;string, string&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建严重级别为 <a class="xref" href="neo_bpsys_wpf.Core.Enums.FrontedLayoutPackageLegacyConvertMessageSeverity.html#neo_bpsys_wpf_Core_Enums_FrontedLayoutPackageLegacyConvertMessageSeverity_CompatibilityNote">CompatibilityNote</a> 的消息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedLayoutPackageLegacyConvertMessage Compat(string code, Dictionary&lt;string, string&gt;? args = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageLegacyConvertMessage.html">FrontedLayoutPackageLegacyConvertMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_Error_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.Error*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_Error_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.Error(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+  Error(string, Dictionary&lt;string, string&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建严重级别为 <a class="xref" href="neo_bpsys_wpf.Core.Enums.FrontedLayoutPackageLegacyConvertMessageSeverity.html#neo_bpsys_wpf_Core_Enums_FrontedLayoutPackageLegacyConvertMessageSeverity_Error">Error</a> 的消息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedLayoutPackageLegacyConvertMessage Error(string code, Dictionary&lt;string, string&gt;? args = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageLegacyConvertMessage.html">FrontedLayoutPackageLegacyConvertMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_Info_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.Info*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_Info_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.Info(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+  Info(string, Dictionary&lt;string, string&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建严重级别为 <a class="xref" href="neo_bpsys_wpf.Core.Enums.FrontedLayoutPackageLegacyConvertMessageSeverity.html#neo_bpsys_wpf_Core_Enums_FrontedLayoutPackageLegacyConvertMessageSeverity_Info">Info</a> 的消息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedLayoutPackageLegacyConvertMessage Info(string code, Dictionary&lt;string, string&gt;? args = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageLegacyConvertMessage.html">FrontedLayoutPackageLegacyConvertMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_LocalizeAll_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.LocalizeAll*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_LocalizeAll_System_Collections_Generic_List_neo_bpsys_wpf_Core_Models_FrontedLayout_Packages_FrontedLayoutPackageLegacyConvertMessage__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.LocalizeAll(System.Collections.Generic.List{neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageLegacyConvertMessage})">
+  LocalizeAll(List&lt;FrontedLayoutPackageLegacyConvertMessage&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对消息列表中的所有消息执行本地化，填充 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageLegacyConvertMessage.html#neo_bpsys_wpf_Core_Models_FrontedLayout_Packages_FrontedLayoutPackageLegacyConvertMessage_Message">Message</a> 属性。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LocalizeAll(List&lt;FrontedLayoutPackageLegacyConvertMessage&gt; messages)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>messages</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageLegacyConvertMessage.html">FrontedLayoutPackageLegacyConvertMessage</a>&gt;</dt>
+    <dd><p>消息列表。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_Warning_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.Warning*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_LegacyConvertMessageHelper_Warning_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.LegacyConvertMessageHelper.Warning(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+  Warning(string, Dictionary&lt;string, string&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建严重级别为 <a class="xref" href="neo_bpsys_wpf.Core.Enums.FrontedLayoutPackageLegacyConvertMessageSeverity.html#neo_bpsys_wpf_Core_Enums_FrontedLayoutPackageLegacyConvertMessageSeverity_Warning">Warning</a> 的消息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedLayoutPackageLegacyConvertMessage Warning(string code, Dictionary&lt;string, string&gt;? args = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Packages.FrontedLayoutPackageLegacyConvertMessage.html">FrontedLayoutPackageLegacyConvertMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/LegacyConvertMessageHelper.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

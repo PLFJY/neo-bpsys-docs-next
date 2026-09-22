@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class WebLocalizationSnapshot | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WebLocalizationSnapshot | neo-bpsys-wpf ">
+      
+      <meta name="description" content="Web Renderer 的不可变本地化快照；所有值均为最终显示文本。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot" class="text-break">
+Class WebLocalizationSnapshot  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.html">Abstractions</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Web Renderer 的不可变本地化快照；所有值均为最终显示文本。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed record WebLocalizationSnapshot : IEquatable&lt;WebLocalizationSnapshot&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">WebLocalizationSnapshot</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.html">WebLocalizationSnapshot</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot__ctor_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot__ctor_System_Int32_System_Int64_System_String_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__System_Collections_Generic_IReadOnlyDictionary_System_String_neo_bpsys_wpf_Core_Abstractions_Services_WebMapV2Localization__" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.#ctor(System.Int32,System.Int64,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Collections.Generic.IReadOnlyDictionary{System.String,neo_bpsys_wpf.Core.Abstractions.Services.WebMapV2Localization})">
+  WebLocalizationSnapshot(int, long, string, IReadOnlyDictionary&lt;string, string&gt;, IReadOnlyDictionary&lt;string, WebMapV2Localization&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Web Renderer 的不可变本地化快照；所有值均为最终显示文本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebLocalizationSnapshot(int SchemaVersion, long Revision, string Culture, IReadOnlyDictionary&lt;string, string&gt; StaticTexts, IReadOnlyDictionary&lt;string, WebMapV2Localization&gt; MapV2Texts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>SchemaVersion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Revision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>Culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>StaticTexts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>MapV2Texts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebMapV2Localization.html">WebMapV2Localization</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_Culture_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.Culture*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_Culture" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.Culture">
+  Culture
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Culture { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_MapV2Texts_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.MapV2Texts*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_MapV2Texts" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.MapV2Texts">
+  MapV2Texts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, WebMapV2Localization&gt; MapV2Texts { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebMapV2Localization.html">WebMapV2Localization</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_Revision_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.Revision*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_Revision" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.Revision">
+  Revision
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Revision { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_SchemaVersion_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.SchemaVersion*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_SchemaVersion" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.SchemaVersion">
+  SchemaVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SchemaVersion { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_StaticTexts_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.StaticTexts*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_StaticTexts" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.StaticTexts">
+  StaticTexts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, string&gt; StaticTexts { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_Deconstruct_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.Deconstruct*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_Deconstruct_System_Int32__System_Int64__System_String__System_Collections_Generic_IReadOnlyDictionary_System_String_System_String___System_Collections_Generic_IReadOnlyDictionary_System_String_neo_bpsys_wpf_Core_Abstractions_Services_WebMapV2Localization___" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.Deconstruct(System.Int32@,System.Int64@,System.String@,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}@,System.Collections.Generic.IReadOnlyDictionary{System.String,neo_bpsys_wpf.Core.Abstractions.Services.WebMapV2Localization}@)">
+  Deconstruct(out int, out long, out string, out IReadOnlyDictionary&lt;string, string&gt;, out IReadOnlyDictionary&lt;string, WebMapV2Localization&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Deconstruct(out int SchemaVersion, out long Revision, out string Culture, out IReadOnlyDictionary&lt;string, string&gt; StaticTexts, out IReadOnlyDictionary&lt;string, WebMapV2Localization&gt; MapV2Texts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>SchemaVersion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Revision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>Culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>StaticTexts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>MapV2Texts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebMapV2Localization.html">WebMapV2Localization</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_Equals_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.Equals*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_Equals_System_Object_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">object</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_Equals_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.Equals*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_Equals_neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.Equals(neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot)">
+  Equals(WebLocalizationSnapshot?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(WebLocalizationSnapshot? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.html">WebLocalizationSnapshot</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_GetHashCode_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.GetHashCode*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_GetHashCode" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_ToString_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.ToString*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_ToString" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_op_Equality_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.op_Equality*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_op_Equality_neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.op_Equality(neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot,neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot)">
+  operator ==(WebLocalizationSnapshot?, WebLocalizationSnapshot?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(WebLocalizationSnapshot? left, WebLocalizationSnapshot? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.html">WebLocalizationSnapshot</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.html">WebLocalizationSnapshot</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_op_Inequality_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.op_Inequality*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_op_Inequality_neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_neo_bpsys_wpf_Core_Abstractions_Services_WebLocalizationSnapshot_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.op_Inequality(neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot,neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot)">
+  operator !=(WebLocalizationSnapshot?, WebLocalizationSnapshot?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(WebLocalizationSnapshot? left, WebLocalizationSnapshot? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.html">WebLocalizationSnapshot</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.WebLocalizationSnapshot.html">WebLocalizationSnapshot</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWebLocalizationProvider.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

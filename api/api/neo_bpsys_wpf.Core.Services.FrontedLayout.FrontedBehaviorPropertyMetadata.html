@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedBehaviorPropertyMetadata | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedBehaviorPropertyMetadata | neo-bpsys-wpf ">
+      
+      <meta name="description" content="为编辑器和验证器提供通用的行为图属性元数据。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata" class="text-break">
+Class FrontedBehaviorPropertyMetadata  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>为编辑器和验证器提供通用的行为图属性元数据。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FrontedBehaviorPropertyMetadata</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedBehaviorPropertyMetadata</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_CommonPropertyNames_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.CommonPropertyNames*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_CommonPropertyNames" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.CommonPropertyNames">
+  CommonPropertyNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>内置行为编辑器公开的通用可动画属性名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;string&gt; CommonPropertyNames { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_ContentLayerPropertyNames_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.ContentLayerPropertyNames*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_ContentLayerPropertyNames" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.ContentLayerPropertyNames">
+  ContentLayerPropertyNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>通常应用于目标控件主要内容的属性名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;string&gt; ContentLayerPropertyNames { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_ControlLayerPropertyNames_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.ControlLayerPropertyNames*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_ControlLayerPropertyNames" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.ControlLayerPropertyNames">
+  ControlLayerPropertyNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>应用于生成的控件根的属性名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;string&gt; ControlLayerPropertyNames { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_OverlayLayerPropertyNames_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.OverlayLayerPropertyNames*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_OverlayLayerPropertyNames" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.OverlayLayerPropertyNames">
+  OverlayLayerPropertyNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>应用于运行时矩形覆盖层的属性名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;string&gt; OverlayLayerPropertyNames { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_VisibilityOptions_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.VisibilityOptions*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_VisibilityOptions" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.VisibilityOptions">
+  VisibilityOptions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WPF 行为动画支持的可见性值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;string&gt; VisibilityOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_Find_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.Find*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_Find_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.Find(System.String)">
+  Find(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取受支持的可动画属性的元数据。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedAnimatablePropertyMetadata? Find(string? propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>稳定的属性名称。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedAnimatablePropertyMetadata.html">FrontedAnimatablePropertyMetadata</a></dt>
+    <dd><p>属性元数据；当属性未知时返回 <code>null</code>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_GetPropertyNamesForLayer_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.GetPropertyNamesForLayer*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_GetPropertyNamesForLayer_neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedAnimationTargetLayer_System_Boolean_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.GetPropertyNamesForLayer(neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedAnimationTargetLayer,System.Boolean)">
+  GetPropertyNamesForLayer(FrontedAnimationTargetLayer, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取为目标图层推荐的属性名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;string&gt; GetPropertyNamesForLayer(FrontedAnimationTargetLayer targetLayer, bool includeAll = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetLayer</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedAnimationTargetLayer.html">FrontedAnimationTargetLayer</a></dt>
+    <dd><p>目标图层。</p>
+</dd>
+    <dt><code>includeAll</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否包含全部重置的哨兵值。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>该图层推荐的属性名称。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_IsColorProperty_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.IsColorProperty*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_IsColorProperty_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.IsColorProperty(System.String)">
+  IsColorProperty(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>确定属性名称是否表示颜色型行为值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsColorProperty(string? propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要检查的属性名称。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>当属性为颜色型时返回 <code>true</code>；否则返回 <code>false</code>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_IsNumericProperty_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.IsNumericProperty*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_IsNumericProperty_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.IsNumericProperty(System.String)">
+  IsNumericProperty(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>确定属性名称是否表示数值型行为值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNumericProperty(string? propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要检查的属性名称。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>当属性为数值型时返回 <code>true</code>；否则返回 <code>false</code>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_IsVisibilityProperty_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.IsVisibilityProperty*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_IsVisibilityProperty_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.IsVisibilityProperty(System.String)">
+  IsVisibilityProperty(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>确定属性名称是否表示可见性值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsVisibilityProperty(string? propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要检查的属性名称。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>当属性为 Visibility 时返回 <code>true</code>；否则返回 <code>false</code>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_SupportsPercentage_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.SupportsPercentage*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_SupportsPercentage_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.SupportsPercentage(System.String)">
+  SupportsPercentage(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>确定指定属性是否接受百分比值，如 <code>100%</code>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SupportsPercentage(string? propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要检查的属性名称。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>当支持百分比值时返回 <code>true</code>；否则返回 <code>false</code>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_TryValidateValue_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.TryValidateValue*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorPropertyMetadata_TryValidateValue_System_String_System_String_System_String__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorPropertyMetadata.TryValidateValue(System.String,System.String,System.String@)">
+  TryValidateValue(string?, string?, out string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据指定的行为属性名称验证值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryValidateValue(string? propertyName, string? value, out string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>行为属性名称。</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要验证的文本值。</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>验证失败时的验证消息。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>当值对该属性有效时返回 <code>true</code>；否则返回 <code>false</code>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorPropertyMetadata.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

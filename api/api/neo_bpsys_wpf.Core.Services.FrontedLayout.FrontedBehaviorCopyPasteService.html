@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedBehaviorCopyPasteService | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedBehaviorCopyPasteService | neo-bpsys-wpf ">
+      
+      <meta name="description" content="在控件之间复制、预览、验证和粘贴前台行为。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorCopyPasteService">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorCopyPasteService" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorCopyPasteService" class="text-break">
+Class FrontedBehaviorCopyPasteService  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorCopyPasteService.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>在控件之间复制、预览、验证和粘贴前台行为。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedBehaviorCopyPasteService</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedBehaviorCopyPasteService</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorCopyPasteService__ctor_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorCopyPasteService.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorCopyPasteService__ctor_neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_IFrontedBehaviorControlSemanticResolver_neo_bpsys_wpf_Core_Abstractions_Services_IFrontedDesignerLocalizationService_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorCopyPasteService.#ctor(neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.IFrontedBehaviorControlSemanticResolver,neo_bpsys_wpf.Core.Abstractions.Services.IFrontedDesignerLocalizationService)">
+  FrontedBehaviorCopyPasteService(IFrontedBehaviorControlSemanticResolver, IFrontedDesignerLocalizationService?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorCopyPasteService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化行为复制/粘贴服务。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedBehaviorCopyPasteService(IFrontedBehaviorControlSemanticResolver semanticResolver, IFrontedDesignerLocalizationService? localizationService = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticResolver</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.IFrontedBehaviorControlSemanticResolver.html">IFrontedBehaviorControlSemanticResolver</a></dt>
+    <dd><p>用于触发器索引重映射的语义解析器。</p>
+</dd>
+    <dt><code>localizationService</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedDesignerLocalizationService.html">IFrontedDesignerLocalizationService</a></dt>
+    <dd><p>用于用户可见的粘贴消息的本地化服务。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorCopyPasteService_Copy_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorCopyPasteService.Copy*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorCopyPasteService_Copy_System_String_neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedControlDesignItem_neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehavior_neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorDocument_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorCopyPasteService.Copy(System.String,neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedControlDesignItem,neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehavior,neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorDocument)">
+  Copy(string, FrontedControlDesignItem, FrontedBehavior, FrontedBehaviorDocument?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorCopyPasteService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建深拷贝的剪贴板负载。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedBehaviorClipboardPayload Copy(string windowType, FrontedControlDesignItem source, FrontedBehavior behavior, FrontedBehaviorDocument? sourceDocument = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>windowType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>源窗口类型。</p>
+</dd>
+    <dt><code>source</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedControlDesignItem.html">FrontedControlDesignItem</a></dt>
+    <dd><p>源控件。</p>
+</dd>
+    <dt><code>behavior</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehavior.html">FrontedBehavior</a></dt>
+    <dd><p>源行为。</p>
+</dd>
+    <dt><code>sourceDocument</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorDocument.html">FrontedBehaviorDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.html">FrontedBehaviorClipboardPayload</a></dt>
+    <dd><p>剪贴板负载。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorCopyPasteService_Paste_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorCopyPasteService.Paste*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorCopyPasteService_Paste_neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedControlDesignItem_neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorDocument_neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorPasteOptions_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorCopyPasteService.Paste(neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload,neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedControlDesignItem,neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorDocument,neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorPasteOptions)">
+  Paste(FrontedBehaviorClipboardPayload, FrontedControlDesignItem, FrontedBehaviorDocument, FrontedBehaviorPasteOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorCopyPasteService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将深拷贝的行为粘贴到一个目标行为文档中。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedBehaviorPasteResult Paste(FrontedBehaviorClipboardPayload payload, FrontedControlDesignItem target, FrontedBehaviorDocument document, FrontedBehaviorPasteOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>payload</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.html">FrontedBehaviorClipboardPayload</a></dt>
+    <dd><p>已复制的行为负载。</p>
+</dd>
+    <dt><code>target</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedControlDesignItem.html">FrontedControlDesignItem</a></dt>
+    <dd><p>目标控件。</p>
+</dd>
+    <dt><code>document</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorDocument.html">FrontedBehaviorDocument</a></dt>
+    <dd><p>目标行为文档。</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorPasteOptions.html">FrontedBehaviorPasteOptions</a></dt>
+    <dd><p>粘贴选项。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorPasteResult.html">FrontedBehaviorPasteResult</a></dt>
+    <dd><p>粘贴结果。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorCopyPasteService_Preview_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorCopyPasteService.Preview*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorCopyPasteService_Preview_neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedControlDesignItem_neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorPasteOptions_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorCopyPasteService.Preview(neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload,neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedControlDesignItem,neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorPasteOptions)">
+  Preview(FrontedBehaviorClipboardPayload, FrontedControlDesignItem, FrontedBehaviorPasteOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorCopyPasteService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>预览单个目标控件的兼容性和重写。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedBehaviorPastePreview Preview(FrontedBehaviorClipboardPayload payload, FrontedControlDesignItem target, FrontedBehaviorPasteOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>payload</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.html">FrontedBehaviorClipboardPayload</a></dt>
+    <dd><p>已复制的行为负载。</p>
+</dd>
+    <dt><code>target</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedControlDesignItem.html">FrontedControlDesignItem</a></dt>
+    <dd><p>目标控件。</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorPasteOptions.html">FrontedBehaviorPasteOptions</a></dt>
+    <dd><p>粘贴选项。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorPastePreview.html">FrontedBehaviorPastePreview</a></dt>
+    <dd><p>粘贴预览。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorCopyPasteService.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

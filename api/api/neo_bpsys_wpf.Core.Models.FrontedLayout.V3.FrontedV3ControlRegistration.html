@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedV3ControlRegistration | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedV3ControlRegistration | neo-bpsys-wpf ">
+      
+      <meta name="description" content="v3 前台控件的注册信息，由统一 Registry 按  索引。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration" class="text-break">
+Class FrontedV3ControlRegistration  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.html">V3</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>v3 前台控件的注册信息，由统一 Registry 按 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_CanonicalControlType">CanonicalControlType</a> 索引。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedV3ControlRegistration</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedV3ControlRegistration</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+该类型统一了内置控件与插件控件的身份与元数据。
+Registry 只维护 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_CanonicalControlType">CanonicalControlType</a> → <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html">FrontedV3ControlRegistration</a>。
+</p>
+<p>
+身份规则：
+<ul><li>内置控件：<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_CanonicalControlType">CanonicalControlType</a> 直接使用 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_LocalControlId">LocalControlId</a>，例如 <code>Text</code>。</li><li>插件控件：<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_CanonicalControlType">CanonicalControlType</a> 为 <code>plugin:{PackageId}/{LocalControlId}</code>，例如 <code>plugin:plfjy.ExamplePlugin/TeamCard</code>。</li></ul>
+
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration__ctor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.#ctor">
+  FrontedV3ControlRegistration()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3ControlRegistration()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_CanonicalControlType_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.CanonicalControlType*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_CanonicalControlType" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.CanonicalControlType">
+  CanonicalControlType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件的 Canonical Control Type，作为 Registry 的唯一键。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required string CanonicalControlType { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_ConfigType_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.ConfigType*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_ConfigType" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.ConfigType">
+  ConfigType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件配置类型，必须继承 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a>。
+插件控件为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.PluginFrontedControlConfig.html">PluginFrontedControlConfig</a>；内置控件为各自的强类型 Config。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required Type ConfigType { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_ControlType_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.ControlType*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_ControlType" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.ControlType">
+  ControlType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件类型，必须继承 <span class="xref">System.Windows.FrameworkElement</span>（通常是 <code>FrontedV3ControlBase</code>）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required Type ControlType { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_CreateDefaultConfig_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.CreateDefaultConfig*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_CreateDefaultConfig" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.CreateDefaultConfig">
+  CreateDefaultConfig
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建默认配置实例的工厂。框架根据 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_IsBuiltIn">IsBuiltIn</a> 与 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_ConfigType">ConfigType</a> 提供默认实现。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required Func&lt;FrontedControlConfigBase&gt; CreateDefaultConfig { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_FixedParts_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.FixedParts*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_FixedParts" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.FixedParts">
+  FixedParts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件声明的固定 Part 定义列表，由控件类上的 <code>public static readonly FrontedV3Part</code> 字段发现，
+或由内置控件的 <code>BuiltInPartDefinitionResolver</code> 提供。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;FrontedV3PartDefinition&gt; FixedParts { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition.html">FrontedV3PartDefinition</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_FixedParts_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+插件控件通过 <code>FrontedV3Part.Register&lt;TControl&gt;</code> 声明固定 Part，
+框架在注册时通过 <a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3Part.html#neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Parts_FrontedV3Part_Discover_System_Type_">Discover(Type)</a>
+反射发现并转换为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition.html">FrontedV3PartDefinition</a>。
+</p>
+<p>
+内置控件（如 BorderedImage、MapV2Display）通过 <code>BuiltInPartDefinitionResolver</code>
+在注册时填充，无需在控件类上声明静态字段。
+</p>
+<p>
+Designer 选择 Part 时优先从该字段查找，确保插件 Part 与内置 Part 走统一链路。
+默认为空列表，表示控件无可编辑的固定 Part。
+</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_IsBuiltIn_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.IsBuiltIn*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_IsBuiltIn" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.IsBuiltIn">
+  IsBuiltIn
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否为宿主内置控件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBuiltIn { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_LocalControlId_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.LocalControlId*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_LocalControlId" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.LocalControlId">
+  LocalControlId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件局部标识，例如 <code>TeamCard</code> 或内置的 <code>Text</code>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required string LocalControlId { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_Metadata_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.Metadata*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_Metadata" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.Metadata">
+  Metadata
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件在 Designer 与运行时的元数据，由 FrontedV3ControlAttribute 推导。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3ControlMetadata Metadata { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.html">FrontedV3ControlMetadata</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_Metadata_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>默认为空 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlMetadata.html">FrontedV3ControlMetadata</a>，调用方按字段 null 情况回退到合理默认值。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_PackageId_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.PackageId*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_PackageId" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.PackageId">
+  PackageId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>所属插件包 ID；内置控件为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? PackageId { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_PartCollections_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.PartCollections*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_PartCollections" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.PartCollections">
+  PartCollections
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件声明的 PartCollection 定义列表，由控件类上的 <code>public static readonly FrontedV3Parts</code> 字段发现，
+或由内置控件的 <code>BuiltInPartCollectionDefinitionResolver</code> 提供。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;FrontedV3PartCollectionDefinition&gt; PartCollections { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_PartCollections_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+插件控件通过 <code>FrontedV3Parts.RegisterCollection&lt;TControl&gt;</code> 声明 PartCollection，
+框架在注册时通过 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3Parts.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3Parts_Discover_System_Type_">Discover(Type)</a>
+反射发现并转换为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a>。
+</p>
+<p>
+内置控件（如 GlobalScoreRow）通过 <code>BuiltInPartCollectionDefinitionResolver</code>
+在注册时填充，无需在控件类上声明静态字段。
+</p>
+<p>
+Designer 选择集合项时优先从该字段查找，确保插件与内置走统一链路。
+默认为空列表，表示控件无可编辑的 PartCollection。
+</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_Properties_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.Properties*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_Properties" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.Properties">
+  Properties
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件的属性定义列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required IReadOnlyList&lt;FrontedV3PropertyDefinition&gt; Properties { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html">FrontedV3PropertyDefinition</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_StyleTransfer_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.StyleTransfer*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_StyleTransfer" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.StyleTransfer">
+  StyleTransfer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>控件的 StyleTransfer 能力声明，描述哪些语义分类可以参与传播。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3PropertyTransfer StyleTransfer { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyTransfer.html">FrontedV3PropertyTransfer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_StyleTransfer_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+默认为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyTransfer.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyTransfer_Default">Default</a>（仅 Appearance 可传播）。
+实际传播时还需配合 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferProfile.html">FrontedV3StyleTransferProfile</a>（每次操作的选择），
+只有能力允许且 profile 选中的语义才会真正传播。
+</p>
+<p>
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertySemantic.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_DataIdentity">DataIdentity</a> 永远不可传播，无论能力声明如何设置。
+</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_SupportsPeerStyleTransfer_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.SupportsPeerStyleTransfer*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_SupportsPeerStyleTransfer" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.SupportsPeerStyleTransfer">
+  SupportsPeerStyleTransfer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否在 Designer 中显示&quot;应用到同类型控件&quot;按钮并允许同类型 peer 之间传播外观样式。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportsPeerStyleTransfer { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_SupportsPeerStyleTransfer_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+默认为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。该字段由 Registry 在注册时从
+<code>FrontedV3ControlAttribute.SupportsPeerStyleTransfer</code>
+复制而来，用于在 Designer 中门控同类型 peer 样式传播入口的可见性与可用性。
+</p>
+<p>
+仅当该字段为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> 时，Designer 才会显示"应用到同类型控件"按钮；
+按钮的启用还需满足存在同类型 peer 等其他条件。
+</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/FrontedV3ControlRegistration.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

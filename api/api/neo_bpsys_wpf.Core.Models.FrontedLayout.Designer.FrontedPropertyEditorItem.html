@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedPropertyEditorItem | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedPropertyEditorItem | neo-bpsys-wpf ">
+      
+      <meta name="description" content="设计器 v3 属性网格中的单个可编辑行。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem" class="text-break">
+Class FrontedPropertyEditorItem  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.html">Designer</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>设计器 v3 属性网格中的单个可编辑行。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FrontedPropertyEditorItem : ObservableObject, INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">ObservableObject</span></div>
+      <div><span class="xref">FrontedPropertyEditorItem</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem__ctor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.#ctor">
+  FrontedPropertyEditorItem()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedPropertyEditorItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_AllowedBindingTypeNames_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.AllowedBindingTypeNames*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_AllowedBindingTypeNames" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.AllowedBindingTypeNames">
+  AllowedBindingTypeNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>绑定浏览器为此行接受的类型名称列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; AllowedBindingTypeNames { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_BindingTargetKind_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.BindingTargetKind*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_BindingTargetKind" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.BindingTargetKind">
+  BindingTargetKind
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>绑定浏览器过滤使用的预期绑定目标类别。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedBindingTargetKind BindingTargetKind { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedBindingTargetKind.html">FrontedBindingTargetKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_BrowseButtonText_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.BrowseButtonText*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_BrowseButtonText" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.BrowseButtonText">
+  BrowseButtonText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>可选的短浏览按钮文本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? BrowseButtonText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_BrowseDialogTitle_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.BrowseDialogTitle*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_BrowseDialogTitle" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.BrowseDialogTitle">
+  BrowseDialogTitle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>可选的浏览对话框标题键。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? BrowseDialogTitle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_CanBrowseBinding_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.CanBrowseBinding*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_CanBrowseBinding" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.CanBrowseBinding">
+  CanBrowseBinding
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指示此文本类行是否能打开绑定浏览器。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanBrowseBinding { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_CanBrowseResource_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.CanBrowseResource*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_CanBrowseResource" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.CanBrowseResource">
+  CanBrowseResource
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指示此文本类行是否能打开资源浏览器。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanBrowseResource { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_CanToggleInheritance_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.CanToggleInheritance*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_CanToggleInheritance" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.CanToggleInheritance">
+  CanToggleInheritance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置指示该属性是否支持&quot;跟随父控件 / 独立设定&quot;切换的值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanToggleInheritance { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_CanToggleInheritance_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>仅对 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_ParentFallback">ParentFallback</a>
+继承模式的子控件属性为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。PropertyGrid 在该值为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> 时
+显示一个 CheckBox，允许用户切换 override 与跟随父控件两种状态。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_ColorValue_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.ColorValue*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_ColorValue" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.ColorValue">
+  ColorValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>颜色字符串行的 ColorPicker 友好值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ColorValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_Description_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.Description*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_Description" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.Description">
+  Description
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>属性的可选帮助文本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Description { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_DisplayName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.DisplayName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_DisplayName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.DisplayName">
+  DisplayName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>面向用户的行标签。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DisplayName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_DisplayValue_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.DisplayValue*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_DisplayValue" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.DisplayValue">
+  DisplayValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>只读值的可选面向用户显示文本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DisplayValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_EditError_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.EditError*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_EditError" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.EditError">
+  EditError
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>最近一次失败的显式文本提交的验证消息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? EditError { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_EditText_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.EditText*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_EditText" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.EditText">
+  EditText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>显式提交类文本行的用户编辑缓冲区。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? EditText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_EditorKind_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.EditorKind*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_EditorKind" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.EditorKind">
+  EditorKind
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>为该属性选择的编辑器类型。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedPropertyEditorKind EditorKind { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorKind.html">FrontedPropertyEditorKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_ExpectedBindingTypeName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.ExpectedBindingTypeName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_ExpectedBindingTypeName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.ExpectedBindingTypeName">
+  ExpectedBindingTypeName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>预期绑定类型的短显示名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ExpectedBindingTypeName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_GroupDisplayName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.GroupDisplayName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_GroupDisplayName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.GroupDisplayName">
+  GroupDisplayName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>用于显示的本地化分组标签。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GroupDisplayName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_GroupName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.GroupName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_GroupName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.GroupName">
+  GroupName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>逻辑分组名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GroupName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_HasEditError_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.HasEditError*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_HasEditError" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.HasEditError">
+  HasEditError
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指示最近一次显式文本提交是否未通过验证。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasEditError { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsEditingDisabled_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsEditingDisabled*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsEditingDisabled" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsEditingDisabled">
+  IsEditingDisabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指示该行的编辑器控件是否完全禁用交互（IsEnabled=false）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEditingDisabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsEditingDisabled_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>与 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.html#neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsReadOnly">IsReadOnly</a> 的区别：<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.html#neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsReadOnly">IsReadOnly</a> 主要针对文本输入（光标可进入但不可修改），
+而 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.html#neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsEditingDisabled">IsEditingDisabled</a> 通过 <code>IsEnabled=false</code> 完全禁用编辑器（包括 ComboBox/CheckBox/ColorPicker 等）。
+典型场景：子控件属性&quot;跟随父控件&quot;时，编辑器应完全禁用，仅显示从父控件继承的值。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsGroupHeaderVisible_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsGroupHeaderVisible*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsGroupHeaderVisible" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsGroupHeaderVisible">
+  IsGroupHeaderVisible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指示此行是否应显示其分组标题。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGroupHeaderVisible { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsInheritedFromParent_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsInheritedFromParent*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsInheritedFromParent" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsInheritedFromParent">
+  IsInheritedFromParent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置指示该属性当前是否从父控件继承（即子控件未设置 override）的值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInheritedFromParent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsInheritedFromParent_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>当 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.html#neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_CanToggleInheritance">CanToggleInheritance</a> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> 时，该值驱动 PropertyGrid 中
+切换 CheckBox 的选中状态：选中表示跟随父控件（无 override），未选中表示独立设定（有 override）。
+切换该值时不会直接修改底层 Config，需由 ViewModel 命令处理清除或写入 override。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsMultiSelectionBatchEditable_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsMultiSelectionBatchEditable*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsMultiSelectionBatchEditable" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsMultiSelectionBatchEditable">
+  IsMultiSelectionBatchEditable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置指示此行是否可对当前多选进行批量编辑的值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMultiSelectionBatchEditable { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsMultiSelectionMixedValue_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsMultiSelectionMixedValue*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsMultiSelectionMixedValue" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsMultiSelectionMixedValue">
+  IsMultiSelectionMixedValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置指示该行是否表示具有不同当前值的选中控件的值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMultiSelectionMixedValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsReadOnly_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsReadOnly*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsReadOnly" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsReadOnly">
+  IsReadOnly
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指示该行是否为只读。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsRequired_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsRequired*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsRequired" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsRequired">
+  IsRequired
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指示该属性是否为必需。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRequired { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsSectionHeaderVisible_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsSectionHeaderVisible*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsSectionHeaderVisible" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsSectionHeaderVisible">
+  IsSectionHeaderVisible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指示此行是否应显示所属小节标题。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSectionHeaderVisible { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsSectionItem_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsSectionItem*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_IsSectionItem" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.IsSectionItem">
+  IsSectionItem
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指示此行是否属于分组内的小节，应在属性网格中以缩进方式显示。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSectionItem { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_Options_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.Options*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_Options" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.Options">
+  Options
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>枚举类编辑器的可选值列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;object&gt;? Options { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<span class="xref">object</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_PropertyName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.PropertyName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_PropertyName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.PropertyName">
+  PropertyName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>底层设计项或配置属性名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PropertyName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_PropertyType_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.PropertyType*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_PropertyType" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.PropertyType">
+  PropertyType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>底层 CLR 属性类型。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type PropertyType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_RequiresExplicitCommit_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.RequiresExplicitCommit*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_RequiresExplicitCommit" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.RequiresExplicitCommit">
+  RequiresExplicitCommit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置指示该行是否在写入配置前等待 Enter、应用或浏览器选择的值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequiresExplicitCommit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_SectionDisplayName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.SectionDisplayName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_SectionDisplayName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.SectionDisplayName">
+  SectionDisplayName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前分组内小节的本地化显示名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? SectionDisplayName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_SectionName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.SectionName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_SectionName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.SectionName">
+  SectionName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前分组内的可选小节标识。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? SectionName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_ValidationErrors_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.ValidationErrors*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_ValidationErrors" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.ValidationErrors">
+  ValidationErrors
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>附加到此属性行的验证消息列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; ValidationErrors { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_ValidationMessages_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.ValidationMessages*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_ValidationMessages" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.ValidationMessages">
+  ValidationMessages
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>附加到此属性行的、带有严重级别的验证消息列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;FrontedLayoutValidationMessage&gt; ValidationMessages { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedLayoutValidationMessage.html">FrontedLayoutValidationMessage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_Value_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.Value*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_Value" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.Value">
+  Value
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前属性值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? Value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">object</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_SetEditError_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.SetEditError*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Designer_FrontedPropertyEditorItem_SetEditError_System_String_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Designer.FrontedPropertyEditorItem.SetEditError(System.String)">
+  SetEditError(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>应用失败的编辑状态，不丢弃用户的编辑缓冲区。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEditError(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Designer/FrontedPropertyEditorItem.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

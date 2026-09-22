@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class SevenZipArchiveService | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SevenZipArchiveService | neo-bpsys-wpf ">
+      
+      <meta name="description" content="基于官方 x64 7z.exe 的运行时归档服务,支持 ZIP 和 7z 包。 所有进程调用通过  启动,支持 CancellationToken 和原生进度汇报。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_Archives_SevenZipArchiveService" data-uid="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService" class="text-break">
+Class SevenZipArchiveService  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Archives/SevenZipArchiveService.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.Archives.html">Archives</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>基于官方 x64 7z.exe 的运行时归档服务,支持 ZIP 和 7z 包。
+所有进程调用通过 <span class="xref">neo_bpsys_wpf.Core.Services.Archives.SevenZipProcessRunner</span> 启动,支持 CancellationToken 和原生进度汇报。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SevenZipArchiveService : IArchiveService</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">SevenZipArchiveService</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IArchiveService.html">IArchiveService</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_Archives_SevenZipArchiveService__ctor_" data-uid="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_Archives_SevenZipArchiveService__ctor" data-uid="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService.#ctor">
+  SevenZipArchiveService()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Archives/SevenZipArchiveService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建 <a class="xref" href="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService.html">SevenZipArchiveService</a> 实例,使用默认的 <a class="xref" href="neo_bpsys_wpf.Core.Services.Archives.SevenZipToolLocator.html">SevenZipToolLocator</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SevenZipArchiveService()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_Archives_SevenZipArchiveService__ctor_" data-uid="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_Archives_SevenZipArchiveService__ctor_neo_bpsys_wpf_Core_Services_Archives_SevenZipToolLocator_" data-uid="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService.#ctor(neo_bpsys_wpf.Core.Services.Archives.SevenZipToolLocator)">
+  SevenZipArchiveService(SevenZipToolLocator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Archives/SevenZipArchiveService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建 <a class="xref" href="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService.html">SevenZipArchiveService</a> 实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SevenZipArchiveService(SevenZipToolLocator toolLocator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toolLocator</code> <a class="xref" href="neo_bpsys_wpf.Core.Services.Archives.SevenZipToolLocator.html">SevenZipToolLocator</a></dt>
+    <dd><p>7z.exe 定位器。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_Archives_SevenZipArchiveService_DetectFormatAsync_" data-uid="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService.DetectFormatAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_Archives_SevenZipArchiveService_DetectFormatAsync_System_String_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService.DetectFormatAsync(System.String,System.Threading.CancellationToken)">
+  DetectFormatAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Archives/SevenZipArchiveService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>通过探测归档内容检测归档格式。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ArchiveFormat&gt; DetectFormatAsync(string archivePath, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>archivePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>归档文件路径。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.Archives.ArchiveFormat.html">ArchiveFormat</a>&gt;</dt>
+    <dd><p>检测到的归档格式。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a></dt>
+    <dd><p>当归档文件不存在时抛出。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.invaliddataexception">InvalidDataException</a></dt>
+    <dd><p>当文件不是受支持的归档时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_Archives_SevenZipArchiveService_ExtractToDirectoryAsync_" data-uid="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService.ExtractToDirectoryAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_Archives_SevenZipArchiveService_ExtractToDirectoryAsync_System_String_System_String_System_IProgress_neo_bpsys_wpf_Core_Models_Archives_ArchiveProgress__System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService.ExtractToDirectoryAsync(System.String,System.String,System.IProgress{neo_bpsys_wpf.Core.Models.Archives.ArchiveProgress},System.Threading.CancellationToken)">
+  ExtractToDirectoryAsync(string, string, IProgress&lt;ArchiveProgress&gt;?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Archives/SevenZipArchiveService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将归档安全地解压到目标目录，并在解压过程中报告进度。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ArchiveFormat&gt; ExtractToDirectoryAsync(string archivePath, string destinationDirectory, IProgress&lt;ArchiveProgress&gt;? progress, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>archivePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>归档文件路径。</p>
+</dd>
+    <dt><code>destinationDirectory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>目标目录。</p>
+</dd>
+    <dt><code>progress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.Archives.ArchiveProgress.html">ArchiveProgress</a>&gt;</dt>
+    <dd><p>可选的解压进度报告器。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.Archives.ArchiveFormat.html">ArchiveFormat</a>&gt;</dt>
+    <dd><p>检测到的归档格式。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a></dt>
+    <dd><p>当归档文件不存在时抛出。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.invaliddataexception">InvalidDataException</a></dt>
+    <dd><p>当文件不是受支持的归档时抛出。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>当归档条目路径不安全或解压失败时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_Archives_SevenZipArchiveService_ExtractToDirectoryAsync_" data-uid="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService.ExtractToDirectoryAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_Archives_SevenZipArchiveService_ExtractToDirectoryAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.Archives.SevenZipArchiveService.ExtractToDirectoryAsync(System.String,System.String,System.Threading.CancellationToken)">
+  ExtractToDirectoryAsync(string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Archives/SevenZipArchiveService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将归档安全地解压到目标目录。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ArchiveFormat&gt; ExtractToDirectoryAsync(string archivePath, string destinationDirectory, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>archivePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>归档文件路径。</p>
+</dd>
+    <dt><code>destinationDirectory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>目标目录。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.Archives.ArchiveFormat.html">ArchiveFormat</a>&gt;</dt>
+    <dd><p>检测到的归档格式。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a></dt>
+    <dd><p>当归档文件不存在时抛出。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.invaliddataexception">InvalidDataException</a></dt>
+    <dd><p>当文件不是受支持的归档时抛出。</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>当归档条目路径不安全或解压失败时抛出。</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/Archives/SevenZipArchiveService.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

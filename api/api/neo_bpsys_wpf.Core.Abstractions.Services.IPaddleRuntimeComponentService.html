@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IPaddleRuntimeComponentService | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IPaddleRuntimeComponentService | neo-bpsys-wpf ">
+      
+      <meta name="description" content="Paddle CUDA runtime 组件管理服务。负责下载、校验、安装、删除和状态检查。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService" class="text-break">
+Interface IPaddleRuntimeComponentService  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.html">Abstractions</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Paddle CUDA runtime 组件管理服务。负责下载、校验、安装、删除和状态检查。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IPaddleRuntimeComponentService</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_DownloadProgress_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.DownloadProgress*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_DownloadProgress" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.DownloadProgress">
+  DownloadProgress
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前下载进度（0-100）；未下载时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double? DownloadProgress { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_DownloadSpeed_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.DownloadSpeed*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_DownloadSpeed" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.DownloadSpeed">
+  DownloadSpeed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前下载速度（字节/秒）；未下载时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double? DownloadSpeed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_IsDownloadFinished_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.IsDownloadFinished*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_IsDownloadFinished" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.IsDownloadFinished">
+  IsDownloadFinished
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前下载是否已完成（含校验与安装）。参照 <code>UpdaterService.IsDownloadFinished</code>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsDownloadFinished { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_IsDownloadPaused_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.IsDownloadPaused*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_IsDownloadPaused" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.IsDownloadPaused">
+  IsDownloadPaused
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前下载是否已暂停。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsDownloadPaused { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_IsDownloading_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.IsDownloading*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_IsDownloading" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.IsDownloading">
+  IsDownloading
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前是否正在下载。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsDownloading { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_LastInstallSucceeded_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.LastInstallSucceeded*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_LastInstallSucceeded" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.LastInstallSucceeded">
+  LastInstallSucceeded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>上一次下载安装的结果：<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 表示尚未完成过一次安装，
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> 表示成功，<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 表示失败或取消。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool? LastInstallSucceeded { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_CancelDownload_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.CancelDownload*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_CancelDownload" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.CancelDownload">
+  CancelDownload()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>取消正在进行的下载。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CancelDownload()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_DeleteComponent_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.DeleteComponent*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_DeleteComponent" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.DeleteComponent">
+  DeleteComponent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>删除已安装的 CUDA 组件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteComponent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>删除是否成功。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_DownloadAsync_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.DownloadAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_DownloadAsync_neo_bpsys_wpf_Core_Abstractions_Services_PaddleRuntimePackageInfo_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.DownloadAsync(neo_bpsys_wpf.Core.Abstractions.Services.PaddleRuntimePackageInfo,System.Threading.CancellationToken)">
+  DownloadAsync(PaddleRuntimePackageInfo, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>启动指定 CUDA runtime 包的下载。下载与随后的校验、安装均在后台异步进行，
+调用方不应 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/operators/await">await</a> 下载结果；应通过 <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.html#neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_DownloadStateChanged">DownloadStateChanged</a>
+事件以及 <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.html#neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_IsDownloading">IsDownloading</a>、<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.html#neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_IsDownloadFinished">IsDownloadFinished</a>、
+<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.html#neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_LastInstallSucceeded">LastInstallSucceeded</a> 属性感知状态。
+参照 <code>UpdaterService.DownloadUpdate</code> 的 fire-and-forget 模式。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DownloadAsync(PaddleRuntimePackageInfo package, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.PaddleRuntimePackageInfo.html">PaddleRuntimePackageInfo</a></dt>
+    <dd><p>要安装的包信息。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>已启动下载的任务（<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task.completedtask">CompletedTask</a>）；不代表下载完成。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_GetInstallStatus_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.GetInstallStatus*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_GetInstallStatus" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.GetInstallStatus">
+  GetInstallStatus()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前 CUDA 组件安装状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PaddleRuntimeInstallInfo GetInstallStatus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.PaddleRuntimeInstallInfo.html">PaddleRuntimeInstallInfo</a></dt>
+    <dd><p>安装信息。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_IsCompatibleWithCurrentVersion_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.IsCompatibleWithCurrentVersion*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_IsCompatibleWithCurrentVersion" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.IsCompatibleWithCurrentVersion">
+  IsCompatibleWithCurrentVersion()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>检查已安装组件是否与当前 PaddleInference 版本兼容。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsCompatibleWithCurrentVersion()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>兼容返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>；未安装或不兼容返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_PauseDownload_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.PauseDownload*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_PauseDownload" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.PauseDownload">
+  PauseDownload()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>暂停正在进行的下载。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PauseDownload()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_ResumeDownload_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.ResumeDownload*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_ResumeDownload" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.ResumeDownload">
+  ResumeDownload()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>恢复已暂停的下载。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ResumeDownload()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeComponentService_DownloadStateChanged" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeComponentService.DownloadStateChanged">
+  DownloadStateChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>下载状态变化事件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler? DownloadStateChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeComponentService.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
