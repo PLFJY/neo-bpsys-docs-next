@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IWindowCaptureService | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IWindowCaptureService | neo-bpsys-wpf ">
+      
+      <meta name="description" content="窗口捕获服务">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService" class="text-break">
+Interface IWindowCaptureService  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWindowCaptureService.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.html">Abstractions</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>窗口捕获服务</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IWindowCaptureService</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_IsCapturing_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.IsCapturing*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_IsCapturing" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.IsCapturing">
+  IsCapturing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWindowCaptureService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前是否处于捕获状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsCapturing { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_GetCurrentFrame_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.GetCurrentFrame*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_GetCurrentFrame" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.GetCurrentFrame">
+  GetCurrentFrame()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWindowCaptureService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前缓存的最新帧。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BitmapSource? GetCurrentFrame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">BitmapSource</span></dt>
+    <dd><p>当前帧；若尚未产生有效帧则返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_ListActiveWindows_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.ListActiveWindows*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_ListActiveWindows" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.ListActiveWindows">
+  ListActiveWindows()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWindowCaptureService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前可用于捕获的窗口列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;WindowInfo&gt; ListActiveWindows()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.WindowInfo.html">WindowInfo</a>&gt;</dt>
+    <dd><p>窗口信息列表。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_OpenPreviewWindow_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.OpenPreviewWindow*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_OpenPreviewWindow" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.OpenPreviewWindow">
+  OpenPreviewWindow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWindowCaptureService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>打开捕获预览窗口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OpenPreviewWindow()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_StartCapture_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.StartCapture*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_StartCapture_neo_bpsys_wpf_Core_Models_WindowInfo_neo_bpsys_wpf_Core_Enums_CaptureMethod_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.StartCapture(neo_bpsys_wpf.Core.Models.WindowInfo,neo_bpsys_wpf.Core.Enums.CaptureMethod)">
+  StartCapture(WindowInfo?, CaptureMethod)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWindowCaptureService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>以指定方式启动对目标窗口的捕获。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool StartCapture(WindowInfo? window, CaptureMethod captureMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>window</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.WindowInfo.html">WindowInfo</a></dt>
+    <dd><p>目标窗口信息。</p>
+</dd>
+    <dt><code>captureMethod</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.CaptureMethod.html">CaptureMethod</a></dt>
+    <dd><p>捕获方式。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>启动成功返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>，否则返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_StartCaptureWithPickerAsync_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.StartCaptureWithPickerAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_StartCaptureWithPickerAsync" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.StartCaptureWithPickerAsync">
+  StartCaptureWithPickerAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWindowCaptureService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>打开系统窗口选择器并对用户所选窗口启动捕获。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; StartCaptureWithPickerAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>启动成功返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>；用户取消或失败返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_StopCapture_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.StopCapture*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IWindowCaptureService_StopCapture" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IWindowCaptureService.StopCapture">
+  StopCapture()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWindowCaptureService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>停止当前捕获会话并释放相关资源。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void StopCapture()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IWindowCaptureService.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IPaddleRuntimeState | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IPaddleRuntimeState | neo-bpsys-wpf ">
+      
+      <meta name="description" content="Paddle runtime 运行时状态。提供当前进程实际加载的后端、设备、模块路径等只读状态。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState" class="text-break">
+Interface IPaddleRuntimeState  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.html">Abstractions</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Paddle runtime 运行时状态。提供当前进程实际加载的后端、设备、模块路径等只读状态。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IPaddleRuntimeState</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_ActiveBackend_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.ActiveBackend*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_ActiveBackend" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.ActiveBackend">
+  ActiveBackend
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>本进程实际激活的推理后端。由 Bootstrap 在启动时确定，运行期不可变。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OcrInferenceBackend ActiveBackend { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.OcrInferenceBackend.html">OcrInferenceBackend</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_ActiveCudaDeviceId_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.ActiveCudaDeviceId*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_ActiveCudaDeviceId" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.ActiveCudaDeviceId">
+  ActiveCudaDeviceId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>实际使用的 CUDA 设备 ID；<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.html#neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_ActiveBackend">ActiveBackend</a> 非 Cuda 时为 -1。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ActiveCudaDeviceId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_CudaRuntimeCompatible_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.CudaRuntimeCompatible*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_CudaRuntimeCompatible" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.CudaRuntimeCompatible">
+  CudaRuntimeCompatible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>已安装的 CUDA runtime 组件是否与当前 PaddleInference 版本兼容。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CudaRuntimeCompatible { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_CudaRuntimeInstalled_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.CudaRuntimeInstalled*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_CudaRuntimeInstalled" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.CudaRuntimeInstalled">
+  CudaRuntimeInstalled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>CUDA runtime 组件是否已安装。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CudaRuntimeInstalled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_DetectedCudaDevices_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.DetectedCudaDevices*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_DetectedCudaDevices" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.DetectedCudaDevices">
+  DetectedCudaDevices
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>检测到的 CUDA 设备列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;CudaDeviceInfo&gt; DetectedCudaDevices { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.CudaDeviceInfo.html">CudaDeviceInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_LoadedNativeModulePath_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.LoadedNativeModulePath*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_LoadedNativeModulePath" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.LoadedNativeModulePath">
+  LoadedNativeModulePath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>实际加载的 <code>paddle_inference_c.dll</code> 完整路径。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string? LoadedNativeModulePath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_PaddleBackendVerified_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.PaddleBackendVerified*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_PaddleBackendVerified" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.PaddleBackendVerified">
+  PaddleBackendVerified
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>PaddleOCR Predictor 是否在当前后端下成功构造并验证。
+仅当 <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.html#neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_ActiveBackend">ActiveBackend</a> 为 <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.OcrInferenceBackend.html#neo_bpsys_wpf_Core_Abstractions_Services_OcrInferenceBackend_Cuda">Cuda</a> 且
+真实 <code>PaddleOcrAll</code> 构造成功（含 det/cls/rec 三个 Predictor）后才为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。
+用于区分&quot;runtime DLL 加载成功&quot;与&quot;真实模型在 GPU 上可用&quot;。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool PaddleBackendVerified { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_RestartRequired_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.RestartRequired*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_RestartRequired" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.RestartRequired">
+  RestartRequired
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否需要重启以应用后端切换。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RestartRequired { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_RuntimeLoadError_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.RuntimeLoadError*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_RuntimeLoadError" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.RuntimeLoadError">
+  RuntimeLoadError
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>runtime 加载错误信息；无错误时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string? RuntimeLoadError { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_SelectedCudaDevice_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.SelectedCudaDevice*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_SelectedCudaDevice" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.SelectedCudaDevice">
+  SelectedCudaDevice
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>选中的 CUDA 设备；无设备时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CudaDeviceInfo? SelectedCudaDevice { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.CudaDeviceInfo.html">CudaDeviceInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IPaddleRuntimeState_StateChanged" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IPaddleRuntimeState.StateChanged">
+  StateChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>状态变化事件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler? StateChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IPaddleRuntimeState.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

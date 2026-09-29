@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedV3PartDefinitionValidator | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedV3PartDefinitionValidator | neo-bpsys-wpf ">
+      
+      <meta name="description" content="校验  与  列表的声明完整性，在控件注册时 fail-fast 阻止非法声明进入 Registration。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3PartDefinitionValidator">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Parts_FrontedV3PartDefinitionValidator" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3PartDefinitionValidator" class="text-break">
+Class FrontedV3PartDefinitionValidator  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Parts/FrontedV3PartDefinitionValidator.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.html">V3</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.html">Parts</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>校验 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition.html">FrontedV3PartDefinition</a> 与 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a>
+列表的声明完整性，在控件注册时 fail-fast 阻止非法声明进入 Registration。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FrontedV3PartDefinitionValidator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedV3PartDefinitionValidator</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Parts_FrontedV3PartDefinitionValidator_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+该校验器在插件控件注册（<code>AddFrontedV3Control&lt;T&gt;</code>）与内置控件注册
+（<code>AddBuiltInFrontedV3Control&lt;TControl,TConfig&gt;</code>）路径中共享调用，
+确保两条注册链路对 Part/PartCollection 的约束保持一致。
+</p>
+<p>
+校验规则：
+<ul><li>Part Id 与 PartCollection Id 必须非空、非空白、不含路径分隔符或文件系统非法字符。</li><li>同一控件内的 Part Id 之间必须唯一（区分大小写）。</li><li>同一控件内的 PartCollection Id 之间必须唯一（区分大小写）。</li><li>Part Id 与 PartCollection Id 之间不得冲突（避免 Designer 选中歧义）。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanMove">CanMove</a> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> 时，
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartDefinition_XStorage">XStorage</a> 与 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartDefinition_YStorage">YStorage</a>
+不得同时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCapabilities.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCapabilities_CanResize">CanResize</a> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> 时，
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartDefinition_WidthStorage">WidthStorage</a> 与 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartDefinition_HeightStorage">HeightStorage</a>
+不得同时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionStrategy.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionStrategy_FixedTemplate">FixedTemplate</a> 策略的 PartCollection
+必须配置 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_EnsureTemplateItems">EnsureTemplateItems</a>。</li><li>声明了具名 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_Templates">Templates</a> 的 PartCollection
+必须同时配置 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition_ApplyTemplate">ApplyTemplate</a>。</li></ul>
+
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Parts_FrontedV3PartDefinitionValidator_Validate_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3PartDefinitionValidator.Validate*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Parts_FrontedV3PartDefinitionValidator_Validate_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartDefinition__System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition__System_Type_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3PartDefinitionValidator.Validate(System.Collections.Generic.IReadOnlyList{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition},System.Collections.Generic.IReadOnlyList{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition},System.Type)">
+  Validate(IReadOnlyList&lt;FrontedV3PartDefinition&gt;, IReadOnlyList&lt;FrontedV3PartCollectionDefinition&gt;, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Parts/FrontedV3PartDefinitionValidator.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>校验固定 Part 列表与 PartCollection 列表的声明完整性，包括跨集合 Id 唯一性。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Validate(IReadOnlyList&lt;FrontedV3PartDefinition&gt; parts, IReadOnlyList&lt;FrontedV3PartCollectionDefinition&gt; collections, Type controlType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition.html">FrontedV3PartDefinition</a>&gt;</dt>
+    <dd><p>固定 Part 定义列表。</p>
+</dd>
+    <dt><code>collections</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a>&gt;</dt>
+    <dd><p>PartCollection 定义列表。</p>
+</dd>
+    <dt><code>controlType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>控件类型，用于错误消息。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedLayoutConfigException.html">FrontedLayoutConfigException</a></dt>
+    <dd><p>当任何 Part 或 PartCollection 声明违反约束时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Parts_FrontedV3PartDefinitionValidator_ValidateCrossCollectionIdUniqueness_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3PartDefinitionValidator.ValidateCrossCollectionIdUniqueness*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Parts_FrontedV3PartDefinitionValidator_ValidateCrossCollectionIdUniqueness_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartDefinition__System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition__System_Type_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3PartDefinitionValidator.ValidateCrossCollectionIdUniqueness(System.Collections.Generic.IReadOnlyList{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition},System.Collections.Generic.IReadOnlyList{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition},System.Type)">
+  ValidateCrossCollectionIdUniqueness(IReadOnlyList&lt;FrontedV3PartDefinition&gt;, IReadOnlyList&lt;FrontedV3PartCollectionDefinition&gt;, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Parts/FrontedV3PartDefinitionValidator.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>校验 Part Id 与 PartCollection Id 之间不得冲突。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidateCrossCollectionIdUniqueness(IReadOnlyList&lt;FrontedV3PartDefinition&gt; parts, IReadOnlyList&lt;FrontedV3PartCollectionDefinition&gt; collections, Type controlType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition.html">FrontedV3PartDefinition</a>&gt;</dt>
+    <dd><p>固定 Part 定义列表。</p>
+</dd>
+    <dt><code>collections</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a>&gt;</dt>
+    <dd><p>PartCollection 定义列表。</p>
+</dd>
+    <dt><code>controlType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>控件类型，用于错误消息。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedLayoutConfigException.html">FrontedLayoutConfigException</a></dt>
+    <dd><p>当 Part Id 与 PartCollection Id 冲突时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Parts_FrontedV3PartDefinitionValidator_ValidatePartCollections_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3PartDefinitionValidator.ValidatePartCollections*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Parts_FrontedV3PartDefinitionValidator_ValidatePartCollections_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartCollectionDefinition__System_Type_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3PartDefinitionValidator.ValidatePartCollections(System.Collections.Generic.IReadOnlyList{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition},System.Type)">
+  ValidatePartCollections(IReadOnlyList&lt;FrontedV3PartCollectionDefinition&gt;, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Parts/FrontedV3PartDefinitionValidator.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>校验 PartCollection 列表的 Id 合法性、唯一性、策略/回调配对与 Templates/ApplyTemplate 配对。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidatePartCollections(IReadOnlyList&lt;FrontedV3PartCollectionDefinition&gt; collections, Type controlType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collections</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartCollectionDefinition.html">FrontedV3PartCollectionDefinition</a>&gt;</dt>
+    <dd><p>PartCollection 定义列表。</p>
+</dd>
+    <dt><code>controlType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>控件类型，用于错误消息。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedLayoutConfigException.html">FrontedLayoutConfigException</a></dt>
+    <dd><p>当 PartCollection 声明违反约束时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Parts_FrontedV3PartDefinitionValidator_ValidateParts_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3PartDefinitionValidator.ValidateParts*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_Parts_FrontedV3PartDefinitionValidator_ValidateParts_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Parts_FrontedV3PartDefinition__System_Type_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3PartDefinitionValidator.ValidateParts(System.Collections.Generic.IReadOnlyList{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition},System.Type)">
+  ValidateParts(IReadOnlyList&lt;FrontedV3PartDefinition&gt;, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Parts/FrontedV3PartDefinitionValidator.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>校验固定 Part 列表的 Id 合法性、唯一性与 Capabilities/Storage 配对。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidateParts(IReadOnlyList&lt;FrontedV3PartDefinition&gt; parts, Type controlType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Parts.FrontedV3PartDefinition.html">FrontedV3PartDefinition</a>&gt;</dt>
+    <dd><p>Part 定义列表。</p>
+</dd>
+    <dt><code>controlType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>控件类型，用于错误消息。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedLayoutConfigException.html">FrontedLayoutConfigException</a></dt>
+    <dd><p>当 Part 声明违反约束时抛出。</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/Parts/FrontedV3PartDefinitionValidator.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

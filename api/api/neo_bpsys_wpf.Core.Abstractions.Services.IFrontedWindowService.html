@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IFrontedWindowService | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IFrontedWindowService | neo-bpsys-wpf ">
+      
+      <meta name="description" content="前台窗口接口服务">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService" class="text-break">
+Interface IFrontedWindowService  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.html">Abstractions</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>前台窗口接口服务</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFrontedWindowService</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_FrontedWindowStates_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.FrontedWindowStates*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_FrontedWindowStates" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.FrontedWindowStates">
+  FrontedWindowStates
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>前台窗口状态列表（只读视图）。键为窗口 Canonical ID，值为窗口是否可见。
+比较语义与 <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.html#neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_FrontedWindows">FrontedWindows</a> 一致。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyDictionary&lt;string, bool&gt; FrontedWindowStates { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_FrontedWindowStates_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>公开为 <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary&lt;TKey, TValue&gt;</a> 以防止外部消费者直接修改状态缓存。
+内部可变字典保持 private。需要修改窗口状态必须通过服务方法。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_FrontedWindows_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.FrontedWindows*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_FrontedWindows" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.FrontedWindows">
+  FrontedWindows
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>前台窗口列表（只读视图）。键为窗口 Canonical ID，使用
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.stringcomparer.ordinalignorecase">OrdinalIgnoreCase</a> 与注册表的比较语义保持一致。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyDictionary&lt;string, Window&gt; FrontedWindows { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">Window</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_FrontedWindows_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>公开为 <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary&lt;TKey, TValue&gt;</a> 以防止外部消费者直接修改缓存。
+内部可变字典保持 private。需要修改窗口缓存必须通过服务方法（如
+<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.html#neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_EnsureWindowCreated_System_String_">EnsureWindowCreated(string)</a>、<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.html#neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_ShowWindow_System_String_">ShowWindow(string)</a>、
+<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.html#neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_HideWindow_System_String_">HideWindow(string)</a> 等）。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_AllWindowHide_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.AllWindowHide*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_AllWindowHide" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.AllWindowHide">
+  AllWindowHide()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>隐藏全部窗口</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AllWindowHide()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_AllWindowShow_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.AllWindowShow*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_AllWindowShow" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.AllWindowShow">
+  AllWindowShow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>显示全部窗口</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AllWindowShow()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_ApplyWindowBackgroundColorAsync_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.ApplyWindowBackgroundColorAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_ApplyWindowBackgroundColorAsync_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.ApplyWindowBackgroundColorAsync(System.String)">
+  ApplyWindowBackgroundColorAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将存储的窗口背景色立即应用到已注册的前台窗口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; ApplyWindowBackgroundColorAsync(string fullWindowType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullWindowType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>窗口布局标识，例如 <code>BpWindow</code>。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>找到并更新已注册窗口时返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_ApplyWindowSizeAsync_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.ApplyWindowSizeAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_ApplyWindowSizeAsync_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.ApplyWindowSizeAsync(System.String)">
+  ApplyWindowSizeAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将存储的窗口宽高立即应用到已注册的前台窗口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; ApplyWindowSizeAsync(string fullWindowType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullWindowType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>窗口布局标识，例如 <code>BpWindow</code>。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>找到并更新已注册窗口时返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_EnsureWindowCreated_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.EnsureWindowCreated*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_EnsureWindowCreated_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.EnsureWindowCreated(System.String)">
+  EnsureWindowCreated(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>确保存在一个前台窗口实例，且不创建任何其他前台窗口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Window? EnsureWindowCreated(string windowId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>windowId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>窗口 GUID</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Window</span></dt>
+    <dd><p>已存在或新建的窗口；当 ID 未注册时返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_GetWindowName_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.GetWindowName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_GetWindowName_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.GetWindowName(System.String)">
+  GetWindowName(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取窗口名称</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string? GetWindowName(string windowId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>windowId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>窗口 GUID</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>窗口名称，如果未找到则返回 <code>null</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_GetWindowName_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.GetWindowName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_GetWindowName_neo_bpsys_wpf_Core_Enums_FrontedWindowType_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.GetWindowName(neo_bpsys_wpf.Core.Enums.FrontedWindowType)">
+  GetWindowName(FrontedWindowType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取窗口名称</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string? GetWindowName(FrontedWindowType windowType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>windowType</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.FrontedWindowType.html">FrontedWindowType</a></dt>
+    <dd><p>窗口类型</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>窗口名称，如果未找到则返回 <code>null</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_GetWindowSize_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.GetWindowSize*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_GetWindowSize_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.GetWindowSize(System.String)">
+  GetWindowSize(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取已注册前台窗口的当前宽高，窗口未打开时返回 <code>null</code>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">(double Width, double Height)? GetWindowSize(string fullWindowType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullWindowType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>窗口布局标识，例如 <code>BpWindow</code>。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.width">Width</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.height">Height</a>)?</dt>
+    <dd><p>由 (Width, Height) 组成的元组，窗口未找到时返回 <code>null</code>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_HideWindow_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.HideWindow*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_HideWindow_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.HideWindow(System.String)">
+  HideWindow(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>隐藏窗口</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void HideWindow(string windowId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>windowId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>窗口 GUID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_HideWindow_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.HideWindow*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_HideWindow_neo_bpsys_wpf_Core_Enums_FrontedWindowType_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.HideWindow(neo_bpsys_wpf.Core.Enums.FrontedWindowType)">
+  HideWindow(FrontedWindowType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>隐藏窗口</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void HideWindow(FrontedWindowType windowType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>windowType</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.FrontedWindowType.html">FrontedWindowType</a></dt>
+    <dd><p>窗口类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_MarkWindowLayoutDirty_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.MarkWindowLayoutDirty*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_MarkWindowLayoutDirty_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.MarkWindowLayoutDirty(System.String)">
+  MarkWindowLayoutDirty(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将已存在的 v3 前台窗口布局标记为脏，但不创建该窗口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MarkWindowLayoutDirty(string windowIdOrFullWindowType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>windowIdOrFullWindowType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>运行时窗口 ID 或完整的布局窗口类型。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_ReloadFrontedLayoutsAsync_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.ReloadFrontedLayoutsAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_ReloadFrontedLayoutsAsync" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.ReloadFrontedLayoutsAsync">
+  ReloadFrontedLayoutsAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>在当前已注册的前台窗口支持时，重新加载其 v3 布局。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ReloadFrontedLayoutsAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_RestartWindowForTransparencyChangeAsync_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.RestartWindowForTransparencyChangeAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_RestartWindowForTransparencyChangeAsync_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.RestartWindowForTransparencyChangeAsync(System.String)">
+  RestartWindowForTransparencyChangeAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>重启已创建的前台窗口，以便影响源的透明度设置生效。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; RestartWindowForTransparencyChangeAsync(string fullWindowType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullWindowType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>窗口布局标识，例如 <code>BpWindow</code>。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>当已存在的窗口实例被移除或重启时返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>；
+当窗口未注册或尚未创建时返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_ShowWindow_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.ShowWindow*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_ShowWindow_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.ShowWindow(System.String)">
+  ShowWindow(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>显示窗口s</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ShowWindow(string windowId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>windowId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>窗口 GUID</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_ShowWindow_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.ShowWindow*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedWindowService_ShowWindow_neo_bpsys_wpf_Core_Enums_FrontedWindowType_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedWindowService.ShowWindow(neo_bpsys_wpf.Core.Enums.FrontedWindowType)">
+  ShowWindow(FrontedWindowType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>显示窗口</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ShowWindow(FrontedWindowType windowType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>windowType</code> <a class="xref" href="neo_bpsys_wpf.Core.Enums.FrontedWindowType.html">FrontedWindowType</a></dt>
+    <dd><p>窗口类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedWindowService.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

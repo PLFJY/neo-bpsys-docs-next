@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedV3StyleTransferService | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedV3StyleTransferService | neo-bpsys-wpf ">
+      
+      <meta name="description" content="v3 前台控件 StyleTransfer 核心服务，执行父-子继承与同 peer 传播。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService" class="text-break">
+Class FrontedV3StyleTransferService  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/StyleTransfer/FrontedV3StyleTransferService.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.html">V3</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.html">StyleTransfer</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>v3 前台控件 StyleTransfer 核心服务，执行父-子继承与同 peer 传播。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedV3StyleTransferService</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedV3StyleTransferService</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+该服务替代旧链路中 MapV2/GlobalScore 的手写 StyleTransfer 特判：
+<ul><li>Peer 传播（替代 <code>ApplyMapV2DisplayStyleToAll</code>/<code>CopyMapV2DisplayStyle</code>）：仅匹配完全相同的 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_CanonicalControlType">CanonicalControlType</a>。</li><li>Parent-Child 继承（替代 <code>ApplyParentStyleToGlobalScoreCells</code>/<code>ClearGlobalScoreCellStyleOverrides</code>）：根据相同 OptionsPath 匹配父子属性。</li></ul>
+
+<p>
+<b>不可破坏的传播约束</b>：
+<ul><li>默认仅传播 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertySemantic.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_Appearance">Appearance</a> 语义的属性。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertySemantic.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_RootSize">RootSize</a>/<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertySemantic.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_PartLayout">PartLayout</a>/<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertySemantic.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_Behaviors">Behaviors</a>/<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertySemantic.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_Effects">Effects</a> 只有 profile 显式开启时才传播。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertySemantic.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_DataIdentity">DataIdentity</a> 和 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertySemantic.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_Other">Other</a> 永远不传播（数据身份字段、MapKey、TeamType、BindingPath、ControlName 等）。</li><li>根级保留字段（<code>Left</code>/<code>Top</code>/<code>ZIndex</code> 等）不会注册为属性，因此不在传播范围内。</li></ul>
+
+<p>
+<b>ParentFallback 动态读取</b>：<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.html#neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_ReadValueWithInheritance_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_">ReadValueWithInheritance(FrontedV3PropertyDefinition, FrontedControlConfigBase, FrontedControlConfigBase?, FrontedV3PropertyDefinition?)</a> 每次调用时动态判断子控件是否有 override，
+不缓存 fallback 值。父控件后续修改会反映到子控件的读取结果。
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService__ctor_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService__ctor" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.#ctor">
+  FrontedV3StyleTransferService()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/StyleTransfer/FrontedV3StyleTransferService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化 <a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.html">FrontedV3StyleTransferService</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3StyleTransferService()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_ApplyParentStyle_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.ApplyParentStyle*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_ApplyParentStyle_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition__neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition__System_Collections_Generic_IEnumerable_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase__neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferProfile_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.ApplyParentStyle(System.Collections.Generic.IReadOnlyList{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition},neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,System.Collections.Generic.IReadOnlyList{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition},System.Collections.Generic.IEnumerable{neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase},neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferProfile)">
+  ApplyParentStyle(IReadOnlyList&lt;FrontedV3PropertyDefinition&gt;, FrontedControlConfigBase, IReadOnlyList&lt;FrontedV3PropertyDefinition&gt;, IEnumerable&lt;FrontedControlConfigBase&gt;, FrontedV3StyleTransferProfile?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/StyleTransfer/FrontedV3StyleTransferService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将父控件的 Appearance（或 profile 开启的语义）属性值传播给子控件，按相同 OptionsPath 匹配父子属性。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyParentStyle(IReadOnlyList&lt;FrontedV3PropertyDefinition&gt; parentProperties, FrontedControlConfigBase parentConfig, IReadOnlyList&lt;FrontedV3PropertyDefinition&gt; childProperties, IEnumerable&lt;FrontedControlConfigBase&gt; childConfigs, FrontedV3StyleTransferProfile? profile = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parentProperties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html">FrontedV3PropertyDefinition</a>&gt;</dt>
+    <dd><p>父控件的属性定义列表。</p>
+</dd>
+    <dt><code>parentConfig</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>父控件配置实例。</p>
+</dd>
+    <dt><code>childProperties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html">FrontedV3PropertyDefinition</a>&gt;</dt>
+    <dd><p>子控件的属性定义列表。</p>
+</dd>
+    <dt><code>childConfigs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a>&gt;</dt>
+    <dd><p>要应用到的子控件配置列表。</p>
+</dd>
+    <dt><code>profile</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferProfile.html">FrontedV3StyleTransferProfile</a></dt>
+    <dd><p>本次操作的传播 profile；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时使用 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferProfile.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferProfile_Default">Default</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_ApplyParentStyle_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition__neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition__System_Collections_Generic_IEnumerable_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase__neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferProfile__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+匹配规则：对每个子控件属性，在父属性列表中查找 OptionsPath 完全相同的父属性，
+将父属性的值（通过父存储在父 Config 上读取）写入子属性（通过子存储在子 Config 上写入）。
+</p>
+<p>
+传播范围：只传播同时满足以下两个条件的属性：
+<ul><li>属性语义被 profile 选中（<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferProfile.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferProfile_ShouldTransfer_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_">ShouldTransfer(FrontedV3PropertySemantic)</a>）。</li><li>子属性不在 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_LockedToParent">LockedToParent</a> 模式（该模式拒绝写入）。</li></ul>
+
+<p>
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertySemantic.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_DataIdentity">DataIdentity</a> 和 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertySemantic.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_Other">Other</a> 语义的属性不会被 profile 选中，因此永远不会传播。
+</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_ClearChildOverrides_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.ClearChildOverrides*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_ClearChildOverrides_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition__System_Collections_Generic_IEnumerable_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase__neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferProfile_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.ClearChildOverrides(System.Collections.Generic.IReadOnlyList{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition},System.Collections.Generic.IEnumerable{neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase},neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferProfile)">
+  ClearChildOverrides(IReadOnlyList&lt;FrontedV3PropertyDefinition&gt;, IEnumerable&lt;FrontedControlConfigBase&gt;, FrontedV3StyleTransferProfile?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/StyleTransfer/FrontedV3StyleTransferService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>清除子控件的 override，使 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_ParentFallback">ParentFallback</a> 与 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_LockedToParent">LockedToParent</a> 属性恢复回退到父值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearChildOverrides(IReadOnlyList&lt;FrontedV3PropertyDefinition&gt; childProperties, IEnumerable&lt;FrontedControlConfigBase&gt; childConfigs, FrontedV3StyleTransferProfile? profile = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>childProperties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html">FrontedV3PropertyDefinition</a>&gt;</dt>
+    <dd><p>子控件的属性定义列表。</p>
+</dd>
+    <dt><code>childConfigs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a>&gt;</dt>
+    <dd><p>要清除 override 的子控件配置列表。</p>
+</dd>
+    <dt><code>profile</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferProfile.html">FrontedV3StyleTransferProfile</a></dt>
+    <dd><p>本次操作的传播 profile；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时使用 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferProfile.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferProfile_Default">Default</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_ClearChildOverrides_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition__System_Collections_Generic_IEnumerable_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase__neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferProfile__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+清除规则：对每个子控件属性，当满足以下条件时将值设为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>：
+<ul><li>继承模式为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_ParentFallback">ParentFallback</a> 或 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_LockedToParent">LockedToParent</a>。</li><li>属性语义被 profile 选中。</li></ul>
+
+<p>
+清除后，<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.html#neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_ReadValueWithInheritance_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_">ReadValueWithInheritance(FrontedV3PropertyDefinition, FrontedControlConfigBase, FrontedControlConfigBase?, FrontedV3PropertyDefinition?)</a> 读取子控件属性时将回退到父值。
+对于不可清空（非 nullable CLR 属性）的存储，清除操作为 no-op。
+</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_IsOverrideMissing_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.IsOverrideMissing*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_IsOverrideMissing_System_Object_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.IsOverrideMissing(System.Object)">
+  IsOverrideMissing(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/StyleTransfer/FrontedV3StyleTransferService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>判断子控件的 override 是否缺失（应回退到父值）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsOverrideMissing(object? childValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>childValue</code> <span class="xref">object</span></dt>
+    <dd><p>子控件存储的原始值。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>当值为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 或 <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonelement">JsonElement</a> 的 <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonvaluekind#system-text-json-jsonvaluekind-undefined">Undefined</a>/<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonvaluekind#system-text-json-jsonvaluekind-null">Null</a> 时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_IsOverrideMissing_System_Object__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>对于 ExtensionData 存储，缺失键返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>；存在的 null 值返回 <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonvaluekind#system-text-json-jsonvaluekind-null">Null</a> 的 <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonelement">JsonElement</a>。
+两种情况都视为 override 缺失，应回退到父值。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_ReadValueWithInheritance_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.ReadValueWithInheritance*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_ReadValueWithInheritance_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.ReadValueWithInheritance(neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition)">
+  ReadValueWithInheritance(FrontedV3PropertyDefinition, FrontedControlConfigBase, FrontedControlConfigBase?, FrontedV3PropertyDefinition?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/StyleTransfer/FrontedV3StyleTransferService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>按继承模式读取子控件的属性值，动态应用 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_ParentFallback">ParentFallback</a> 与 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_LockedToParent">LockedToParent</a> 语义。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? ReadValueWithInheritance(FrontedV3PropertyDefinition property, FrontedControlConfigBase childConfig, FrontedControlConfigBase? parentConfig, FrontedV3PropertyDefinition? parentProperty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html">FrontedV3PropertyDefinition</a></dt>
+    <dd><p>子控件的属性定义（包含继承模式元数据）。</p>
+</dd>
+    <dt><code>childConfig</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>子控件配置实例。</p>
+</dd>
+    <dt><code>parentConfig</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>父控件配置实例；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时按无父处理。</p>
+</dd>
+    <dt><code>parentProperty</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html">FrontedV3PropertyDefinition</a></dt>
+    <dd><p>父控件中与子属性同 OptionsPath 的属性定义；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时按无父处理。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">object</span></dt>
+    <dd><p>按继承模式解析后的属性值。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_ReadValueWithInheritance_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+继承模式处理规则：
+<ul><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_None">None</a>：直接读取子控件值。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_ParentFallback">ParentFallback</a>：先读取子控件 override；override 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时动态回退到父控件同 OptionsPath 的值。不缓存 fallback。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_CopyFromParentOnCreate">CopyFromParentOnCreate</a>：创建后独立，直接读取子控件值。</li><li><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_LockedToParent">LockedToParent</a>：始终返回父控件的值（当父控件或父属性缺失时回退到子控件值）。</li></ul>
+
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_TransferPeerStyle_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.TransferPeerStyle*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_TransferPeerStyle_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_PeerStyleTarget__neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferProfile_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.TransferPeerStyle(neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,System.Collections.Generic.IReadOnlyList{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.PeerStyleTarget},neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferProfile)">
+  TransferPeerStyle(FrontedV3ControlRegistration, FrontedControlConfigBase, IReadOnlyList&lt;PeerStyleTarget&gt;, FrontedV3StyleTransferProfile?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/StyleTransfer/FrontedV3StyleTransferService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>在同 peer 控件之间传播 Appearance（或 profile 开启的语义）属性值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransferPeerStyle(FrontedV3ControlRegistration sourceRegistration, FrontedControlConfigBase sourceConfig, IReadOnlyList&lt;PeerStyleTarget&gt; peers, FrontedV3StyleTransferProfile? profile = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceRegistration</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html">FrontedV3ControlRegistration</a></dt>
+    <dd><p>源控件的注册信息。</p>
+</dd>
+    <dt><code>sourceConfig</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>源控件配置实例。</p>
+</dd>
+    <dt><code>peers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.PeerStyleTarget.html">PeerStyleTarget</a>&gt;</dt>
+    <dd><p>目标 peer 列表。</p>
+</dd>
+    <dt><code>profile</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferProfile.html">FrontedV3StyleTransferProfile</a></dt>
+    <dd><p>本次操作的传播 profile；为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时使用 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferProfile.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferProfile_Default">Default</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_TransferPeerStyle_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_PeerStyleTarget__neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferProfile__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+<b>精确匹配约束</b>：只匹配完全相同的 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_CanonicalControlType">CanonicalControlType</a>。
+<code>plugin:a/TeamCard</code> 不能传播给 <code>plugin:b/TeamCard</code>。
+当 peer 的 CanonicalControlType 与源不同时，抛出 <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a>。
+</p>
+<p>
+传播范围：只传播同时满足以下两个条件的属性：
+<ul><li>属性语义被 profile 选中。</li><li>属性语义被源注册的 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_StyleTransfer">StyleTransfer</a> 能力允许。</li></ul>
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertySemantic.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_DataIdentity">DataIdentity</a> 和 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertySemantic.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertySemantic_Other">Other</a> 永远不会被传播。
+
+<p>
+传播方式：源与 peer 使用相同的注册（因此有相同的属性列表与存储访问器），
+通过 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_GetValue_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_">GetValue(FrontedControlConfigBase)</a> 读取源值，再通过 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_SetValue_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Object_">SetValue(FrontedControlConfigBase, object?)</a> 写入每个 peer。
+</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>当某个 peer 的 CanonicalControlType 与源不完全相同时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_TrySetChildValue_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.TrySetChildValue*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_TrySetChildValue_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Object_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.StyleTransfer.FrontedV3StyleTransferService.TrySetChildValue(neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,System.Object)">
+  TrySetChildValue(FrontedV3PropertyDefinition, FrontedControlConfigBase, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/StyleTransfer/FrontedV3StyleTransferService.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>尝试在子控件上写入属性 override，遵守 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_LockedToParent">LockedToParent</a> 约束。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySetChildValue(FrontedV3PropertyDefinition property, FrontedControlConfigBase childConfig, object? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html">FrontedV3PropertyDefinition</a></dt>
+    <dd><p>子控件的属性定义（包含继承模式元数据）。</p>
+</dd>
+    <dt><code>childConfig</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>子控件配置实例。</p>
+</dd>
+    <dt><code>value</code> <span class="xref">object</span></dt>
+    <dd><p>要写入的值。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>当写入成功时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>；当属性为 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_LockedToParent">LockedToParent</a> 时返回 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_StyleTransfer_FrontedV3StyleTransferService_TrySetChildValue_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Object__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.StyleTransfer.FrontedV3PropertyInheritance.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_StyleTransfer_FrontedV3PropertyInheritance_LockedToParent">LockedToParent</a> 模式拒绝 override 写入。
+其他继承模式均允许写入到子控件的存储。</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/StyleTransfer/FrontedV3StyleTransferService.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
