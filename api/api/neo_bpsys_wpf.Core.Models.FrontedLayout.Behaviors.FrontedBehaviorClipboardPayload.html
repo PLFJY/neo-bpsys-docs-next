@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedBehaviorClipboardPayload | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedBehaviorClipboardPayload | neo-bpsys-wpf ">
+      
+      <meta name="description" content="在控件间复制单个前台行为时使用的应用级剪贴板负载。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload" class="text-break">
+Class FrontedBehaviorClipboardPayload  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorCopyPasteModels.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.html">Behaviors</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>在控件间复制单个前台行为时使用的应用级剪贴板负载。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedBehaviorClipboardPayload</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedBehaviorClipboardPayload</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload__ctor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.#ctor">
+  FrontedBehaviorClipboardPayload()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorCopyPasteModels.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedBehaviorClipboardPayload()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_AnimationParts_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.AnimationParts*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_AnimationParts" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.AnimationParts">
+  AnimationParts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorCopyPasteModels.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置所复制行为需要的源动画部件定义。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FrontedAnimationPartConfig&gt; AnimationParts { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedAnimationPartConfig.html">FrontedAnimationPartConfig</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_Behavior_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.Behavior*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_Behavior" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.Behavior">
+  Behavior
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorCopyPasteModels.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置复制的行为快照。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedBehavior Behavior { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehavior.html">FrontedBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_Requirements_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.Requirements*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_Requirements" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.Requirements">
+  Requirements
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorCopyPasteModels.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置生成部件和控件类型要求。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FrontedBehaviorCopyRequirement&gt; Requirements { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorCopyRequirement.html">FrontedBehaviorCopyRequirement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_SourceControlBehaviorGuid_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.SourceControlBehaviorGuid*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_SourceControlBehaviorGuid" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.SourceControlBehaviorGuid">
+  SourceControlBehaviorGuid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorCopyPasteModels.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置源控件的行为 GUID。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid SourceControlBehaviorGuid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_SourceControlName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.SourceControlName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_SourceControlName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.SourceControlName">
+  SourceControlName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorCopyPasteModels.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置源控件名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SourceControlName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_SourceSemanticIndex_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.SourceSemanticIndex*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_SourceSemanticIndex" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.SourceSemanticIndex">
+  SourceSemanticIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorCopyPasteModels.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置源控件的推断语义索引。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? SourceSemanticIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_SourceWindowType_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.SourceWindowType*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_SourceWindowType" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.SourceWindowType">
+  SourceWindowType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorCopyPasteModels.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置源窗口类型。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SourceWindowType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_Version_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.Version*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorClipboardPayload_Version" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorClipboardPayload.Version">
+  Version
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorCopyPasteModels.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取或设置剪贴板负载版本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Version { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorCopyPasteModels.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

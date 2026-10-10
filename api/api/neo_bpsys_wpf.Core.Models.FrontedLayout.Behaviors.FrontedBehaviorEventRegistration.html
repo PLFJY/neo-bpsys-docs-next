@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedBehaviorEventRegistration | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedBehaviorEventRegistration | neo-bpsys-wpf ">
+      
+      <meta name="description" content="描述一个由宿主或插件注册的前台行为语义事件。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration" class="text-break">
+Class FrontedBehaviorEventRegistration  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.html">Behaviors</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>描述一个由宿主或插件注册的前台行为语义事件。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedBehaviorEventRegistration</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedBehaviorEventRegistration</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration__ctor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration__ctor" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.#ctor">
+  FrontedBehaviorEventRegistration()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedBehaviorEventRegistration()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_Category_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.Category*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_Category" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.Category">
+  Category
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取稳定分类标识。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Category { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_CategoryDisplayName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.CategoryDisplayName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_CategoryDisplayName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.CategoryDisplayName">
+  CategoryDisplayName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取直接分类显示名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CategoryDisplayName { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_CategoryDisplayNameKey_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.CategoryDisplayNameKey*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_CategoryDisplayNameKey" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.CategoryDisplayNameKey">
+  CategoryDisplayNameKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可选的分类显示名称本地化键。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CategoryDisplayNameKey { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_Description_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.Description*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_Description" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.Description">
+  Description
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取直接描述文本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_DescriptionKey_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.DescriptionKey*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_DescriptionKey" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.DescriptionKey">
+  DescriptionKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可选的描述本地化键。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DescriptionKey { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_DisplayName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.DisplayName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_DisplayName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.DisplayName">
+  DisplayName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取直接显示名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DisplayName { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_DisplayNameKey_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.DisplayNameKey*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_DisplayNameKey" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.DisplayNameKey">
+  DisplayNameKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可选的宿主本地化键。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DisplayNameKey { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_EventType_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.EventType*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_EventType" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.EventType">
+  EventType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取规范事件类型，例如 <code>plugin:top.example.overlay/ShowPlayerCard</code>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required string EventType { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_IsBuiltIn_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.IsBuiltIn*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_IsBuiltIn" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.IsBuiltIn">
+  IsBuiltIn
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取事件是否由宿主内置代码提供。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBuiltIn { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_LocalEventId_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.LocalEventId*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_LocalEventId" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.LocalEventId">
+  LocalEventId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取提供方作用域内的局部事件标识。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required string LocalEventId { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_Order_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.Order*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_Order" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.Order">
+  Order
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取分类内排序序号。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Order { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_PackageId_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.PackageId*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_PackageId" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.PackageId">
+  PackageId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取插件包 ID；宿主内置事件为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? PackageId { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_PayloadFields_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.PayloadFields*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_PayloadFields" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.PayloadFields">
+  PayloadFields
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取事件负载字段定义。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;FrontedBehaviorEventPayloadField&gt; PayloadFields { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventPayloadField.html">FrontedBehaviorEventPayloadField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_SupportedUsages_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.SupportedUsages*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorEventRegistration_SupportedUsages" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventRegistration.SupportedUsages">
+  SupportedUsages
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取事件所属的运行时触发链路。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedBehaviorEventUsage SupportedUsages { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorEventUsage.html">FrontedBehaviorEventUsage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/Behaviors/FrontedBehaviorEventRegistration.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

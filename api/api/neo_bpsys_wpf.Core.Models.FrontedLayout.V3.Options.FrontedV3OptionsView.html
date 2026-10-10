@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedV3OptionsView | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedV3OptionsView | neo-bpsys-wpf ">
+      
+      <meta name="description" content="v3 前台控件 Options 的动态代理视图，按属性 Schema 将逻辑路径（如 Appearance.TextColor） 投影到当前  的实际存储位置。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView" class="text-break">
+Class FrontedV3OptionsView  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.html">Models</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.html">V3</a>.<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.html">Options</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>v3 前台控件 Options 的动态代理视图，按属性 Schema 将逻辑路径（如 <code>Appearance.TextColor</code>）
+投影到当前 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a> 的实际存储位置。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedV3OptionsView : INotifyPropertyChanged, ICustomTypeDescriptor</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedV3OptionsView</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.icustomtypedescriptor">ICustomTypeDescriptor</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Options 视图是运行时与 Designer 的属性投影，<b>不进入 JSON</b>，<b>不缓存独立值</b>：
+读取属性时调用 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_GetValue_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_">GetValue(FrontedControlConfigBase)</a>；
+修改属性时调用 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_SetValue_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Object_">SetValue(FrontedControlConfigBase, object?)</a> 并触发
+<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_PropertyChanged">PropertyChanged</a>，使 WPF 绑定立即更新视觉。
+</p>
+<p>
+视图按 <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html#neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition_OptionsPath">OptionsPath</a> 的段分层组织：
+<code>Appearance.TextColor</code> 在根视图暴露 <code>Appearance</code> 子视图，子视图再暴露 <code>TextColor</code> 叶子属性。
+WPF 绑定 <code>{Binding Appearance.TextColor}</code> 通过 <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.icustomtypedescriptor">ICustomTypeDescriptor</a> 发现这些动态属性。
+</p>
+<p>
+单一事实来源：Options 的任何属性都直接映射到当前 Config 的根级字段，Options 不保存副本。
+</p>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_Create_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.Create*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_Create_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Collections_Generic_IReadOnlyList_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Properties_FrontedV3PropertyDefinition__" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.Create(neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,System.Collections.Generic.IReadOnlyList{neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition})">
+  Create(FrontedControlConfigBase, IReadOnlyList&lt;FrontedV3PropertyDefinition&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建根 Options 视图。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FrontedV3OptionsView Create(FrontedControlConfigBase config, IReadOnlyList&lt;FrontedV3PropertyDefinition&gt; properties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>控件配置实例，作为属性读写的单一事实来源。</p>
+</dd>
+    <dt><code>properties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Properties.FrontedV3PropertyDefinition.html">FrontedV3PropertyDefinition</a>&gt;</dt>
+    <dd><p>控件属性定义列表。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.html">FrontedV3OptionsView</a></dt>
+    <dd><p>代理 <code class="paramref">config</code> 的根 Options 视图。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当参数为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetAttributes_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetAttributes*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetAttributes" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetAttributes">
+  GetAttributes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttributeCollection GetAttributes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.attributecollection">AttributeCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetClassName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetClassName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetClassName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetClassName">
+  GetClassName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetClassName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetComponentName_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetComponentName*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetComponentName" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetComponentName">
+  GetComponentName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetComponentName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetConverter_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetConverter*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetConverter" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetConverter">
+  GetConverter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeConverter GetConverter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.typeconverter">TypeConverter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetDefaultEvent_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetDefaultEvent*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetDefaultEvent" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetDefaultEvent">
+  GetDefaultEvent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventDescriptor? GetDefaultEvent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.eventdescriptor">EventDescriptor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetDefaultProperty_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetDefaultProperty*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetDefaultProperty" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetDefaultProperty">
+  GetDefaultProperty()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyDescriptor? GetDefaultProperty()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor">PropertyDescriptor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetEditor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetEditor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetEditor_System_Type_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetEditor(System.Type)">
+  GetEditor(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? GetEditor(Type editorBaseType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editorBaseType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">object</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetEvents_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetEvents*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetEvents" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetEvents">
+  GetEvents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventDescriptorCollection GetEvents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.eventdescriptorcollection">EventDescriptorCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetEvents_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetEvents*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetEvents_System_Attribute___" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetEvents(System.Attribute[])">
+  GetEvents(Attribute[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventDescriptorCollection GetEvents(Attribute[]? attributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.eventdescriptorcollection">EventDescriptorCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetProperties_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetProperties*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetProperties" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetProperties">
+  GetProperties()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyDescriptorCollection GetProperties()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertydescriptorcollection">PropertyDescriptorCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetProperties_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetProperties*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetProperties_System_Attribute___" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetProperties(System.Attribute[])">
+  GetProperties(Attribute[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyDescriptorCollection GetProperties(Attribute[]? attributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertydescriptorcollection">PropertyDescriptorCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetPropertyOwner_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetPropertyOwner*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_GetPropertyOwner_System_ComponentModel_PropertyDescriptor_" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)">
+  GetPropertyOwner(PropertyDescriptor?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetPropertyOwner(PropertyDescriptor? pd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor">PropertyDescriptor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">object</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="neo_bpsys_wpf_Core_Models_FrontedLayout_V3_Options_FrontedV3OptionsView_PropertyChanged" data-uid="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.Options.FrontedV3OptionsView.PropertyChanged">
+  PropertyChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>属性变更事件。叶子属性被修改时，所属子视图与根视图均会触发。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PropertyChangedEventHandler? PropertyChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Models/FrontedLayout/V3/Options/FrontedV3OptionsView.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

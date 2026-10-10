@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedBehaviorRuntimeHostManager | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedBehaviorRuntimeHostManager | neo-bpsys-wpf ">
+      
+      <meta name="description" content="单例管理器，按窗口 ID 创建和跟踪  实例。 确保在分离时正确清理。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager" class="text-break">
+Class FrontedBehaviorRuntimeHostManager  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorRuntimeHostManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>单例管理器，按窗口 ID 创建和跟踪 <span class="xref">neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHost</span> 实例。
+确保在分离时正确清理。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedBehaviorRuntimeHostManager : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedBehaviorRuntimeHostManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager__ctor_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager__ctor_neo_bpsys_wpf_Core_Abstractions_Services_IFrontedBehaviorService_neo_bpsys_wpf_Core_Abstractions_Services_IFrontedEventBus_neo_bpsys_wpf_Core_Abstractions_Services_IFrontedNodeGraphRuntime_neo_bpsys_wpf_Core_Abstractions_Services_IFrontedAnimationRuntime_neo_bpsys_wpf_Core_Abstractions_Services_IFrontedBehaviorAnimationPartRenderer_neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorTriggerEvaluator_Microsoft_Extensions_Logging_ILogger_neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.#ctor(neo_bpsys_wpf.Core.Abstractions.Services.IFrontedBehaviorService,neo_bpsys_wpf.Core.Abstractions.Services.IFrontedEventBus,neo_bpsys_wpf.Core.Abstractions.Services.IFrontedNodeGraphRuntime,neo_bpsys_wpf.Core.Abstractions.Services.IFrontedAnimationRuntime,neo_bpsys_wpf.Core.Abstractions.Services.IFrontedBehaviorAnimationPartRenderer,neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorTriggerEvaluator,Microsoft.Extensions.Logging.ILogger{neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager})">
+  FrontedBehaviorRuntimeHostManager(IFrontedBehaviorService, IFrontedEventBus, IFrontedNodeGraphRuntime, IFrontedAnimationRuntime, IFrontedBehaviorAnimationPartRenderer, FrontedBehaviorTriggerEvaluator, ILogger&lt;FrontedBehaviorRuntimeHostManager&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorRuntimeHostManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化 <a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.html">FrontedBehaviorRuntimeHostManager</a> 的新实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedBehaviorRuntimeHostManager(IFrontedBehaviorService behaviorService, IFrontedEventBus eventBus, IFrontedNodeGraphRuntime graphRuntime, IFrontedAnimationRuntime animationRuntime, IFrontedBehaviorAnimationPartRenderer animationPartRenderer, FrontedBehaviorTriggerEvaluator triggerEvaluator, ILogger&lt;FrontedBehaviorRuntimeHostManager&gt; logger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>behaviorService</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedBehaviorService.html">IFrontedBehaviorService</a></dt>
+    <dd></dd>
+    <dt><code>eventBus</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedEventBus.html">IFrontedEventBus</a></dt>
+    <dd></dd>
+    <dt><code>graphRuntime</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedNodeGraphRuntime.html">IFrontedNodeGraphRuntime</a></dt>
+    <dd></dd>
+    <dt><code>animationRuntime</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedAnimationRuntime.html">IFrontedAnimationRuntime</a></dt>
+    <dd></dd>
+    <dt><code>animationPartRenderer</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedBehaviorAnimationPartRenderer.html">IFrontedBehaviorAnimationPartRenderer</a></dt>
+    <dd></dd>
+    <dt><code>triggerEvaluator</code> <a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorTriggerEvaluator.html">FrontedBehaviorTriggerEvaluator</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.html">FrontedBehaviorRuntimeHostManager</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager_AttachHostAsync_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.AttachHostAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager_AttachHostAsync_neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorRuntimeContext_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.AttachHostAsync(neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorRuntimeContext,System.Threading.CancellationToken)">
+  AttachHostAsync(FrontedBehaviorRuntimeContext, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorRuntimeHostManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>为给定上下文附加行为运行时宿主。
+如果同一窗口 ID 的宿主已存在，则先将其分离。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AttachHostAsync(FrontedBehaviorRuntimeContext context, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorRuntimeContext.html">FrontedBehaviorRuntimeContext</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager_DetachHost_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.DetachHost*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager_DetachHost_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.DetachHost(System.String)">
+  DetachHost(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorRuntimeHostManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>分离并释放给定窗口 ID 的宿主。
+取消所有正在运行的行为，释放事件订阅和动画会话。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DetachHost(string windowId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>windowId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager_Dispose_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.Dispose*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager_Dispose" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorRuntimeHostManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>分离所有宿主并释放所有资源。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager_PublishManualTrigger_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.PublishManualTrigger*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager_PublishManualTrigger_System_String_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.PublishManualTrigger(System.String,System.String)">
+  PublishManualTrigger(string, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorRuntimeHostManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>向事件总线发布 ManualTrigger 事件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PublishManualTrigger(string triggerName, string? windowId = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>triggerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>windowId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager_StopAllLoopBehaviorsAsync_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.StopAllLoopBehaviorsAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager_StopAllLoopBehaviorsAsync_neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorStopReason_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.StopAllLoopBehaviorsAsync(neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorStopReason,System.Threading.CancellationToken)">
+  StopAllLoopBehaviorsAsync(FrontedBehaviorStopReason, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorRuntimeHostManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>停止所有已附加宿主中的活动循环行为。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; StopAllLoopBehaviorsAsync(FrontedBehaviorStopReason reason, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reason</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorStopReason.html">FrontedBehaviorStopReason</a></dt>
+    <dd><p>停止活动循环的原因。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>请求停止的循环数量。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager_StopLoopBehaviorsAsync_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.StopLoopBehaviorsAsync*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedBehaviorRuntimeHostManager_StopLoopBehaviorsAsync_System_String_neo_bpsys_wpf_Core_Models_FrontedLayout_Behaviors_FrontedBehaviorStopReason_System_Threading_CancellationToken_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedBehaviorRuntimeHostManager.StopLoopBehaviorsAsync(System.String,neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorStopReason,System.Threading.CancellationToken)">
+  StopLoopBehaviorsAsync(string, FrontedBehaviorStopReason, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorRuntimeHostManager.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>停止单个已附加前台窗口宿主的活动循环行为。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; StopLoopBehaviorsAsync(string windowId, FrontedBehaviorStopReason reason, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>windowId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>前台窗口标识符。</p>
+</dd>
+    <dt><code>reason</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.Behaviors.FrontedBehaviorStopReason.html">FrontedBehaviorStopReason</a></dt>
+    <dd><p>停止活动循环的原因。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>取消令牌。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>请求停止的循环数量。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedBehaviorRuntimeHostManager.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

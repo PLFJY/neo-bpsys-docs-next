@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedV3ControlHost | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedV3ControlHost | neo-bpsys-wpf ">
+      
+      <meta name="description" content="v3 前台控件的根布局宿主，唯一负责根级属性的应用与错误占位。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.png" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost" class="text-break">
+Class FrontedV3ControlHost  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.html">V3</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>v3 前台控件的根布局宿主，唯一负责根级属性的应用与错误占位。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FrontedV3ControlHost : Decorator, ISupportInitialize</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Visual</span></div>
+      <div><span class="xref">UIElement</span></div>
+      <div><span class="xref">FrameworkElement</span></div>
+      <div><span class="xref">Decorator</span></div>
+      <div><span class="xref">FrontedV3ControlHost</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.isupportinitialize">ISupportInitialize</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+结构统一为 <code>Canvas → FrontedV3ControlHost → FrontedV3ControlBase</code>。
+Host 是 v3 控件路径中唯一被直接加入 Canvas 的元素，所有根级属性都由 Host 拥有，
+包装的 Control 只负责矩形区域内的视觉内容，不得设置自己的 Canvas 坐标。
+</p>
+<p>
+Host 唯一负责以下根属性：
+<ul><li><span class="xref">System.Windows.Controls.Canvas.LeftProperty</span>、<span class="xref">System.Windows.Controls.Canvas.TopProperty</span></li><li><span class="xref">System.Windows.Controls.Panel.ZIndexProperty</span></li><li><span class="xref">System.Windows.FrameworkElement.Width</span>、<span class="xref">System.Windows.FrameworkElement.Height</span></li><li><span class="xref">System.Windows.UIElement.Visibility</span></li><li>视觉效果链（高斯模糊、阴影、发光）—— 通过 Border 包装实现 Effect 树</li><li><a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRendererProperties.html#neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRendererProperties_BehaviorGuidProperty">BehaviorGuidProperty</a> 标记</li><li><a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRendererProperties.html#neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRendererProperties_IsGeneratedControlProperty">IsGeneratedControlProperty</a> 运行时生成标记</li><li>Designer 选中与根 Move/Resize（通过 <span class="xref">neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.RootControlGeometryTarget</span>）</li><li>错误占位（<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.html#neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_ShowError_System_Exception_">ShowError(Exception)</a>）</li></ul>
+
+<p>
+本 Host 是所有 v3 前台控件的唯一根布局实现。
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost__ctor_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost__ctor_neo_bpsys_wpf_Core_Models_FrontedLayout_V3_FrontedV3ControlRegistration_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlConfigBase_System_Boolean_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.#ctor(neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase,System.Boolean)">
+  FrontedV3ControlHost(FrontedV3ControlRegistration, FrontedControlConfigBase, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化 <a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.html">FrontedV3ControlHost</a> 并保存根布局所需的状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3ControlHost(FrontedV3ControlRegistration registration, FrontedControlConfigBase config, bool isDesignerPreview)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>registration</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html">FrontedV3ControlRegistration</a></dt>
+    <dd><p>v3 控件注册信息。</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd><p>控件配置实例，作为根级字段的单一事实来源。</p>
+</dd>
+    <dt><code>isDesignerPreview</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>指示当前是否为 Designer 预览渲染，影响错误占位文案。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">registration</code> 或 <code class="paramref">config</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_Config_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.Config*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_Config" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.Config">
+  Config
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取本 Host 关联的控件配置实例，是根级字段的单一事实来源。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedControlConfigBase Config { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlConfigBase.html">FrontedControlConfigBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_Control_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.Control*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_Control" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.Control">
+  Control
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取被 Host 包装的 v3 控件实例；未成功创建时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrameworkElement? Control { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FrameworkElement</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_HasError_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.HasError*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_HasError" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.HasError">
+  HasError
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取一个值指示 Host 当前是否处于错误占位状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasError { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_InitializationError_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.InitializationError*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_InitializationError" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.InitializationError">
+  InitializationError
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取控件初始化失败时捕获的异常；初始化成功时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Exception? InitializationError { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_IsDesignerPreview_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.IsDesignerPreview*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_IsDesignerPreview" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.IsDesignerPreview">
+  IsDesignerPreview
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取本 Host 是否用于 Designer 预览渲染。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDesignerPreview { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_PartVisualDiscovery_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.PartVisualDiscovery*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_PartVisualDiscovery" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.PartVisualDiscovery">
+  PartVisualDiscovery
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取控件初始化成功后由 <a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3PartVisualRuntimeBinder.html">FrontedV3PartVisualRuntimeBinder</a> 产生的 Part Visual 发现结果；
+未初始化或控件无固定 Part 时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3PartVisualDiscoveryResult? PartVisualDiscovery { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Parts.FrontedV3PartVisualDiscoveryResult.html">FrontedV3PartVisualDiscoveryResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_PartVisualDiscovery_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Designer 可据此读取 Missing/Duplicate Visual 诊断并展示给用户；Runtime 仅用于日志。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_Registration_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.Registration*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_Registration" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.Registration">
+  Registration
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取本 Host 关联的 v3 控件注册信息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedV3ControlRegistration Registration { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.V3.FrontedV3ControlRegistration.html">FrontedV3ControlRegistration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_ApplyRootLayout_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.ApplyRootLayout*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_ApplyRootLayout" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.ApplyRootLayout">
+  ApplyRootLayout()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>从当前 Config 重新应用所有根级属性到 Host 自身。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyRootLayout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_ApplyRootLayout_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>调用方在 Config 字段被外部修改后可调用本方法恢复视觉一致性。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_AttachControl_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.AttachControl*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_AttachControl_System_Windows_FrameworkElement_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.AttachControl(System.Windows.FrameworkElement)">
+  AttachControl(FrameworkElement)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将成功创建并初始化的 v3 控件附加到 Host。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AttachControl(FrameworkElement control)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>control</code> <span class="xref">FrameworkElement</span></dt>
+    <dd><p>要包装的 v3 控件实例。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">control</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_GetGeometryTarget_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.GetGeometryTarget*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_GetGeometryTarget" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.GetGeometryTarget">
+  GetGeometryTarget()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>返回本 Host 的根几何操作目标，供 Designer 的 Move/Resize 调用。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFrontedV3GeometryTarget GetGeometryTarget()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedV3GeometryTarget.html">IFrontedV3GeometryTarget</a></dt>
+    <dd><p>绑定到本 Host 与 Config 的 <span class="xref">neo_bpsys_wpf.Core.Services.FrontedLayout.V3.Geometry.RootControlGeometryTarget</span>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_ShowError_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.ShowError*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_ShowError_System_Exception_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.ShowError(System.Exception)">
+  ShowError(Exception)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将 Host 切换为错误占位状态，替换视觉内容为安全占位元素。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowError(Exception error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>error</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>导致初始化失败的异常。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">error</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_TryInitialize_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.TryInitialize*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_TryInitialize_neo_bpsys_wpf_Core_Abstractions_Services_FrontedV3ControlContext_Microsoft_Extensions_Logging_ILogger_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.TryInitialize(neo_bpsys_wpf.Core.Abstractions.Services.FrontedV3ControlContext,Microsoft.Extensions.Logging.ILogger)">
+  TryInitialize(FrontedV3ControlContext, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建并初始化 v3 控件，将其附加到 Host；失败时切换到错误占位状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryInitialize(FrontedV3ControlContext context, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedV3ControlContext.html">FrontedV3ControlContext</a></dt>
+    <dd><p>控件运行时上下文，将传递给 <code>InitializeFrontedV3</code>。</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>可选日志，用于记录初始化失败警告。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功初始化时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>；失败时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>（已切换到错误占位）。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_TryInitialize_neo_bpsys_wpf_Core_Abstractions_Services_FrontedV3ControlContext_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+该方法是 v3 控件创建路径的错误边界，覆盖以下失败场景：
+<ul><li>控件构造函数失败（含 XAML <code>InitializeComponent</code> 失败）。</li><li><code>InitializeFrontedV3</code> 调用失败（含 Binding 初始化、服务解析失败）。</li></ul>
+
+<p>
+控件通过 <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.activatorutilities.createinstance#microsoft-extensions-dependencyinjection-activatorutilities-createinstance(system-iserviceprovider-system-type-system-object())">CreateInstance(IServiceProvider, Type, params object[])</a> 创建，支持构造函数依赖注入；
+随后直接调用 <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedV3ControlBase.html#neo_bpsys_wpf_Core_Abstractions_Services_FrontedV3ControlBase_InitializeFrontedV3_neo_bpsys_wpf_Core_Abstractions_Services_FrontedV3ControlContext_">InitializeFrontedV3(FrontedV3ControlContext)</a> 完成上下文注入。
+</p>
+<p>
+根布局（<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.html#neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_ApplyRootLayout">ApplyRootLayout()</a>）在创建控件之前应用，确保无论成功还是失败 Host 都具备
+<code>Left</code>/<code>Top</code>/<code>Width</code>/<code>Height</code>/<code>ZIndex</code>/<code>Visibility</code>、
+<code>BehaviorGuid</code> 与 <code>IsGeneratedControl</code> 标记。失败路径的错误占位同样可被
+<code>FrontedRenderer</code> 通过 <code>IsGeneratedControl</code> 识别并清理，避免重复堆积。
+</p>
+<p>
+失败时：Runtime 记录 warning 并显示安全占位；Designer 通过 <a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.html#neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_IsDesignerPreview">IsDesignerPreview</a>
+显示带 Designer 标识的错误占位；原 <a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.V3.FrontedV3ControlHost.html#neo_bpsys_wpf_Core_Services_FrontedLayout_V3_FrontedV3ControlHost_Config">Config</a> 保留，不写默认值覆盖。
+</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>当 <code class="paramref">context</code> 为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 时抛出。</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/V3/FrontedV3ControlHost.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
