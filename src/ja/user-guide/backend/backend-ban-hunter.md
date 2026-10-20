@@ -2,7 +2,7 @@
 
 このページでは、[BP 画面](../fronted/fronted-bp.md)に表示する BAN 対象のハンターを設定します。
 
-![ハンター BAN](/user-guide/backend/images/禁用监管者.png)
+![ハンター BAN](/user-guide/backend/images/禁用监管者.webp)
 
 本ソフトウェアには、試合ごとの BAN 枠が2つ、全試合共通の BAN 枠が3つ用意されています。
 
@@ -13,6 +13,6 @@
 
 > 26号守衛は `bb` で検索できます（「邦邦」では検索できません）。
 
-![ハンター BAN 枠数の設定](/user-guide/backend/images/控制监管者禁用数量.png)
+![ハンター BAN 枠数の設定](/user-guide/backend/images/控制监管者禁用数量.webp)
 
 BAN 枠の数もカスタマイズできます。

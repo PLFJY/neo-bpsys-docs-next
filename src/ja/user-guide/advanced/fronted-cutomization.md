@@ -4,13 +4,13 @@
 
 [設定](../backend/backend-settings.md)ページでは、各表示ウィンドウの背景と文字の属性を変更できます。
 
-![背景と文字のカスタマイズ](/user-guide/advanced/images/背景文字自定义.png)
+![背景と文字のカスタマイズ](/user-guide/advanced/images/背景文字自定义.webp)
 
 ---
 
 ## コンポーネントのサイズと位置を変更する
 
-![コンポーネントのサイズと位置のカスタマイズ|700](/user-guide/advanced/images/组件位置大小自定义.png)
+![コンポーネントのサイズと位置のカスタマイズ|700](/user-guide/advanced/images/组件位置大小自定义.webp)
 ユーザーは[表示画面管理](../backend/backend-fronted-manager.md)ページでデザインモードを開けます。デザインモードでは、各コンポーネントのサイズと位置をカスタマイズできます。
 
 ---
@@ -19,6 +19,6 @@
 
 注意：カスタマイズ後は、ソフトウェアを終了する前にデザインモードを閉じる必要があります。**閉じないまま終了すると変更は保存されません！**
 
-#### ↓血と涙の教訓↓（![超模記録|35](/user-guide/images/记录.png)+![超模宣読|35](/user-guide/images/宣读.png)+![超模採信|35](/user-guide/images/采信.png)）——S0 記録担当
+#### ↓血と涙の教訓↓（![超模記録|35](/user-guide/images/记录.webp)+![超模宣読|35](/user-guide/images/宣读.webp)+![超模採信|35](/user-guide/images/采信.webp)）——S0 記録担当
 
-![未保存のチャット記録||250](/user-guide/advanced/images/没保存聊天记录1.png)![未保存のチャット記録||250](/user-guide/advanced/images/没保存聊天记录2.png)
+![未保存のチャット記録||250](/user-guide/advanced/images/没保存聊天记录1.webp)![未保存のチャット記録||250](/user-guide/advanced/images/没保存聊天记录2.webp)

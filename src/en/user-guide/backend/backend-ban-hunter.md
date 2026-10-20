@@ -1,7 +1,7 @@
 # Ban Hunter
 
 This page is used to show hunters that are banned on [BP Window](../fronted-bp.md).
-![禁用监管者](images/禁用监管者.png)
+![禁用监管者](images/禁用监管者.webp)
 
 2 Current Ban and 3 Global Ban are preset.
 
@@ -14,6 +14,6 @@ Simultaenously, this control also exists in the form of a selection box only. Yo
 
 ‍
 
-![监管者禁用数量控制](images/控制监管者禁用数量.png)
+![监管者禁用数量控制](images/控制监管者禁用数量.webp)
 
 Number of ban positions can be customized.

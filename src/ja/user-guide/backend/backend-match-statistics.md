@@ -1,6 +1,6 @@
 # 試合後データ
 
-![試合後データ画面](/user-guide/backend/images/赛后数据.png)
+![試合後データ画面](/user-guide/backend/images/赛后数据.webp)
 
 試合後データウィンドウでは、1試合終了後に両チームのデータ（解読進捗、牽制時間など）を表示できます。
 

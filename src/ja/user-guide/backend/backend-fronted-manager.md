@@ -2,7 +2,7 @@
 
 このページでは、表示ウィンドウの表示・非表示を管理します。
 
-![表示画面管理](/user-guide/backend/images/前台管理.png)
+![表示画面管理](/user-guide/backend/images/前台管理.webp)
 
 各表示ウィンドウのスタイルとレイアウトをカスタマイズできます。詳しい操作方法は[表示画面のカスタマイズ](../advanced/fronted-cutomization.md)を参照してください。
 

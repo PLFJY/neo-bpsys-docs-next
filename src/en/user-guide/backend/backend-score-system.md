@@ -2,7 +2,7 @@
 
 本页面的功能是设置[比分组件](../fronted/fronted-score.md)上显示的各类分数。
 
-![BP界面及游戏内比分](images/BP界面及游戏内比分.png)
+![BP界面及游戏内比分](images/BP界面及游戏内比分.webp)
 
 上图中设置的比分将显示在[BP画面](../fronted/fronted-bp.md)和[比分组件](../fronted/fronted-score.md)上半部分（显示在游戏内左上角和右上角的比分）。
 
@@ -12,7 +12,7 @@
 
 
 
-![分数统计功能](images/分数统计.png)
+![分数统计功能](images/分数统计.webp)
 
 此部分的功能是控制[比分组件](../fronted/fronted-score.md)下半部分（每局结束后显示的每局小分以及小分和）。
 

@@ -2,7 +2,7 @@
 
 このページでは、[スコアコンポーネント](../fronted/fronted-score.md)に表示する各種スコアを設定します。
 
-![BP 画面とゲーム内スコア](/user-guide/backend/images/BP界面及游戏内比分.png)
+![BP 画面とゲーム内スコア](/user-guide/backend/images/BP界面及游戏内比分.webp)
 
 上図で設定したスコアは、[BP 画面](../fronted/fronted-bp.md)と[スコアコンポーネント](../fronted/fronted-score.md)の上部（ゲーム内の左上・右上に表示されるスコア）に表示されます。
 
@@ -10,7 +10,7 @@
 
 ミスやカスタムルールなどの理由でスコアを消去したり手動で管理したりする場合は、【すべて消去】、【小スコア消去】、【手動管理】ボタンをクリックしてください。
 
-![スコア集計機能](/user-guide/backend/images/分数统计.png)
+![スコア集計機能](/user-guide/backend/images/分数统计.webp)
 
 この部分では、[スコアコンポーネント](../fronted/fronted-score.md)の下部（各試合終了後に表示される各試合の小スコアと合計）を管理します。
 

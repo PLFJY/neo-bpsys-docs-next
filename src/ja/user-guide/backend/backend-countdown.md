@@ -1,6 +1,6 @@
 # タイマー
 
-![カウントダウン](/user-guide/backend/images/倒计时.png)
+![カウントダウン](/user-guide/backend/images/倒计时.webp)
 
 この機能は、表示ウィンドウの[BP 画面](../fronted/fronted-bp.md)にタイマーを表示します。タイマーの動作中は BP 画面の「VS」が残り秒数に置き換わり、カウントダウンが終了するか手動で停止すると「VS」に戻ります。
 

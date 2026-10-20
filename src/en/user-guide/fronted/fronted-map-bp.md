@@ -1,6 +1,6 @@
 # 地图BP
 
-![地图BP画面|288](images/地图BP.png)
+![地图BP画面|288](images/地图BP.webp)
 
 地图BP和[BP总览](BP总览.md)的打开方式都是点击[前台管理页面](../backend/backend-fronted-manager.md)中的其它小组件。
 
@@ -17,6 +17,6 @@
 在[v1.1.0.9483](https://github.com/PLFJY/neo-bpsys-wpf/releases/tag/v1.1.0.9483)版本，软件更新了MapBpV2，适配了2025IVL夏季赛地图BP规则。
 
 以下是新的地图BP画面：
-![MapBpV2](images/MapBpV2.png)
+![MapBpV2](images/MapBpV2.webp)
 
 在兼容旧版的同时软件支持同时禁用多张地图，具体使用方法详见[地图禁选](../backend/backend-map-bp.md)。

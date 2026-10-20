@@ -18,6 +18,6 @@ QQ Group Number：175741665
 
 **Kind Reminder: Before submitting an issue or feedbacking in the group, please make sure you have checked whether the problem is on the software or your own brain/eyes**
 
-↓This is an example of a stupid issue↓   （![超模记录|35](images/记录.png)+![超模宣读|35](images/宣读.png)+![超模采信|35](images/采信.png)）——S0 Clerk
+↓This is an example of a stupid issue↓   （![超模记录|35](images/记录.webp)+![超模宣读|35](images/宣读.webp)+![超模采信|35](images/采信.webp)）——S0 Clerk
 
-![](images/宣读唐诗issue.png)
+![](images/宣读唐诗issue.webp)

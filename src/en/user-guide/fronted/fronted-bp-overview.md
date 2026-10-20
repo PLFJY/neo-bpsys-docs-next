@@ -1,6 +1,6 @@
 # BP总览
 
-![BP总览](images/BP总览.png)
+![BP总览](images/BP总览.webp)
 
 BP总览和[地图BP](fronted-map-bp.md)的打开方式都是点击[前台管理页面](../backend/backend-fronted-manager.md)中的其它小组件。
 
