@@ -2,9 +2,9 @@
 
 软件基于GPL-3.0协议开源，**完全免费**。
 
-**如果你遇到了UI与文档中有些许差异请不要慌张，文档基于软件旧版本完成，如果使用上没有较大程度上的不同暂不考虑更新**
 
-**如果遇到前台控件错误或者消失请前往[前台管理](backend/backend-fronted-manager.md)和[设置](backend/backend-settings.md)页面重置配置，这可能是由于上一个版本留下的默认配置导致的Bug**
+
+**如果遇到前台控件错误或者消失请前往[前台管理](backend/backend-fronted-manager.md)页面切换到内置布局，这可能是由于上一个版本留下的默认配置导致的Bug**
 
 官网地址：[https://bpsys.plfjy.top/](https://bpsys.plfjy.top/)
 
@@ -12,7 +12,8 @@
 
 作者QQ：3424127335
 
-QQ交流群号：175741665
+QQ交流群：175741665
+
 
 ‍
 
