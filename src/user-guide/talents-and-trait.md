@@ -7,9 +7,9 @@
 
 ## 天赋选择
 
-![求生者天赋选择部分](images/SurTalents.webp)
+![求生者天赋选择部分](images/TalentsAndTrait-SurTalents.webp)
 
-![监管者天赋选择部分](images/HunTalents.webp)
+![监管者天赋选择部分](images/TalentsAndTrait-HunTalents.webp)
 
 ## 辅助特质选择
 
@@ -17,5 +17,5 @@
 
 使用方法为点击监管者选手选择的辅助特质。
 
-![监管者辅助特质选择部分](images/HunTraitSelection.webp)
+![监管者辅助特质选择部分](images/TalentsAndTrait-HunTraitSelection.webp)
 

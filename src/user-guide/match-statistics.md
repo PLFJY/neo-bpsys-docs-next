@@ -1,6 +1,6 @@
 # 赛后数据
 
-![赛后数据页面](images/MatchStatisticsPageDetails.webp)
+![赛后数据页面](images/MatchStatistics-PageDetails.webp)
 
 在这里可以编辑各选手比赛后的赛后数据，上方的角色名称为只读字段，用于方便查看现在编辑的是哪个角色的赛后数据字段
 

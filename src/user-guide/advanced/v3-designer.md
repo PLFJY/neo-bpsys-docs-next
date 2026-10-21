@@ -2,7 +2,7 @@
 
 这是本软件的第一大复杂的系统，在前台管理页面点击了【打开 v3 前台设计器】之后将会打开本界面
 
-![v3 前台设计器](images/V3Designer.webp)
+![v3 前台设计器](images/V3Designer-Overview.webp)
 
 # v3 前台设计器
 
@@ -12,9 +12,9 @@ v3 前台设计器是本软件用于自定义前台界面的工具。你可以�
 
 ## 一、打开设计器
 
-在软件左侧导航栏进入[前台管理](fronted-manager.md)，点击【打开 v3 前台设计器】。
+在软件左侧导航栏进入[前台管理](../fronted-manager.md)，点击【打开 v3 前台设计器】。
 
-![v3 前台设计器](images/V3DesignerParts.webp)
+![v3 前台设计器](images/V3Designer-PartsOverview.webp)
 
 设计器主要分为以下几个区域：
 
@@ -26,7 +26,7 @@ v3 前台设计器是本软件用于自定义前台界面的工具。你可以�
 
 ### 选择需要编辑的前台窗口
 
-![选择窗口](images/ChooseWindow.webp)
+![选择窗口](images/V3Designer-ChooseWindow.webp)
 
 点击工具栏左侧的窗口选择框，选择需要修改的前台窗口，例如【BP 主窗口】【过场窗口】【全局比分窗口】等。
 
@@ -148,7 +148,7 @@ v3 前台设计器是本软件用于自定义前台界面的工具。你可以�
 
 选中后，控件周围会出现选择框和调整手柄。
 
-![移动和缩放控件](images/AdjustControl.gif)
+![移动和缩放控件](images/V3Designer-AdjustControl.gif)
 
 可以进行以下操作：
 
@@ -220,7 +220,7 @@ v3 前台设计器是本软件用于自定义前台界面的工具。你可以�
 
 左侧的图层面板按层级列出当前窗口中的控件。
 
-![图层面板](images/AdjustZIndex.gif)
+![图层面板](images/V3Designer-AdjustZIndex.gif)
 
 这里的层级即 `ZIndex`。
 
@@ -271,7 +271,7 @@ CurrentGame.HunTeam.Name
 
 #### 组合多个数据来源
 
-![多个数据来源](images/MultiSourceFormat.webp)
+![多个数据来源](images/V3Designer-MultiSourceFormat.webp)
 
 文本绑定还支持添加多个来源，并通过格式化字符串将它们组合。
 
@@ -383,7 +383,7 @@ v3 设计器提供了多个不同的比分字段。特别是小比分，它们�
 
 如果绑定比分后发现显示的数值与预期不一致，请先检查所选字段的含义。
 
-详细说明请参阅[《比分系统》](score-system.md#标准对局模式)。
+详细说明请参阅[《比分系统》](../score-system.md#标准对局模式)。
 
 ## 五、编辑特殊控件
 
@@ -468,7 +468,7 @@ v3 设计器提供了多个不同的比分字段。特别是小比分，它们�
 
 ### 2. 设置触发器
 
-![设置触发器](images/SetTriggers.webp)
+![设置触发器](images/V3Designer-SetTriggers.webp)
 
 每条行为都可以设置触发器，决定动画何时执行。
 
@@ -625,7 +625,7 @@ v3 设计器提供了多个不同的比分字段。特别是小比分，它们�
 
 ### 3. 重新加载与重置
 
-![“布局“菜单](images/LayoutMenu.webp)
+![“布局“菜单](images/V3Designer-LayoutMenu.webp)
 
 顶部【布局】菜单还提供：
 
@@ -639,7 +639,7 @@ v3 设计器提供了多个不同的比分字段。特别是小比分，它们�
 
 布局保存成功后，软件会尝试重新加载对应的前台窗口布局。
 
-可以返回[前台管理](fronted-manager.md)，打开对应的前台窗口，检查真实输出效果。
+可以返回[前台管理](../fronted-manager.md)，打开对应的前台窗口，检查真实输出效果。
 
 设计器中的预览数据并不等同于正式比赛数据，因此建议使用后台实际修改队伍名称、角色、地图或比分，确认绑定和动画是否正常工作。
 
@@ -649,9 +649,9 @@ v3 设计器提供了多个不同的比分字段。特别是小比分，它们�
 
 v3 设计器的布局通过 `.bpui` 文件进行打包和分享。
 
-在[前台管理](fronted-manager.md)页面切换到【布局包】标签页，即可管理所有已安装的前台布局包。
+在[前台管理](../fronted-manager.md)页面切换到【布局包】标签页，即可管理所有已安装的前台布局包。
 
-![布局包管理](images/LayoutPackageTab.webp)
+![布局包管理](../images/FrontendManager-LayoutPackageTab.webp)
 
 ### 1. 激活布局包
 

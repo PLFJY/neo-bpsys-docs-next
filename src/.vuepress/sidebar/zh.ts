@@ -16,7 +16,6 @@ export const zhSidebar = sidebar({
     { text: "设置页面", link: "settings" },
     { text: "天赋特质", link: "talents-and-trait" },
     { text: "队伍信息编辑", link: "team-info" },
-    { text: "v3 前台设计器", link: "v3-designer" },
     {
       text: "高级选项",
       icon: "screwdriver-wrench",

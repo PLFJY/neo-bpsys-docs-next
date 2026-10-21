@@ -19,6 +19,6 @@ QQ交流群：175741665
 
 **温馨提醒：在GitHub上提交issue或在群内反馈问题前请一定认真检查一下是软件的问题还是自己偷着练邦邦的问题。**
 
-↓以下是一个唐诗issue的示例↓   （![超模记录|35](images/Record.webp)+![超模宣读|35](images/ReadPoem.webp)+![超模采信|35](images/AdoptRecord.webp)）——S0记录员
+↓以下是一个唐诗issue的示例↓   （![超模记录|35](images/Introduction-Record.webp)+![超模宣读|35](images/Introduction-ReadPoem.webp)+![超模采信|35](images/Introduction-AdoptRecord.webp)）——S0记录员
 
-![](images/ReadPoemIssue.webp)
+![](images/Introduction-ReadPoemIssue.webp)

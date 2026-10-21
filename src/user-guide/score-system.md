@@ -6,11 +6,11 @@
 
 ## 标准对局模式
 
-![标准对局模式比分系统](images/ScorePageStandard.webp)
+![标准对局模式比分系统](images/ScoreSystem-ScorePageStandard.webp)
 
 每局游戏结束后点击对应的游戏结果，
 
-![标准对局模式比分系统_1](images/ScorePage.webp)
+![标准对局模式比分系统_1](images/ScoreSystem-ScorePage.webp)
 
 当前对局状态会随着你按下按钮的那一刻被记录到表格当中
 
@@ -31,7 +31,7 @@
 
 ## 自由对局模式
 
-![自由对局模式比分](images/ScorePageFreeGameMode.webp)
+![自由对局模式比分](images/ScoreSystem-ScorePageFreeGameMode.webp)
 
 自由对局模式的比分系统与 v2 及之前的版本使用逻辑完全相同，为累加 + 手动管理制，这里不区分上述的 3 中小比分类型，现在已不再推荐这种方式
 
@@ -51,7 +51,7 @@
 
 在弹窗内点击要编辑的比分之后，在下方操作区域对比分的详情进行编辑
 
-![手动编辑游戏内比分](images/ManualScoreEdit.webp)
+![手动编辑游戏内比分](images/ScoreSystem-ManualScoreEdit.webp)
 
 这里编辑的字段将会同步到全部的比分显示界面当中
 
@@ -59,4 +59,4 @@
 
 点击对应的比分位置，在下方的操作区当中，可以进行手动编辑，推荐点击预设并点击结果，下方的手动编辑是完全的手动编辑模式，通常不需要手动操作
 
-![手动编辑全局比分](images/ManualEditGlobalScore.webp)
+![手动编辑全局比分](images/ScoreSystem-ManualEditGlobalScore.webp)

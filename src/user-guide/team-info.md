@@ -4,7 +4,7 @@
 
 ## 设置队伍信息及上场选手
 
-‍![设置队伍信息及上场选手](images/TeamInfoPage.webp)
+‍![设置队伍信息及上场选手](images/TeamInfo-TeamInfoPage.webp)
 
 上图为队伍信息填入页面（客场同理）。
 
@@ -20,5 +20,5 @@
 
 使用方法为点击选手名称后面的数字来将该选手与指定位置的选手互换
 
-![修改上场选手顺序](images/ReorderActivePlayers.webp)
+![修改上场选手顺序](images/TeamInfo-ReorderActivePlayers.webp)
 

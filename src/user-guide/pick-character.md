@@ -2,7 +2,7 @@
 
 本页面的功能是记录双方选择的角色以及全局禁选记录
 
-![选择角色页面](images/PickPage.webp)
+![选择角色页面](images/PickCharacter-PickPage.webp)
 
 ## 选择各阵营上场角色
 
@@ -16,7 +16,7 @@
 
 ## 全局禁选记录
 
-![全局禁选记录功能](images/global-ban-record.webp)
+![全局禁选记录功能](images/PickCharacter-GlobalBanRecordDetails.webp)
 
 全局禁选记录的功能是记录各队伍**下次扮演该阵营时**应该进入全局禁选的角色，并会在换边时自动应用到全局禁选中。
 
