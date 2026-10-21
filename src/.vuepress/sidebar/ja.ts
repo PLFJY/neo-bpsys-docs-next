@@ -13,18 +13,6 @@ export const jaSidebar = sidebar({
       link: "quick-start",
     },
     {
-      text: "バックエンド",
-      icon: "sliders",
-      prefix: "backend/",
-      children: "structure",
-    },
-    {
-      text: "フロントエンド出力",
-      icon: "window-maximize",
-      prefix: "fronted/",
-      children: "structure",
-    },
-    {
       text: "詳細設定",
       icon: "screwdriver-wrench",
       prefix: "advanced/",

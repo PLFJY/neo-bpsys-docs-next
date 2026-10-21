@@ -117,7 +117,7 @@ const messages = {
           contribution: "提供了 v2.0 版本的默认前台 UI",
         },
         {
-          avatar: withBase("/assets/avatars/paperwings.PNG"),
+          avatar: withBase("/assets/avatars/paperwings.webp"),
           name: "paperwings",
           contribution: "提供了强大的 3D 插件支持",
           link: {
@@ -215,7 +215,7 @@ const messages = {
           contribution: "Default UI for v2.0",
         },
         {
-          avatar: withBase("/assets/avatars/paperwings.PNG"),
+          avatar: withBase("/assets/avatars/paperwings.webp"),
           name: "paperwings",
           contribution: "Provides powerful 3D plugin support",
           link: {
@@ -313,7 +313,7 @@ const messages = {
           contribution: "v2.0 の既定UIを提供",
         },
         {
-          avatar: withBase("/assets/avatars/paperwings.PNG"),
+          avatar: withBase("/assets/avatars/paperwings.webp"),
           name: "paperwings",
           contribution: "強力な3Dプラグインサポートを提供",
           link: {

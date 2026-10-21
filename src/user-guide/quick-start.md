@@ -45,54 +45,54 @@
 
 在该页面的最下面显示了当前上场的选手。对于每个求生者选手，可以点击名称后面的数字以切换其位置。
 
-![修改上场选手顺序](images/修改上场选手顺序.webp)
+![修改上场选手顺序](images/ReorderActivePlayers.webp)
 
 如果需要了解如何更快速的导入队伍信息，请参阅[从Json导入队伍信息](advanced/import-team-from-json.md)。
 
 ---
 
 ### 二、设置赛制
-在软件窗口上可以设置赛制为 BO5 或 BO3，**该设置将影响[对局引导](backend/backend-game-info-and-guidance.md)、比分计算等功能，请如实选择**。
+在软件窗口上可以设置赛制为 BO5 或 BO3，**该设置将影响[对局引导](game-info-and-guidance.md)、比分计算等功能，请如实选择**。
 
 ![设置赛制](images/SetCompetitionRule.webp)
 
 ---
 
 ### 三、启动前台
-在软件窗口左侧的页面选择区域点击[前台管理](backend/backend-fronted-manager.md)。在这里可以打开或关闭各个前台展示画面（一般建议全打开然后在[OBS](https://obsproject.com/download)、直播姬、直播伴侣等直播软件中管理前台画面的显示与隐藏）。
+在软件窗口左侧的页面选择区域点击[前台管理](fronted-manager.md)。在这里可以打开或关闭各个前台展示画面（一般建议全打开然后在[OBS](https://obsproject.com/download)、直播姬、直播伴侣等直播软件中管理前台画面的显示与隐藏）。
 
-![前台管理页面](images/frontedanMagerPage.webp)
+![前台管理页面](images/FrontedanMagerPage.webp)
 
 ---
 
 ### 四、开启对局引导
 本软件根据官方比赛BP规则设计了对局引导功能，请选择当前对局进度（例如第一局上半场）后点击【开始对局引导】，然后点击【下一步】来根据比赛规则进行每一步操作。同时，你可以点击【上一步】和【结束对局引导】来进行对应操作。
-![设置赛制及对局引导区域|500](images/对局引导_未开始.webp)
+![设置赛制及对局引导区域|500](images/MatchGuidanceNotStarted.webp)
 
 开启对局引导后即可根据引导来进行BP，关于BP过程中各个步骤的详细介绍，详见：
 
-+ [地图禁选](backend/backend-map-bp.md)
-+ [禁用角色](backend/backend-ban-character.md)
-+ [选择角色](backend/backend-pick-character.md)
-+ [天赋特质](backend/backend-talents-and-trait.md)
++ [地图禁选](map-bp.md)
++ [禁用角色](ban-character.md)
++ [选择角色](pick-character.md)
++ [天赋特质](talents-and-trait.md)
 
 ---
 
 ### 五、赛后数据
 在前台的【赛后数据窗口】可以显示当局双方数据。具体使用方法是在赛后数据页面输入各选手的数据。此时，输入的数据将会在【赛后数据窗口】内显示。
 
-![赛后数据页面](images/matchStatisticsPage.webp)
+![赛后数据页面](images/MatchStatisticsPage.webp)
 
 ---
 
 ### 六、比分控制
-进行完一个对局后，可以在[比分系统](backend/backend-score-system.md)页面来输入和计算比分，比分将同步到【比分窗口】中。
+进行完一个对局后，可以在[比分系统](score-system.md)页面来输入和计算比分，比分将同步到【比分窗口】中。
 
-![比分控制页面](images/scorePage.webp)
+![比分控制页面](images/ScorePage.webp)
 
 在选择上方的对局进度后就可以在比分控制处选择当局的对局结果，所有前台界面的比分组件会自动根据对局进度的记录显示比分
 
-注：在自由对局中会有所不同，具体看[比分系统](backend/backend-score-system.md)中的说明
+注：在自由对局中会有所不同，具体看[比分系统](score-system.md)中的说明
 
 本软件内对局结果的加分与官方比赛一致，关于官方比赛加分详见下表。
 

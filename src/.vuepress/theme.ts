@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://plfjy.top/",
   },
 
-  logo: "logo.png",
+  logo: "logo.webp",
 
   repo: "PLFJY/neo-bpsys-wpf",
 

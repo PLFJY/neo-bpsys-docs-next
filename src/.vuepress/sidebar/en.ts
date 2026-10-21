@@ -13,18 +13,6 @@ export const enSidebar = sidebar({
       link: "quick-start",
     },
     {
-      text: "Backend",
-      icon: "sliders",
-      prefix: "backend/",
-      children: "structure",
-    },
-    {
-      text: "Frontend Output",
-      icon: "window-maximize",
-      prefix: "fronted/",
-      children: "structure",
-    },
-    {
       text: "Advanced Options",
       icon: "screwdriver-wrench",
       prefix: "advanced/",

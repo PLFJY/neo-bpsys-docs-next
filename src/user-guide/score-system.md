@@ -6,11 +6,11 @@
 
 ## 标准对局模式
 
-![标准对局模式比分系统](images/scorePageStandard.webp)
+![标准对局模式比分系统](images/ScorePageStandard.webp)
 
 每局游戏结束后点击对应的游戏结果，
 
-![标准对局模式比分系统_1](../images/scorePage.webp)
+![标准对局模式比分系统_1](images/ScorePage.webp)
 
 当前对局状态会随着你按下按钮的那一刻被记录到表格当中
 
@@ -31,7 +31,7 @@
 
 ## 自由对局模式
 
-![自由对局模式比分](images/scorePageFreeGameMode.webp)
+![自由对局模式比分](images/ScorePageFreeGameMode.webp)
 
 自由对局模式的比分系统与 v2 及之前的版本使用逻辑完全相同，为累加 + 手动管理制，这里不区分上述的 3 中小比分类型，现在已不再推荐这种方式
 

@@ -2,7 +2,7 @@
 home: true
 icon: house
 title: ホーム
-heroImage: logo.png
+heroImage: logo.webp
 heroImageStyle: 
   scale: 0.75
 heroText: neo-bpsys-wpf

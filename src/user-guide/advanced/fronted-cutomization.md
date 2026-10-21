@@ -1,16 +1,16 @@
 # 前台自定义
 ## 修改背景及文字属性
 
-在[设置](../backend/backend-settings.md)页面中，用户可以修改各个前台窗口的背景和文字属性。
+在[设置](../settings.md)页面中，用户可以修改各个前台窗口的背景和文字属性。
 
-![背景文字自定义](images/背景文字自定义.webp)
+![背景文字自定义](images/BackgroundAndTextCustomization.webp)
 
 ---
 
 ## 修改组件大小及位置
 
-![组件位置大小自定义|700](images/组件位置大小自定义.webp)
-用户可以在[前台管理](../backend/backend-fronted-manager.md)页面打开设计模式。在设计模式中，用户可以自定义每一个组件的大小和位置。
+![组件位置大小自定义|700](images/ComponentPositionAndSizeCustomization.webp)
+用户可以在[前台管理](../fronted-manager.md)页面打开设计模式。在设计模式中，用户可以自定义每一个组件的大小和位置。
 
 ---
 
@@ -18,8 +18,8 @@
 
 温馨提醒：自定义完后需要先关闭设计者模式再退出软件，**否则您的更改将不会被保存！**
 
-#### ↓血和泪的教训↓（![超模记录|35](../images/记录.webp)+![超模宣读|35](../images/宣读.webp)+![超模采信|35](../images/采信.webp))——S0记录员
+#### ↓血和泪的教训↓（![超模记录|35](../images/Record.webp)+![超模宣读|35](../images/ReadPoem.webp)+![超模采信|35](../images/AdoptRecord.webp))——S0记录员
 
-![没保存 聊天记录||250](images/没保存聊天记录1.webp)![没保存 聊天记录||250](images/没保存聊天记录2.webp)
+![没保存 聊天记录||250](images/UnsavedChatLog1.webp)![没保存 聊天记录||250](images/UnsavedChatLog2.webp)
 
 ‍

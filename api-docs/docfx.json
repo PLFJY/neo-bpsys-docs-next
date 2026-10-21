@@ -44,7 +44,7 @@
     "globalMetadata": {
       "_appName": "neo-bpsys-wpf",
       "_appTitle": "neo-bpsys-wpf",
-      "_appLogoPath": "public/logo.png",
+      "_appLogoPath": "public/logo.webp",
       "_appLogoUrl": "/",
       "_appFaviconPath": "public/favicon.ico",
       "_enableSearch": true,
