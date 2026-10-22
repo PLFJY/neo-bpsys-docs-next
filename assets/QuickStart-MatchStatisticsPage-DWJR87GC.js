@@ -1,0 +1,1 @@
+const e="/user-guide/images/QuickStart-UiOverview.webp",t="/user-guide/images/QuickStart-SetCompetitionRule.webp",i="/user-guide/images/QuickStart-FrontendManagerPage.webp",s="/user-guide/images/QuickStart-MatchStatisticsPage.webp";export{t as _,i as a,e as b,s as c};

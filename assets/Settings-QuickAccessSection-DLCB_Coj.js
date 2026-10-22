@@ -1,0 +1,1 @@
+const s="/user-guide/images/Settings-SoftwareInfoSection.webp",e="/user-guide/images/Settings-OptionsSwitch.webp",t="/user-guide/images/Settings-ClassicMode.webp",i="/user-guide/images/Settings-BpuiAutoImport.webp",o="/user-guide/images/Settings-EditPath.webp",g="/user-guide/images/Settings-QuickAccessSection.webp";export{s as _,e as a,t as b,i as c,o as d,g as e};
