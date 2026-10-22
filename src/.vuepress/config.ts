@@ -1,6 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { getDirname, path } from 'vuepress/utils'
-
+import { viteBundler } from "@vuepress/bundler-vite";
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 
 import theme from "./theme.js";
@@ -39,8 +39,44 @@ export default defineUserConfig({
         HomeLanding: path.resolve(__dirname, './components/HomeLanding.vue'),
       },
     }),
-  ]
+  ],
 
+  bundler: viteBundler({
+    viteOptions: {
+      build: {
+        rollupOptions: {
+          output: {
+            assetFileNames: (asset) => {
+              const name = asset.names?.[0] ?? "";
+              const original = (
+                asset.originalFileNames?.[0] ?? ""
+              ).replace(/\\/g, "/");
+
+              // 匹配 user-guide 目录内的图片
+              const match = original.match(
+                /(?:^|\/)user-guide\/(.+)$/
+              );
+
+              if (
+                match &&
+                /\.(png|jpe?g|webp|gif|svg|avif)$/i.test(name)
+              ) {
+                const relativePath = match[1].replace(
+                  /\.[^/.]+$/,
+                  ""
+                );
+
+                return `user-guide/${relativePath}[extname]`;
+              }
+
+              // 其他静态资源保留哈希
+              return "assets/[name]-[hash][extname]";
+            },
+          },
+        },
+      },
+    },
+  }),
   // Enable it with pwa
   // shouldPrefetch: false,
 });
