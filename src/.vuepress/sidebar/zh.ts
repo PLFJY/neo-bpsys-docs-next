@@ -20,9 +20,16 @@ export const zhSidebar = sidebar({
     {
       text: "高级选项",
       icon: "screwdriver-wrench",
-      prefix: "advanced/",
-      children: "structure",
+      children: [
+        { text: "修改引导规则", icon: "list-check", link: "advanced/edit-guidance-rule" },
+        { text: "从 Json 文件导入队伍信息", icon: "file-import", link: "advanced/import-team-from-json" },
+        { text: "v3 前台设计器", icon: "pen-ruler", link: "advanced/v3-designer" },
+        { text: "插件系统", icon: "puzzle-piece", link: "advanced/plugin-system" },
+      ],
     },
     { text: "常见问题及解决方案", icon: "question", link: "faq" },
-  ]
+  ],
+  "/dev/": [
+    { text: "开发文档", icon: "screwdriver-wrench", children: "structure" },
+  ],
 });
