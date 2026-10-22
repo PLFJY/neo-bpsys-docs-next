@@ -1,6 +1,6 @@
 # 从Json文件导入信息
 
-除了[手动设置](../后台/队伍信息.md)之外，本软件还提供了从Json一键导入队伍信息的功能。
+除了[手动设置](../team-info.md)之外，本软件还提供了从Json一键导入队伍信息的功能。
 
 使用方法为点击队伍信息页面中的【从Json文件导入】来选择一个Json文件。
 
@@ -48,7 +48,7 @@ SurMemberList下存储队伍求生者选手名单；HunMemberList下存储队伍
 
 队伍名称下的 ImageUri 表示队徽URl或文件路径（例：D:\\\ExamplePhoto\\\1.png)，如果没有队徽或定妆照则在该项填入null
 
-#### <font color="#ff0000">文件路径需要两个反斜杠</font>
+#### <span style="color: #ff0000">文件路径需要两个反斜杠</span>
 
 以下分别为成都WOLVES和GR的队伍信息Json示例
 

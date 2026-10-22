@@ -8,7 +8,7 @@
 
 本软件支持选择/禁用全部排位地图，使用方法为点击需要选择/禁用的地图（~~未来将支持多选~~已于[v1.1.0.9483版本](https://github.com/PLFJY/neo-bpsys-wpf/releases/tag/v1.1.0.9483)开始支持多选禁用）。
 
-‍目前，我们同时支持新旧版地图BP规则并制作了相关的前台画面，详见[地图BP](fronted/fronted-map-bp.md)。
+地图 BP 前台窗口的开启和管理方式详见[前台管理](fronted-manager.md#前台窗口)。
 
 旧版 v1 单地图禁选界面已经彻底删除
 

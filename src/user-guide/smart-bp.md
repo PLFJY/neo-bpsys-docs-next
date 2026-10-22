@@ -21,13 +21,13 @@
 
 首次打开软件中的【智慧 BP】页面时，如果尚未安装模块，会显示安装提示。
 
-![智慧 BP 模块安装界面](images/SmartBp-ModuleInstall.png)
+![智慧 BP 模块安装界面](images/SmartBp-ModuleInstall.webp)
 
 点击【下载并安装】，软件便会下载与当前软件版本匹配的智慧 BP 模块，并自动完成安装。
 
 下载过程中可以查看进度，也可以暂停、继续或取消下载。
 
-![智慧 BP 已加载](images/SmartBp-ModuleLoaded.png)
+![智慧 BP 已加载](images/SmartBp-ModuleLoaded.webp)
 
 安装完成后，软件会加载智慧 BP 模块，进入功能页面。
 
@@ -43,7 +43,7 @@
 
 在智慧 BP 页面中找到【OCR 提供程序】区域。
 
-![OCR 提供程序](images/SmartBp-OcrProvider.png)
+![OCR 提供程序](images/SmartBp-OcrProvider.webp)
 
 建议使用 PaddleOCR，因为开发者没有测另外两个，只能说理论上应该可用，不保证识别准确性，并且没有支持显卡加速
 
@@ -67,7 +67,7 @@
 2. 下载完成后，点击【切换】，将其设为当前使用的 OCR 模型。
 3. 检查页面中显示的当前模型名称，确认模型已正确启用。
 
-![下载并切换 OCR 模型](images/SmartBp-OcrModel.png)
+![下载并切换 OCR 模型](images/SmartBp-OcrModel.webp)
 
 注意：**下载模型和启用模型是两个不同的操作。** 如果只完成了下载但没有切换到对应模型，智慧 BP 仍可能提示 OCR 功能尚未就绪。
 
@@ -79,7 +79,7 @@ OCR 模型准备完成后，还需要告诉智慧 BP 从哪个窗口读取画面
 
 在页面顶部找到【窗口捕获设置】。
 
-![窗口捕获设置](images/SmartBp-WindowCapture.png)
+![窗口捕获设置](images/SmartBp-WindowCapture.webp)
 
 ### 选择捕获方式
 
@@ -103,7 +103,7 @@ OCR 模型准备完成后，还需要告诉智慧 BP 从哪个窗口读取画面
 
 捕获启动后，点击【预览】，确认智慧 BP 实际读取到了什么内容。
 
-![窗口捕获预览](images/SmartBp-CapturePreview.png)
+![窗口捕获预览](images/SmartBp-CapturePreview.webp)
 
 这里需要特别注意：**智慧 BP 识别的是预览中的画面，而不是你在显示器上看到的任意内容。**
 
@@ -117,7 +117,7 @@ OCR 模型准备完成后，还需要告诉智慧 BP 从哪个窗口读取画面
 
 在智慧 BP 页面找到【全流程 BP 自动识别】区域。
 
-![自动 BP 识别设置](images/SmartBp-AutoRecognition.png)
+![自动 BP 识别设置](images/SmartBp-AutoRecognition.webp)
 
 ### 启动之前
 
@@ -166,7 +166,7 @@ OCR 模型准备完成后，还需要告诉智慧 BP 从哪个窗口读取画面
 
 确认后，智慧 BP 将开始持续识别指定窗口中的游戏画面。
 
-![启动自动识别确认](images/SmartBp-RecognitionConfirm.png)
+![启动自动识别确认](images/SmartBp-RecognitionConfirm.webp)
 
 接下来，可以在游戏中正常进行角色 BP，观察后台的[禁用角色](ban-character.md)和[选择角色](pick-character.md)页面。
 
@@ -180,7 +180,7 @@ OCR 模型准备完成后，还需要告诉智慧 BP 从哪个窗口读取画面
 2. 点击选手旁边的【更多】按钮
 3. 在这里填写选手的游戏内 ID
 
-![游戏内 ID 设置](images/SmartBp-InGameIdSetting.png)
+![游戏内 ID 设置](images/SmartBp-InGameIdSetting.webp)
 
 智慧 BP 在角色分配阶段所使用用于对应的 ID 将会按照如下优先级顺序进行识别：
 
@@ -210,7 +210,7 @@ OCR 模型准备完成后，还需要告诉智慧 BP 从哪个窗口读取画面
 
 确认智慧 BP 仍在捕获正确的游戏窗口，并能读取到当前画面。
 
-![赛后数据示例](images/SmartBp-MatchStatisticsSample.png)
+![赛后数据示例](images/SmartBp-MatchStatisticsSample.webp)
 
 ### 自动填写赛后数据
 
@@ -220,13 +220,13 @@ OCR 模型准备完成后，还需要告诉智慧 BP 从哪个窗口读取画面
 
 点击【自动识别并填充赛后数据】，软件会读取当前捕获画面，并尝试识别其中的选手数据。
 
-![自动识别并填充赛后数据](images/SmartBp-PostGameAutoFill.png)
+![自动识别并填充赛后数据](images/SmartBp-PostGameAutoFill.webp)
 
 识别过程中会显示进度和当前处理阶段。
 
 识别完成后，软件会将成功解析的数据写入当前对局，包括求生者和监管者的赛后统计信息。
 
-![智慧 BP 赛后数据识别结果](images/SmartBp-PostGameResult.png)
+![智慧 BP 赛后数据识别结果](images/SmartBp-PostGameResult.webp)
 
 请在识别完成后检查填写结果，尤其是选手角色对应关系和数值是否正确。
 
@@ -276,7 +276,7 @@ OCR 模型准备完成后，还需要告诉智慧 BP 从哪个窗口读取画面
 
 与普通的自动识别不同，强制同步不是等待后续连续识别逐步完成，而是直接根据当前画面进行状态同步。
 
-![强制同步对局状态](images/SmartBp-ForceSync.png)
+![强制同步对局状态](images/SmartBp-ForceSync.webp)
 
 使用时需要注意：
 
@@ -301,11 +301,11 @@ OCR 模型准备完成后，还需要告诉智慧 BP 从哪个窗口读取画面
 
 然后在智慧 BP 页面找到【识别区域配置】，点击【编辑 BP 识别区域】。
 
-![BP 识别区域设置](images/SmartBp-RegionSettings.png)
+![BP 识别区域设置](images/SmartBp-RegionSettings.webp)
 
 区域编辑器会使用当前捕获到的画面作为参考，展示对应的识别框。
 
-![BP 识别区域编辑器](images/SmartBp-RegionEditor.png)
+![BP 识别区域编辑器](images/SmartBp-RegionEditor.webp)
 
 ### 调整区域
 
@@ -338,7 +338,7 @@ BP 识别区域主要包括以下内容：
 | RapidOCR | 可选的本地 OCR 方案，提供中文模型管理 |
 | Tesseract | 可选方案，需要下载对应语言数据 |
 
-![OCR 提供程序切换](images/SmartBp-OcrProvidersAdvanced.png)
+![OCR 提供程序切换](images/SmartBp-OcrProvidersAdvanced.webp)
 
 不同的提供程序使用不同的模型或语言文件，并不是下载一个 PaddleOCR 模型后就能直接切换到其他引擎。
 
@@ -356,7 +356,7 @@ BP 识别区域主要包括以下内容：
 
 这些设置位于【高级参数】中。
 
-![智慧 BP 高级参数](images/SmartBp-AdvancedSettings.png)
+![智慧 BP 高级参数](images/SmartBp-AdvancedSettings.webp)
 
 ### 测试识别速度
 
@@ -402,7 +402,7 @@ BP 识别区域主要包括以下内容：
 
 如果软件检测到相关硬件环境，智慧 BP 页面会提供 CUDA 硬件加速设置与状态信息。
 
-![CUDA 硬件加速（截图待补充）](images/SmartBp-Cuda.webp)
+<!-- TODO: 补充 CUDA 硬件加速截图。 -->
 
 CUDA 是 NVIDIA 的 GPU 计算技术，因此并非所有显卡都支持。
 
@@ -426,9 +426,9 @@ CUDA 是 NVIDIA 的 GPU 计算技术，因此并非所有显卡都支持。
 - 查看最近一次赛后数据识别得到的选手、角色和数字。
 - 打开独立的识别日志窗口。
 
-![智慧 BP 调试选项](images/SmartBp-Debug.png)
+![智慧 BP 调试选项](images/SmartBp-Debug.webp)
 
-![智慧 BP 调试选项 2](images/SmartBp-Debug_2.png)
+![智慧 BP 调试选项 2](images/SmartBp-Debug_2.webp)
 
 如果准备向开发者反馈识别问题，建议提供当时的游戏画面、捕获预览截图，以及对应的识别日志。
 
@@ -442,7 +442,7 @@ CUDA 是 NVIDIA 的 GPU 计算技术，因此并非所有显卡都支持。
 
 如果下载出现问题，或者你已经拥有完整的模块文件，也可以在未加载模块时展开【高级选项】进行手动操作。
 
-![智慧 BP 模块高级选项](images/SmartBp-ModuleAdvanced.png)
+![智慧 BP 模块高级选项](images/SmartBp-ModuleAdvanced.webp)
 
 这里可以修改模块目录、选择已经安装的模块，或者导入本地的模块压缩包。
 

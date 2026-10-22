@@ -7,7 +7,7 @@
 ![插件管理](images/PluginSystem-Management.webp)上图是插件管理界面。在这里，你可以管理你已经安装的插件。
 点击【从文件安装插件】来安装新的插件（zip文件）。
 
-详情可见插件[开发文档](/dev/plugin-dev-guide.md)
+插件开发文档待补充。
 
 ---
 ### 插件市场
