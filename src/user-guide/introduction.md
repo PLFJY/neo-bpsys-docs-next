@@ -2,7 +2,7 @@
 
 软件基于GPL-3.0协议开源，**完全免费**。
 
-
+![主界面](images/Introduction-MainPage.webp)
 
 **如果遇到前台控件错误或者消失请前往[前台管理](fronted-manager.md)页面切换到内置布局，这可能是由于上一个版本留下的默认配置导致的Bug**
 
