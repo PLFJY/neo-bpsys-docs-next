@@ -6,7 +6,7 @@ export const enNavbar = navbar([
   {
     text: "User Guide",
     icon: "lightbulb",
-    link: "en/user-guide/introduction"
+    link: "/en/user-guide/introduction"
   },
   {
     text: "Development Documentation",

@@ -15,7 +15,7 @@ actions:
 
   - text: 使い方
     icon: book-open
-    link: ja/user-guide/introduction
+    link: /ja/user-guide/introduction
 
   - text: Discordに参加
     icon: fa6-brands:discord

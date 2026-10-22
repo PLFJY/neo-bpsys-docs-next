@@ -22,7 +22,7 @@ export default defineUserConfig({
     "/en/": {
       lang: "en-US",
       title: "neo-bpsys-wpf",
-      description: "A Identity V BP display tool for unofficial tournaments",
+      description: "An Identity V BP display tool for unofficial tournaments",
     },
     "/ja/": {
       lang: "ja-JP",

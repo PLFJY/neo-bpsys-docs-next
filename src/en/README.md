@@ -6,7 +6,7 @@ heroImage: logo.webp
 heroImageStyle: 
   scale: 0.75
 heroText: neo-bpsys-wpf
-tagline: A live-streaming BP display tool for Identity V unofficial tournament.
+tagline: A broadcast BP display tool for unofficial Identity V tournaments.
 actions:
   - text: Download for Windows
     icon: download
@@ -15,7 +15,7 @@ actions:
 
   - text: User Guide
     icon: book-open
-    link: en/user-guide/introduction
+    link: /en/user-guide/introduction
 
   - text: Join Discord
     icon: fa6-brands:discord

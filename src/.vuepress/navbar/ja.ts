@@ -6,7 +6,7 @@ export const jaNavbar = navbar([
   {
     text: "ユーザーガイド",
     icon: "lightbulb",
-    link: "ja/user-guide/introduction"
+    link: "/ja/user-guide/introduction"
   },
   {
     text: "開発ドキュメント",
