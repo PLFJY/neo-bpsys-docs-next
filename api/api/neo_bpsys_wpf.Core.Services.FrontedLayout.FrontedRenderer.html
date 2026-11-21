@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Class FrontedRenderer | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FrontedRenderer | neo-bpsys-wpf ">
+      
+      <meta name="description" content="默认 v3 前台 Canvas 渲染器。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.webp" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer" class="text-break">
+Class FrontedRenderer  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.html">Services</a>.<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.html">FrontedLayout</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>默认 v3 前台 Canvas 渲染器。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FrontedRenderer : IFrontedRenderer, IFrontedIncrementalRenderer</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FrontedRenderer</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedRenderer.html">IFrontedRenderer</a></div>
+      <div><a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.html">IFrontedIncrementalRenderer</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer__ctor_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.#ctor*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer__ctor_System_IServiceProvider_neo_bpsys_wpf_Core_Abstractions_Services_ISharedDataService_neo_bpsys_wpf_Core_Abstractions_Services_IFrontedResourceResolver_neo_bpsys_wpf_Core_Abstractions_Services_IFrontedV3ControlRegistry_Microsoft_Extensions_Logging_ILogger_neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.#ctor(System.IServiceProvider,neo_bpsys_wpf.Core.Abstractions.Services.ISharedDataService,neo_bpsys_wpf.Core.Abstractions.Services.IFrontedResourceResolver,neo_bpsys_wpf.Core.Abstractions.Services.IFrontedV3ControlRegistry,Microsoft.Extensions.Logging.ILogger{neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer})">
+  FrontedRenderer(IServiceProvider, ISharedDataService, IFrontedResourceResolver, IFrontedV3ControlRegistry, ILogger&lt;FrontedRenderer&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>默认 v3 前台 Canvas 渲染器。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrontedRenderer(IServiceProvider services, ISharedDataService sharedDataService, IFrontedResourceResolver resourceResolver, IFrontedV3ControlRegistry v3ControlRegistry, ILogger&lt;FrontedRenderer&gt; logger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
+    <dd></dd>
+    <dt><code>sharedDataService</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.ISharedDataService.html">ISharedDataService</a></dt>
+    <dd></dd>
+    <dt><code>resourceResolver</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedResourceResolver.html">IFrontedResourceResolver</a></dt>
+    <dd></dd>
+    <dt><code>v3ControlRegistry</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedV3ControlRegistry.html">IFrontedV3ControlRegistry</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.html">FrontedRenderer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_AddControl_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.AddControl*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_AddControl_System_Windows_Controls_Canvas_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedCanvasConfig_neo_bpsys_wpf_Core_Abstractions_Services_FrontedRenderContext_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.AddControl(System.Windows.Controls.Canvas,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig,neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext,System.String)">
+  AddControl(Canvas, FrontedCanvasConfig, FrontedRenderContext, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>向现有预览 Canvas 增量添加一个控件，用于粘贴/新增控件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddControl(Canvas canvas, FrontedCanvasConfig config, FrontedRenderContext context, string controlName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>目标 Canvas。</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig.html">FrontedCanvasConfig</a></dt>
+    <dd><p>当前画布配置。</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext.html">FrontedRenderContext</a></dt>
+    <dd><p>渲染上下文。</p>
+</dd>
+    <dt><code>controlName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>控件名。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功添加时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_AddControls_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.AddControls*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_AddControls_System_Windows_Controls_Canvas_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedCanvasConfig_neo_bpsys_wpf_Core_Abstractions_Services_FrontedRenderContext_System_Collections_Generic_IEnumerable_System_String__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.AddControls(System.Windows.Controls.Canvas,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig,neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext,System.Collections.Generic.IEnumerable{System.String})">
+  AddControls(Canvas, FrontedCanvasConfig, FrontedRenderContext, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>批量向现有预览 Canvas 增量添加控件，只解析一次画布运行时状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddControls(Canvas canvas, FrontedCanvasConfig config, FrontedRenderContext context, IEnumerable&lt;string&gt; controlNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>目标 Canvas。</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig.html">FrontedCanvasConfig</a></dt>
+    <dd><p>当前画布配置。</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext.html">FrontedRenderContext</a></dt>
+    <dd><p>渲染上下文。</p>
+</dd>
+    <dt><code>controlNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>要添加的控件名集合。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>成功添加/刷新的控件数量。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RefreshControl_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RefreshControl*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RefreshControl_System_Windows_Controls_Canvas_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedCanvasConfig_neo_bpsys_wpf_Core_Abstractions_Services_FrontedRenderContext_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RefreshControl(System.Windows.Controls.Canvas,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig,neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext,System.String)">
+  RefreshControl(Canvas, FrontedCanvasConfig, FrontedRenderContext, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>只刷新指定控件的预览视觉，用于属性编辑等局部变更。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RefreshControl(Canvas canvas, FrontedCanvasConfig config, FrontedRenderContext context, string controlName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>目标 Canvas。</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig.html">FrontedCanvasConfig</a></dt>
+    <dd><p>当前画布配置。</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext.html">FrontedRenderContext</a></dt>
+    <dd><p>渲染上下文。</p>
+</dd>
+    <dt><code>controlName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要刷新的控件名。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功替换控件视觉时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>；控件不存在或类型不支持时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RefreshControl_System_Windows_Controls_Canvas_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedCanvasConfig_neo_bpsys_wpf_Core_Abstractions_Services_FrontedRenderContext_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>背景、Canvas 尺寸和其他控件保持不变；调用方应在局部刷新失败时回退到完整渲染。</p>
+</div>
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RefreshControls_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RefreshControls*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RefreshControls_System_Windows_Controls_Canvas_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedCanvasConfig_neo_bpsys_wpf_Core_Abstractions_Services_FrontedRenderContext_System_Collections_Generic_IEnumerable_System_String__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RefreshControls(System.Windows.Controls.Canvas,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig,neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext,System.Collections.Generic.IEnumerable{System.String})">
+  RefreshControls(Canvas, FrontedCanvasConfig, FrontedRenderContext, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>批量刷新指定控件的预览视觉，只解析一次画布运行时状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RefreshControls(Canvas canvas, FrontedCanvasConfig config, FrontedRenderContext context, IEnumerable&lt;string&gt; controlNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>目标 Canvas。</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig.html">FrontedCanvasConfig</a></dt>
+    <dd><p>当前画布配置。</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext.html">FrontedRenderContext</a></dt>
+    <dd><p>渲染上下文。</p>
+</dd>
+    <dt><code>controlNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>要刷新的控件名集合。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>成功刷新的控件数量。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RemoveControl_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RemoveControl*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RemoveControl_System_Windows_Controls_Canvas_System_String_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RemoveControl(System.Windows.Controls.Canvas,System.String)">
+  RemoveControl(Canvas, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>从现有预览 Canvas 增量移除一个控件，用于删除控件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveControl(Canvas canvas, string controlName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>目标 Canvas。</p>
+</dd>
+    <dt><code>controlName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>控件名。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>找到并移除控件时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RemoveControls_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RemoveControls*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RemoveControls_System_Windows_Controls_Canvas_System_Collections_Generic_IEnumerable_System_String__" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RemoveControls(System.Windows.Controls.Canvas,System.Collections.Generic.IEnumerable{System.String})">
+  RemoveControls(Canvas, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>批量从现有预览 Canvas 增量移除控件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemoveControls(Canvas canvas, IEnumerable&lt;string&gt; controlNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>目标 Canvas。</p>
+</dd>
+    <dt><code>controlNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>要移除的控件名集合。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>实际移除的控件数量。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RenderToCanvas_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RenderToCanvas*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RenderToCanvas_System_Windows_Controls_Canvas_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedCanvasConfig_neo_bpsys_wpf_Core_Abstractions_Services_FrontedRenderContext_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RenderToCanvas(System.Windows.Controls.Canvas,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig,neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext)">
+  RenderToCanvas(Canvas, FrontedCanvasConfig, FrontedRenderContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>渲染以画布为中心的旧版 v3 配置，用于转换和过渡辅助。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderToCanvas(Canvas canvas, FrontedCanvasConfig config, FrontedRenderContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd></dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig.html">FrontedCanvasConfig</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext.html">FrontedRenderContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RenderToCanvas_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RenderToCanvas*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RenderToCanvas_System_Windows_Controls_Canvas_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedCanvasSettings_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedControlLayout_neo_bpsys_wpf_Core_Abstractions_Services_FrontedRenderContext_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RenderToCanvas(System.Windows.Controls.Canvas,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasSettings,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlLayout,neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext)">
+  RenderToCanvas(Canvas, FrontedCanvasSettings, FrontedControlLayout, FrontedRenderContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将 v3 控件布局渲染到内部的 BaseCanvas。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderToCanvas(Canvas canvas, FrontedCanvasSettings canvasSettings, FrontedControlLayout controlLayout, FrontedRenderContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>内部的 BaseCanvas。</p>
+</dd>
+    <dt><code>canvasSettings</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasSettings.html">FrontedCanvasSettings</a></dt>
+    <dd><p>画布设置。</p>
+</dd>
+    <dt><code>controlLayout</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedControlLayout.html">FrontedControlLayout</a></dt>
+    <dd><p>控件布局。</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext.html">FrontedRenderContext</a></dt>
+    <dd><p>渲染上下文。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RenderToCanvas_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RenderToCanvas*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Services_FrontedLayout_FrontedRenderer_RenderToCanvas_System_Windows_Controls_Canvas_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedWindowConfig_neo_bpsys_wpf_Core_Abstractions_Services_FrontedRenderContext_" data-uid="neo_bpsys_wpf.Core.Services.FrontedLayout.FrontedRenderer.RenderToCanvas(System.Windows.Controls.Canvas,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedWindowConfig,neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext)">
+  RenderToCanvas(Canvas, FrontedWindowConfig, FrontedRenderContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>将以窗口为中心的 v3 布局渲染到内部的 BaseCanvas。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderToCanvas(Canvas canvas, FrontedWindowConfig config, FrontedRenderContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>内部的 BaseCanvas。</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedWindowConfig.html">FrontedWindowConfig</a></dt>
+    <dd><p>以窗口为中心的配置。</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext.html">FrontedRenderContext</a></dt>
+    <dd><p>渲染上下文。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Services/FrontedLayout/FrontedRenderer.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

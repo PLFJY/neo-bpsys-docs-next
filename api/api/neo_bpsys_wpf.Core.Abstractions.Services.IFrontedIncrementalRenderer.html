@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IFrontedIncrementalRenderer | neo-bpsys-wpf </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IFrontedIncrementalRenderer | neo-bpsys-wpf ">
+      
+      <meta name="description" content="可选的前台画布增量渲染能力。">
+      <link rel="icon" href="../public/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../public/logo.webp" alt="neo-bpsys-wpf">
+            neo-bpsys-wpf
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer">
+
+
+
+  <h1 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer" class="text-break">
+Interface IFrontedIncrementalRenderer  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedIncrementalRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="neo_bpsys_wpf.html">neo_bpsys_wpf</a>.<a class="xref" href="neo_bpsys_wpf.Core.html">Core</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.html">Abstractions</a>.<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>neo-bpsys-wpf.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>可选的前台画布增量渲染能力。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFrontedIncrementalRenderer</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+适合属性编辑、单个控件增删等局部变更；调用方应在局部刷新失败时回退
+<a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedRenderer.html">IFrontedRenderer</a> 的完整渲染。完整重建仍适用于画布/窗口切换、
+布局整体替换和需要重建名称作用域的场景。
+</p>
+<p>
+所有方法必须在拥有 <code>canvas</code> 的 WPF Dispatcher 线程上调用；实现应校验
+<code>canvas</code>、<code>config</code>、<code>context</code> 非空。批量方法的 <code>controlNames</code>
+只枚举一次，重复名称按一个处理；返回数量小于去重后的名称数量表示部分失败。
+</p>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_AddControl_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.AddControl*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_AddControl_System_Windows_Controls_Canvas_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedCanvasConfig_neo_bpsys_wpf_Core_Abstractions_Services_FrontedRenderContext_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.AddControl(System.Windows.Controls.Canvas,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig,neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext,System.String)">
+  AddControl(Canvas, FrontedCanvasConfig, FrontedRenderContext, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedIncrementalRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>向现有画布增量添加一个控件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AddControl(Canvas canvas, FrontedCanvasConfig config, FrontedRenderContext context, string controlName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>目标画布。</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig.html">FrontedCanvasConfig</a></dt>
+    <dd><p>当前画布配置。</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext.html">FrontedRenderContext</a></dt>
+    <dd><p>渲染上下文。</p>
+</dd>
+    <dt><code>controlName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>控件名称。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功添加时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_AddControls_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.AddControls*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_AddControls_System_Windows_Controls_Canvas_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedCanvasConfig_neo_bpsys_wpf_Core_Abstractions_Services_FrontedRenderContext_System_Collections_Generic_IEnumerable_System_String__" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.AddControls(System.Windows.Controls.Canvas,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig,neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext,System.Collections.Generic.IEnumerable{System.String})">
+  AddControls(Canvas, FrontedCanvasConfig, FrontedRenderContext, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedIncrementalRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>批量向现有画布增量添加控件，只解析一次画布运行时状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int AddControls(Canvas canvas, FrontedCanvasConfig config, FrontedRenderContext context, IEnumerable&lt;string&gt; controlNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>目标画布。</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig.html">FrontedCanvasConfig</a></dt>
+    <dd><p>当前画布配置。</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext.html">FrontedRenderContext</a></dt>
+    <dd><p>渲染上下文。</p>
+</dd>
+    <dt><code>controlNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>控件名称集合；只枚举一次。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>成功添加的数量；小于去重后的名称数量表示部分失败。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_RefreshControl_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.RefreshControl*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_RefreshControl_System_Windows_Controls_Canvas_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedCanvasConfig_neo_bpsys_wpf_Core_Abstractions_Services_FrontedRenderContext_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.RefreshControl(System.Windows.Controls.Canvas,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig,neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext,System.String)">
+  RefreshControl(Canvas, FrontedCanvasConfig, FrontedRenderContext, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedIncrementalRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>刷新指定控件的可视化，保留画布、背景和其他控件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RefreshControl(Canvas canvas, FrontedCanvasConfig config, FrontedRenderContext context, string controlName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>目标画布。</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig.html">FrontedCanvasConfig</a></dt>
+    <dd><p>当前画布配置。</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext.html">FrontedRenderContext</a></dt>
+    <dd><p>渲染上下文。</p>
+</dd>
+    <dt><code>controlName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>控件名称。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>成功刷新时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_RefreshControls_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.RefreshControls*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_RefreshControls_System_Windows_Controls_Canvas_neo_bpsys_wpf_Core_Models_FrontedLayout_FrontedCanvasConfig_neo_bpsys_wpf_Core_Abstractions_Services_FrontedRenderContext_System_Collections_Generic_IEnumerable_System_String__" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.RefreshControls(System.Windows.Controls.Canvas,neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig,neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext,System.Collections.Generic.IEnumerable{System.String})">
+  RefreshControls(Canvas, FrontedCanvasConfig, FrontedRenderContext, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedIncrementalRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>批量刷新指定控件，只解析一次画布运行时状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int RefreshControls(Canvas canvas, FrontedCanvasConfig config, FrontedRenderContext context, IEnumerable&lt;string&gt; controlNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>目标画布。</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="neo_bpsys_wpf.Core.Models.FrontedLayout.FrontedCanvasConfig.html">FrontedCanvasConfig</a></dt>
+    <dd><p>当前画布配置。</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="neo_bpsys_wpf.Core.Abstractions.Services.FrontedRenderContext.html">FrontedRenderContext</a></dt>
+    <dd><p>渲染上下文。</p>
+</dd>
+    <dt><code>controlNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>控件名称集合；只枚举一次。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>成功刷新的数量；小于去重后的名称数量表示部分失败。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_RemoveControl_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.RemoveControl*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_RemoveControl_System_Windows_Controls_Canvas_System_String_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.RemoveControl(System.Windows.Controls.Canvas,System.String)">
+  RemoveControl(Canvas, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedIncrementalRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>从现有画布增量移除一个控件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RemoveControl(Canvas canvas, string controlName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>目标画布。</p>
+</dd>
+    <dt><code>controlName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>控件名称。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>找到并移除控件时为 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_RemoveControls_" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.RemoveControls*"></a>
+
+  <h3 id="neo_bpsys_wpf_Core_Abstractions_Services_IFrontedIncrementalRenderer_RemoveControls_System_Windows_Controls_Canvas_System_Collections_Generic_IEnumerable_System_String__" data-uid="neo_bpsys_wpf.Core.Abstractions.Services.IFrontedIncrementalRenderer.RemoveControls(System.Windows.Controls.Canvas,System.Collections.Generic.IEnumerable{System.String})">
+  RemoveControls(Canvas, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedIncrementalRenderer.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>批量从现有画布增量移除控件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int RemoveControls(Canvas canvas, IEnumerable&lt;string&gt; controlNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>目标画布。</p>
+</dd>
+    <dt><code>controlNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>控件名称集合；只枚举一次。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>实际移除的数量；小于去重后的名称数量表示部分失败。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PLFJY/neo-bpsys-wpf/blob/main/neo-bpsys-wpf.Core/Abstractions/Services/IFrontedIncrementalRenderer.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>neo-bpsys-wpf &middot; 以 CC BY-NC-SA 4.0 许可协议授权</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

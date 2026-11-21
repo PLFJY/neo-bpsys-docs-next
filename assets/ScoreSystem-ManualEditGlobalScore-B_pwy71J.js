@@ -1,0 +1,1 @@
+const e="/user-guide/images/ScoreSystem-ScorePageStandard.webp",s="/user-guide/images/ScoreSystem-ScorePageFreeGameMode.webp",a="/user-guide/images/ScoreSystem-ManualScoreEdit.webp",o="/user-guide/images/ScoreSystem-ManualEditGlobalScore.webp";export{e as _,s as a,a as b,o as c};
